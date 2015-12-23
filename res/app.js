@@ -1,14 +1,11 @@
 $(function(){
-	$('.m-header .nav-menu > li > a').hover(function(){
-		$(this).append('<div class="u-nav_hover"></div>')
-	},function(){
-		$('.u-nav_hover').remove();
-	})
-	$('.m-header .drop-menu').hover(function(){
-		$(this).prev().append('<div class="u-nav_hover"></div>')
-	},function(){
-		$('.u-nav_hover').remove();
-	})
+	alert('index');
+	$('.lv1').each(function(index, el) {
+		$(el).on('click',function(){
+			alert(index);
+			$(el).find('.drop-menu').html('111');
+		});
+	});
 	$('.u-link-tt').on('click',function(){
 		if($(this).hasClass('temp')){
 			$('.temp').next('div').addClass('hidden-l');

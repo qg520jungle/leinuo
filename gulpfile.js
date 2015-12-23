@@ -31,21 +31,23 @@ gulp.task('less', function() {
 		.pipe(gulp.dest('./res/'));
 });
 
-gulp.task('serve', ['less'], function() {
+gulp.task('serve', function() {
 	browserSync({
 		server: {
 			baseDir: "./",
 			directory: true
 		}
 	});
+	
+});
+gulp.task('watch',function() {
 	var _tmpArr = [].concat(filePath.page, filePath.less, filePath.css, filePath.js, filePath.img);
-	gulp.watch(_tmpArr).on('change', function() {
-		gulp.start('reload');
-	});
+	gulp.watch(filePath.less,['less']);
+	gulp.watch([].concat(filePath.page, filePath.css, filePath.js, filePath.img),['reload']);
 });
 
 
-gulp.task('reload', function() {
+gulp.task('reload',function() {
 	browserSync.reload();
 });
-gulp.task('default', ['serve']);
+gulp.task('default', ['serve','less','watch']);

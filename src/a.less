@@ -1,0 +1,83 @@
+@yellow:#ffcd33;
+*{
+	margin: 0;
+	padding: 0;
+}
+ul li{
+	list-style-type: none;
+}
+a:hover{
+	text-decoration: none;
+}
+.f-hd {
+	display: none;
+}
+.u-icon {
+	display: inline-block;
+	vertical-align: middle;
+}
+.u-icon-arrow_d {
+	background: url(icons/arrow_d.png) no-repeat center;
+	width: 20px;
+	height: 6px;
+	margin-top: -2px;
+}
+.m-header{
+	margin-top: 35px;
+	margin-bottom: 35px;
+	border-bottom: 1px solid #eee;
+	box-shadow: 0 3px 3px 0 #e7e7e7;
+	.navbar{
+		font-size: 16px;
+		padding: 15px 0;
+	}
+	.navbar a:hover {
+		color: #111;
+		border-bottom: 4px solid @yellow;
+		border-image: 3px;
+	}
+	.lv1{
+		display: inline-block;
+	}
+	.lv1> a{
+		padding: 5px 0;
+		margin: 0 30px;
+		font-weight: bold;
+		position: relative;
+		color:#333;
+		background-color: #fff;
+	}
+	.drop-menu {
+		display: none;
+		padding: 36px 0 0 0;
+		border-radius: 0;
+		background-color: #fff;
+		background: url(icons/arrow_t.png) no-repeat center 26px;
+		border: 0;
+		box-shadow: none;
+		position:absolute;
+		z-index: 3;
+		margin-left: -39px;
+	}
+	.drop-menu a {
+		display: block;
+		color: #fff;
+		background: url(icons/arrow_r_white.png) no-repeat 175px center #333;
+		font-size: 14px;
+		width: 200px;
+		height: 60px;
+		line-height: 60px;
+		border-bottom: 1px solid #666;
+		padding: 0 0 0 20px;
+		box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+	}
+	.drop-menu a:hover {
+		background: url(icons/arrow_r.png) no-repeat 175px center #fece00;
+		color: #333;
+		font-weight: bold;
+	}
+	.slogo{
+		padding-right: 26px;
+		border-right: 6px solid @yellow;
+	}
+}
