@@ -1,9 +1,10 @@
-$(function(){
-	alert('index');
+$(document).ready(function(){
 	$('.lv1').each(function(index, el) {
-		$(el).on('click',function(){
-			alert(index);
-			$(el).find('.drop-menu').html('111');
+		$(el).on('mouseover',function(){
+			$(el).find('.drop-menu').show();
+		});
+		$(el).on('mouseout',function(){
+			$(el).find('.drop-menu').hide();
 		});
 	});
 	$('.u-link-tt').on('click',function(){
@@ -45,4 +46,4 @@ $(function(){
 			$('.z-mb .navbar-body').hide();
 		},500)
 	})
-})
+});

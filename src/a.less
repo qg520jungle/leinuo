@@ -1,4 +1,5 @@
 @yellow:#ffcd33;
+@color_y:#e3ba10;
 *{
 	margin: 0;
 	padding: 0;
@@ -9,8 +10,20 @@ ul li{
 a:hover{
 	text-decoration: none;
 }
+.f-fr{
+	float:right;
+}
 .f-hd {
 	display: none;
+}
+.f-tc{
+	text-align: center;
+}
+.f-mb30{
+	margin-bottom: 30px;
+}
+.s-color-y{
+	color:@color_y;
 }
 .u-icon {
 	display: inline-block;
@@ -21,6 +34,63 @@ a:hover{
 	width: 20px;
 	height: 6px;
 	margin-top: -2px;
+}
+.u-aww{
+
+}
+.u-icon-wb{
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	background: url(icons/sina.png) no-repeat center;
+}
+.u-icon-wx{
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	background: url(icons/wx.png) no-repeat center;
+}
+.u-icon-qq{
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	background: url(icons/qq.png) no-repeat center;
+}
+.u-icon-db{
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	background: url(icons/douban.png) no-repeat center;
+}
+.u-code-wx{
+	width:80px;
+	height: 80px; 
+	display: inline-block;
+	background: url(icons/qcode_wx.png) no-repeat center;
+}
+.u-code-wb{
+	width:80px;
+	height: 80px; 
+	display: inline-block;
+	background: url(icons/qcode_wb.png) no-repeat center;
+}
+.u-icon-head{
+	width:76px;
+	height:76px;
+	background: url(icons/head.png) no-repeat center;
+}
+.u-icon-lv{
+	width:36px;
+	height:42px;
+	background: url(icons/lv.png) no-repeat center;
+}
+.u-link-right{
+	float:right;
+	// line-height: 76px;
 }
 .m-header{
 	margin-top: 35px;
@@ -80,4 +150,51 @@ a:hover{
 		padding-right: 26px;
 		border-right: 6px solid @yellow;
 	}
+}
+.m-footer{
+	background-color: #333;
+	padding: 40px 0 30px;
+	color: #ddd;
+	dt{
+		font-size: 18px;
+		font-weight: bold;
+		margin-bottom: 30px;
+	}
+	a,a:hover{ 
+		color:#FFF;
+		font-size: 14px;
+	}
+	.u-text{
+		display: inline-block;
+	}
+	
+
+}
+.m-footer-copyright{
+	background-color: #000;
+	padding: 40px 0 30px;
+	color:#ddd;
+}
+.m-personalInfo{
+	background-color: #f0f0f0;
+	.top{		
+		padding:12px 20px 12px 20px;
+
+		line-height: 76px;
+	}
+	li{
+		padding:12px 20px 12px 20px;
+
+		border-bottom: 1px solid #fff;
+	}
+	.tt{
+		width:120px;
+		display:inline-block;
+	}
+	.cc{
+		color:#000;
+		font-weight: border;
+
+	}
+
 }
