@@ -1,5 +1,171 @@
-@yellow:#ffcd33;
 @color_y:#e3ba10;
+@color1:#333;
+@color2:#999;
+@bg:#f0f0f0;
+@main-c:#ffcd33;
+.s-color2{
+	color: @color2;
+}
+.f-np-l{
+	padding-left: 0;
+}
+.f-np-r{
+	padding-right: 0;
+}
+.f-pt-lg{
+	padding-top: 40px;
+}
+.btn-app{
+	color: @color1;
+	background-color: @main-c;
+	border-color: @main-c;
+}
+.btn-black{
+	color: #fff;
+	background-color: @color1;
+	border-color: @color1;
+	&:hover{
+		color: #fff;
+	}
+	&:focus{
+		color: #fff;
+	}
+}
+.carousel-indicators li{
+	background-color: @color2;
+	border-color: @color2;
+}
+.carousel-indicators .active{
+	background-color: @main-c;
+	border-color: @main-c;
+}
+.m-login{
+	background-color: @bg;
+	.head{
+		line-height: 22px;
+		padding: 25px 20px 20px;
+		border-bottom: 1px solid #fff;
+	}
+	form{
+		padding: 20px;
+	}
+	.input{
+		width: 100%;
+		height: 40px;
+		line-height: 40px;
+		border: 0;
+		background-color: #fff;
+		border-radius: 0;
+		padding-left: 10px;
+		margin-bottom: 10px;
+	}
+	.qcode{
+		height: 40px;
+		background-color: #fff;
+		margin-left: 10px;
+	}
+	.btn{
+		border-radius: 0;
+		letter-spacing: 24px;
+	}
+	.tips{
+		margin-bottom: 10px;
+		line-height: 23px;
+    padding-left: 26px;
+    background: url(icons/dp.png) no-repeat left top;
+	}
+	.links{
+		margin-top: 11px;
+		a{
+			margin-right: 18px;
+			color: @color2;
+			font-size: 12px;
+		}
+	}
+}
+.u-title {
+	padding: 23px 20px;
+	font-size: 18px;
+	font-weight: bold;
+	border-bottom: 1px solid #e2e2e2;
+	position: relative;
+	.bg {
+		position: absolute;
+		bottom: -1px;
+		left: 40px;
+	}
+	.more {
+		width: 26px;
+		background: url(icons/shuzi.png) no-repeat left center;
+		height: 31px;
+		line-height: 30px;
+		text-align: center;
+		font-weight: normal;
+		font-size: 12px;
+		margin-top: -4px;
+		color: #bbb;
+	}
+}
+.s-box {
+	border: 1px solid #e2e2e2;
+	&:hover {
+		box-shadow: 0 0 4px #f1f1f1;
+	}
+}
+.m-list-act{
+	padding: 10px 0 10px 0;
+	padding-right: 0;
+	position: relative;
+	.item{
+		padding: 0 7px;
+    margin-bottom: 10px;
+		position: relative;
+		img{
+			max-width: 100%;
+		}
+		.btn {
+			width: 142px;
+			height: 33px;
+			line-height: 33px;
+			text-align: center;
+			font-weight: bold;
+			position: absolute;
+			right: 30px;
+			bottom: 10px;
+			padding: 0;
+		}
+	}
+	.more{
+		display: inline-block;
+		*display: inline;
+		zoom: 1;
+	}
+	.aw{
+		float: left;
+		border-right: 1px solid #fff;
+		width: 30px;
+		height: 33px;
+		line-height: 33px;
+	}
+	.btn{
+		border-radius: 0;
+	}
+}
+.m-list-news{
+	.item{
+		overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    line-height: 70px;
+    border-bottom: 1px solid #e2e2e2;
+    height: 71px;
+    font-weight: normal;
+    padding: 0 20px;
+	}
+	.z-last{
+		border-bottom: none;
+	}
+}
 *{
 	margin: 0;
 	padding: 0;
@@ -106,7 +272,6 @@ a:hover{
 }
 .u-link-right{
 	float:right;
-	// line-height: 76px;
 }
 .m-header{
 	margin-top: 35px;
@@ -119,7 +284,7 @@ a:hover{
 	}
 	.navbar a:hover {
 		color: #111;
-		border-bottom: 4px solid @yellow;
+		border-bottom: 4px solid @main-c;
 		border-image: 3px;
 	}
 	.lv1{
@@ -149,7 +314,6 @@ a:hover{
 		display: block;
 		color: #fff;
 		background-color: #333;
-		// background: url(icons/arrow_r_white.png) no-repeat 175px center #333;
 		font-size: 14px;
 		width: 200px;
 		height: 60px;
@@ -159,7 +323,6 @@ a:hover{
 		box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
 	}
 	.drop-menu a:hover {
-		// background: url(icons/arrow_r.png) no-repeat 175px center #fece00;
 		background-color: #fece00;
 		.u-icon-r{
 			background-position: -200px -4px;
@@ -169,7 +332,7 @@ a:hover{
 	}
 	.slogo{
 		padding-right: 26px;
-		border-right: 6px solid @yellow;
+		border-right: 6px solid @main-c;
 	}
 }
 .m-footer{

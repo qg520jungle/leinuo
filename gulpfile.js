@@ -46,8 +46,8 @@ gulp.task('watch',function() {
 	gulp.watch([].concat(filePath.page, filePath.css, filePath.js, filePath.img),['reload']);
 });
 
-
 gulp.task('reload',function() {
 	browserSync.reload();
 });
+
 gulp.task('default', ['serve','less','watch']);
