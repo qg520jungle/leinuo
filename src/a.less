@@ -45,6 +45,12 @@
 		line-height: 22px;
 		padding: 25px 20px 20px;
 		border-bottom: 1px solid #fff;
+		.more{
+			.glyphicon{
+				color: @color1;
+				margin: 0 10px;
+			}
+		}
 	}
 	form{
 		padding: 20px;
@@ -74,6 +80,16 @@
     padding-left: 26px;
     background: url(icons/dp.png) no-repeat left top;
 	}
+	.btns{
+		.btn{
+			position: relative;
+			.glyphicon{
+				position: absolute;
+				top: 15px;
+				right: 0;
+			}
+		}
+	}
 	.links{
 		margin-top: 11px;
 		a{
@@ -95,6 +111,7 @@
 		left: 40px;
 	}
 	.more {
+		display: block;
 		width: 26px;
 		background: url(icons/shuzi.png) no-repeat left center;
 		height: 31px;
@@ -166,16 +183,6 @@
 	.z-last{
 		border-bottom: none;
 	}
-}
-*{
-	margin: 0;
-	padding: 0;
-}
-ul li{
-	list-style-type: none;
-}
-a:hover{
-	text-decoration: none;
 }
 .f-fr{
 	float:right;
