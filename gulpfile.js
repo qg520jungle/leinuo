@@ -31,25 +31,23 @@ gulp.task('less', function() {
 		.pipe(gulp.dest('./res/'));
 });
 
-gulp.task('serve', ['less'],function() {
+gulp.task('serve', function() {
 	browserSync({
 		server: {
 			baseDir: "./",
 			directory: true
 		}
 	});
-	var _tmpArr = [].concat(filePath.page, filePath.less, filePath.css, filePath.js, filePath.img);
-	gulp.watch(_tmpArr).on('change', function() {
-		gulp.start('reload');
-	});
+	
 });
-gulp.task('watch',function(){
-	gulp.watch(filePath.less,['serve']);
-})
+gulp.task('watch',function() {
+	var _tmpArr = [].concat(filePath.page, filePath.less, filePath.css, filePath.js, filePath.img);
+	gulp.watch(filePath.less,['less']);
+	gulp.watch([].concat(filePath.page, filePath.css, filePath.js, filePath.img),['reload']);
+});
 
-
-
-gulp.task('reload', function() {
+gulp.task('reload',function() {
 	browserSync.reload();
 });
-gulp.task('default', ['serve','watch']);
+
+gulp.task('default', ['serve','less','watch']);
