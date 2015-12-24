@@ -31,7 +31,7 @@ gulp.task('less', function() {
 		.pipe(gulp.dest('./res/'));
 });
 
-gulp.task('serve', ['less'], function() {
+gulp.task('serve', ['less'],function() {
 	browserSync({
 		server: {
 			baseDir: "./",
@@ -43,9 +43,13 @@ gulp.task('serve', ['less'], function() {
 		gulp.start('reload');
 	});
 });
+gulp.task('watch',function(){
+	gulp.watch(filePath.less,['serve']);
+})
+
 
 
 gulp.task('reload', function() {
 	browserSync.reload();
 });
-gulp.task('default', ['serve']);
+gulp.task('default', ['serve','watch']);
