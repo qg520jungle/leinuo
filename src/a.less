@@ -1,6 +1,7 @@
 @color_y:#e3ba10;
 @color1:#333;
 @color2:#999;
+@color3:#ddd;
 @bg:#f0f0f0;
 @main-c:#ffcd33;
 ul li{
@@ -8,6 +9,10 @@ ul li{
 }
 a:hover{
 	text-decoration: none;
+}
+ul,li{
+	padding:0;
+	margin:0;
 }
 .s-color2{
 	color: @color2;
@@ -226,6 +231,11 @@ a:hover{
 	font-size: 12px;
 	margin-left: 5px;
 }
+.u-icon-menu_d{
+	font-size: 12px;
+	margin-left: 5px;
+	float: right;
+}
 .u-aww{
 
 }
@@ -382,25 +392,39 @@ a:hover{
 	color:#ddd;
 }
 .m-personalInfo{
-	background-color: #f0f0f0;
+	background-color: @bg;
+	margin-bottom: 40px;
 	.top{		
 		padding:12px 20px 12px 20px;
-
 		line-height: 76px;
 	}
 	li{
 		padding:12px 20px 12px 20px;
-
 		border-bottom: 1px solid #fff;
 	}
 	.tt{
 		width:120px;
 		display:inline-block;
+		margin-left: 12px;
 	}
 	.cc{
 		color:#000;
 		font-weight: border;
-
+	}
+	.tips_down{
+		background-color: #ddd;
+		text-align:center;
+		font-weight: bold;
+		margin:0;
+	}
+	a{
+		color:#333;
+	}
+	a:hover{
+		color:#111;
 	}
 
+}
+.m-personalPad{
+	background-color: @color3;
 }
