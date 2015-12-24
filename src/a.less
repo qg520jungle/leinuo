@@ -4,7 +4,7 @@
 @color2:#999;
 @color3:#ddd;
 @bg:#f0f0f0;
-@main-c:#222;
+@main-c:#fecf00;
 ul li{
 	list-style: none;
 }
@@ -12,7 +12,7 @@ a:hover{
 	text-decoration: none;
 }
 ul,li{
-	padding:110px;
+	padding:0;
 	margin:0;
 }
 .s-color2{
@@ -26,6 +26,10 @@ ul,li{
 }
 .f-pt-lg{
 	padding-top: 40px;
+}
+.u-btn{
+	display: inline-block;
+	text-align: center;
 }
 .btn-app{
 	color: @color1;
@@ -42,6 +46,16 @@ ul,li{
 	&:focus{
 		color: #fff;
 	}
+}
+.btn-m{
+	width:240px;
+	height:50px;
+	line-height: 50px;
+}
+.btn-l{
+	width:400px;
+	height:50px;
+	line-height: 50px;
 }
 .carousel-indicators li{
 	background-color: @color2;
@@ -336,7 +350,8 @@ ul,li{
 	width:500px;
 	height:48px;
 	border:1px solid #ccc;
-
+	font-size: 20px;
+	padding-left: 8px;
 }
 .g-body{
 	margin-top: 35px;
@@ -493,5 +508,10 @@ ul,li{
 	.u-box{
 		display: block;
 		border-top: 1px dotted #ccc;
+		text-align: center;
 	}
+	.btns{
+		margin-top: 22px;
+	}
+
 }
