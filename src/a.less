@@ -3,6 +3,12 @@
 @color2:#999;
 @bg:#f0f0f0;
 @main-c:#ffcd33;
+ul li{
+	list-style: none;
+}
+a:hover{
+	text-decoration: none;
+}
 .s-color2{
 	color: @color2;
 }
@@ -216,14 +222,21 @@
 	height:60px;
 	background-position: 0 -72px;
 }
-.u-icon-arrow_d {
-	background-position: -355px -11px;
-	width: 20px;
-	height: 6px;
-	margin-top: -2px;
+.u-icon-arrow_d{
+	font-size: 12px;
+	margin-left: 5px;
 }
 .u-aww{
 
+}
+.u-icon-tri{
+	width:21px;
+	height:11px;
+	background-position: -215px -4px;
+	position:absolute;
+	left:50%;
+	margin-left: -10px;
+	top:26px;
 }
 .u-icon-wb{
 	width: 38px;
@@ -252,17 +265,18 @@
 .u-code-wx{
 	width:80px;
 	height: 80px;
-	background-position: -96px -145px;
+	display: inline-block;
+	background: url(icons/qcode_wx.png) no-repeat center;
 }
 .u-code-wb{
 	width:80px;
 	height: 80px; 
-	background-position: 0 -145px;
+	display: inline-block;
+	background: url(icons/qcode_wb.png) no-repeat center;
 }
 .u-icon-r{
-	width:8px;
-	height:12px;
-	background-position: -187px -4px;
+	font-size: 12px;
+	// font-weight: bord;
 	margin-top: 23px;
 	margin-right: 19px;
 	float: right;
@@ -289,10 +303,11 @@
 		font-size: 16px;
 		padding: 15px 0;
 	}
-	.navbar a:hover {
+	.lv1> a:hover {
 		color: #111;
 		border-bottom: 4px solid @main-c;
-		border-image: 3px;
+		// border-image: 3px;
+		// text-decoration: none;
 	}
 	.lv1{
 		display: inline-block;
@@ -309,8 +324,6 @@
 		display: none;
 		padding: 36px 0 0 0;
 		border-radius: 0;
-		background-color: #fff;
-		background: url(icons/arrow_t.png) no-repeat center 26px;
 		border: 0;
 		box-shadow: none;
 		position:absolute;
@@ -334,6 +347,7 @@
 		.u-icon-r{
 			background-position: -200px -4px;
 		}
+		
 		color: #333;
 		font-weight: bold;
 	}
