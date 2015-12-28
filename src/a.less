@@ -228,9 +228,6 @@ ul,li{
 }
 .m-list-news{
 	.item{
-		overflow: hidden;
-        white-space: nowrap;
-        text-overflow: ellipsis;
         line-height: 70px;
         border-bottom: 1px solid #e2e2e2;
         height: 71px;
@@ -238,6 +235,11 @@ ul,li{
         padding: 0 20px;
       a{
         color: @color2;
+        display:block;
+        width: 100%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
       }
 	}
 	.z-last{
