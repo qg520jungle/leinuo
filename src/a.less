@@ -158,6 +158,7 @@ ul,li{
         padding: 5px 8px;
         border: 1px solid #c0c0c0;
         position: relative;
+        color: #c0c0c0;
         .u-icon-td{
           position: absolute;
           bottom: -6px;
@@ -547,14 +548,13 @@ ul,li{
 	}
 }
 .m-carousel-imgs{
-  padding: 10px 40px;
   .item{
     li{
       float: left;
-      margin: 10px;
-      border:1px solid #e2e2e2;
+      margin-bottom: 10px;
       img{
         width: 100%;
+        border:1px solid #e2e2e2;
       }
     }
   }
@@ -567,18 +567,27 @@ ul,li{
     &.left{
       background-image: none;
       .glyphicon-chevron-left{
-        left: 0;
+        left: 15px;
       }
     }
     &.right{
       background-image: none;
       .glyphicon-chevron-right{
-        right: 0;
+        right: 15px;
       }
     }
   }
 }
-
+.f-wrap{
+    padding: 0 15px;
+  }
+.f-wrap-re{
+  padding: 15px 0;
+}
+.f-mb-mg{
+  margin-left: -15px;
+  margin-right: -15px;
+}
 @media (min-width: 768px){
     .nav-tabs.nav-justified > .active > a, .nav-tabs.nav-justified > .active > a:hover, .nav-tabs.nav-justified > .active > a:focus {
       border-bottom-color: #e2e2e2;
@@ -586,12 +595,25 @@ ul,li{
         display: block;
       }
   }
+  .m-carousel-imgs{
+    padding: 10px 40px;
+  }
+  .f-wrap{
+    padding: 0 45px;
+  }
+  .f-mb-mg{
+    margin: 0;
+  }
+  .u-title{
+    padding: 23px 20px;
+  }
 }
 .nav-tabs.nav-justified > li > a, .nav-tabs.nav-justified > li > a:hover, .nav-tabs.nav-justified > li > a:focus {
   border-top: none;
   border-left: none;
   border-right: none;
   border-radius: 0;
+  margin-bottom: 0;
 }
 .nav-tabs.nav-justified > li > a:hover, .nav-tabs.nav-justified > li > a:focus {
   color: #000;
@@ -602,11 +624,17 @@ ul,li{
   border-left: none;
   border-right: none;
 }
-.m-gift{
-  padding: 20px 0;
-  .f-wrap{
-    padding: 0 45px;
+.nav-tabs.nav-justified > li {
+    display: table-cell;
+    width: 1%;
+}
+.nav-tabs.nav-justified > .active > a, .nav-tabs.nav-justified > .active > a:hover, .nav-tabs.nav-justified > .active > a:focus {
+      .bg{
+        display: block;
+      }
   }
+.m-gift{
+  padding: 0 0 20px 0;
   .u-title{
     text-align: center;
     border-bottom: none;
@@ -651,4 +679,11 @@ ul,li{
 }
 .s-border-b{
   border-bottom: 1px dashed #e2e2e2;
+}
+.m-mb-more{
+  background-color: @color3;
+  text-align: center;
+  font-size: 18px;
+  color: #000;
+  padding: 13px 10px;
 }
