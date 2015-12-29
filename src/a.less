@@ -655,7 +655,7 @@ ul,li{
 
 .m-title{
 	position: relative;
-	@media(min-width:860px){
+	@media(min-width:992px){
 		.u-arc{
 			position: absolute;
 			top: 100%;
@@ -666,7 +666,7 @@ ul,li{
 			background-position: -182px -3px;
 		}
 	}
-	@media(max-width:860px){
+	@media(max-width:992px){
 		.u-arc{
 			position: absolute;
 			top: 11%;
@@ -682,27 +682,49 @@ ul,li{
 	margin: 30px auto 0 auto;
 	border: 1px solid #e2e2e2;
 	border-bottom: none;
-	@media (min-width:860px){
-		width: 40%;
-		padding: 40px 8% 20px 3% ;
+	@media (min-width:992px){
+		width: 800px;
+		padding: 40px 50px 20px 50px ;
 	}
-	@media (max-width:860px){
+	@media (max-width:992px){
 		width: 80%;
 		padding: 40px 0;
 	}
 	.f-input{
-		margin-bottom: 30px;
+		margin-bottom: 15px;
 		padding: 10px 0;
-		@media (min-width:860px){
+		.u-code{
+			float: right;
+			height: 40px;
+			line-height: 40px;
+			background: #000;
+			text-align: center;
+			font-size: 16px;
+  			font-family: "SourceHanSansCN";
+  			color: rgb(255, 255, 255);
+  			font-weight: bold;
+		}
+		@media (min-width:992px){
 			.f-la{
+				width: 100px;
 				text-align: right;
 				margin-top: 10px;
+				margin-right: 10px;
 			}
 			.f-txt{
+				width: 500px;
 				height: 40px;
 			}
+			.u-validate{
+				width: 320px;
+				margin-right: 10px;
+			}
+			.u-code{
+				width: 170px;
+				margin-right: 82px;
+			}
 		}
-		@media (max-width:860px){
+		@media (max-width:992px){
 			.f-la{
 				display: block;
 				float: none;
@@ -717,17 +739,65 @@ ul,li{
 				padding: 0;
 				margin: 0 0 0 10%;
 			}
+			.u-validate{
+				width: 58%;
+				margin-right: 2%;
+				line-height: 40px;
+			}
+			.u-code{
+				width: 20%;
+				margin-right: 10%;
+			}
 		}
 		span{
 			padding-right: 3px;
 		}
 	}
+	.m-item{
+		padding: 20px ;
+		border: 1px solid #e2e2e2;
+		@media(min-width:992px){
+			margin-left: 112px;
+			width: 508px;
+		}
+		@media(max-width:992px){
+
+		}
+		::-webkit-scrollbar{
+			width: 20px;
+			height: 200px;
+			background-color: rgb(225,225,225);
+		}
+		::-webkit-scrollbar-thumb{
+			background-color: rgb(205,205,205);
+		}
+		.u-content{
+			padding-right: 10px;
+			height: 230px;
+			font-size: 12px;
+  			font-family: "SourceHanSansCN";
+  			color: rgb(153, 153, 153);
+  			line-height: 20px;
+			overflow-y: scroll;
+		}
+	}
+	.u-radio{
+		display:inline-block;
+		margin-left: 112px;
+		margin-top: 10px;
+		font-size: 14px;
+  		font-family: "SourceHanSansCN";
+  		color: rgb(102, 102, 102);
+		.u-icon{
+
+		}
+	}
 }
 .m-btn{
-	@media(min-width:860px){
-		width: 40%;
+	@media(min-width:992px){
+		width:800px;
 	}
-	@media(max-width:860px){
+	@media(max-width:992px){
 		width: 80%;
 	}
 	margin:0 auto 40px auto;
@@ -736,23 +806,23 @@ ul,li{
 	padding:20px 0;
 	.f-btn{
 		display: inline-block;
-		@media(min-width:860px){
-			width: 27%;
+		@media(min-width:992px){
+			width: 240px;
 		}
-		@media(max-width:860px){
-			width:40%;
+		@media(max-width:992px){
+			width:37%;
 		}
 		height: 40px;
 		text-align: center;
 		line-height: 40px;
 	}
 	.u-getPw{
-		@media(min-width:860px){
-			margin-left: 24%;
-			margin-right: 4%;
+		@media(min-width:992px){
+			margin-left: 160px;
+			margin-right: 25px;
 		}
-		@media(max-width:860px){
-			margin-left: 5%;
+		@media(max-width:992px){
+			margin-left: 10%;
 			margin-right: 5%;
 		}
 		background-color:rgb(255,205,13);
