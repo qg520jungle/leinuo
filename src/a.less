@@ -240,6 +240,9 @@ ul li{
   &:hover {
     box-shadow: 0 0 4px #f1f1f1;
   }
+  form{
+    padding: 20px 0 10px 0;
+  }
 }
 .m-list-act {
   padding: 10px 0 10px 0;
@@ -441,6 +444,11 @@ ul li{
   height: 8px;
   background-position: -150px -62px;
 }
+.u-icon-back{
+  width: 13px;
+  height: 13px;
+  background-position:-193px -56px;
+}
 .u-link-right {
   float: right;
 }
@@ -614,7 +622,7 @@ ul li{
   }
   .u-menu2{
     height: 53px;
-    padding: 0 8px;
+    padding: 0 8px !important;
     background: #fff;
     position: absolute;
     top:0;
@@ -623,10 +631,10 @@ ul li{
   .u-arrow-left{
     width: 22px;
     height: 25px;
-    background-position:-236px 0;
+    background-position:-244px 0;
     position: absolute;
     top: 5px;
-    left: -21px;
+    left: -11px;
   }
 
 }
@@ -644,7 +652,7 @@ ul li{
     .u-icon-slogo {
       width: 68px;
       height: 59px;
-      background-position: -101px -150px;
+      background-position: -101px -193px;
     }
 }
 @media (min-width: 768px) and (max-width:992px) {
@@ -659,13 +667,13 @@ ul li{
   .u-icon-logo {
       width: 200px;
       height: 40px;
-      background-position: 0 -228px;
+      background-position: 0 -143px;
     }
 
     .u-icon-slogo {
       width: 84px;
       height: 70px;
-      background-position: 0 -145px;
+      background-position: 0 -193px;
     }
 }
 
@@ -967,10 +975,44 @@ ul li{
 .u-crumbs{
   padding: 25px 20px;
   border-bottom: 1px solid #e2e2e2;
+  font-size: 16px;
   .b{
     font-weight: bold;
   }
   .m{
     margin: 0 6px;
+  }
+}
+.m-article-head{
+  text-align: center;
+  color: #666;
+  border-bottom: 1px dashed #e2e2e2;
+  h3{
+    position: relative;
+    color: #000;
+    .back{
+      position: absolute;
+      bottom: 3px;
+      right: 15px;
+      font-size: 16px;
+      color: #666;
+      .u-icon{
+        margin-left: 8px;
+      }
+    }
+  }
+}
+.m-article-body{
+  padding: 20px;
+  color: #666;
+  p{
+    text-align: justify;
+    text-indent: 20px;
+    line-height: 24px;
+    font-size: 14px;
+  }
+  img{
+    display: block;
+    margin: 20px auto;
   }
 }
