@@ -1,202 +1,489 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="renderer" content="webkit">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-		<meta name="viewport" id="viewport" content="width=400">
-		<meta name="keywords" content="首页" />
-		<meta name="description" content="雷诺会员系统首页" />
-		<title>登陆页</title>
-		<link href="res/bootstrap.css" rel="stylesheet">
-		<link href="res/a.css" rel="stylesheet">
-		<script src="lib/jquery.js"></script>
-		<script src="lib/respond.js"></script>
-		<script src="res/bootstrap.min.js"></script>
-		<script type="text/javascript" src="res/app.js"></script>
-		
-		<link type="image/x-icon" href="favicon.ico" rel="shortcut icon" />
-		<link href="favicon.ico" rel="bookmark icon" />
-	</head>
-	<body>
-	<div class="m-header">
-		<div class="container">
-			<div class="row">
-				<div class="col-xs-3">
-					<a class="logo" href="index.html">
-						<i class="u-icon u-icon-logo"></i>
-					</a>
-				</div>
-				
-				<ul class="navbar col-xs-6">
-						<li class="lv1"><a href="index.html">首页</a></li>
-						<li class="lv1">
-							<a href="###">诺生活<i class="glyphicon glyphicon-menu-down u-icon-arrow_d "></i></a>
-							<ul class="drop-menu">
-								<i class="u-icon u-icon-tri "></i>
-								<li><a href="###">雷诺品牌<i class="glyphicon glyphicon-menu-right  u-icon-r"></i></a></li>
-								<li><a href="###">俱乐部简介<i class="glyphicon glyphicon-menu-right  u-icon-r"></i></a></li>
-								<li><a href="###">如何成为会员<i class="glyphicon glyphicon-menu-right  u-icon-r"></i></a></li>
-								<li><a href="###">会员权利与义务<i class="glyphicon glyphicon-menu-right  u-icon-r"></i></a></li>
-								<li><a href="###">会员卡服务内容<i class="glyphicon glyphicon-menu-right  u-icon-r"></i></a></li>
-								<li><a href="###">升级条款<i class="glyphicon glyphicon-menu-right  u-icon-r"></i></a></li>
-							</ul>
-						</li>
-						<li class="lv1">
-							<a href="###">会员服务<i class="glyphicon glyphicon-menu-down u-icon-arrow_d "></i></a>
-							<ul class="drop-menu">
-							<i class="u-icon u-icon-tri"></i>
-								<li><a href="###">如何成为会员<i class="glyphicon glyphicon-menu-right  u-icon-r"></i></a></li>
-								<li><a href="###">会员权利与义务<i class="glyphicon glyphicon-menu-right  u-icon-r"></i></a></li>
-								<li><a href="###">会员卡服务内容<i class="glyphicon glyphicon-menu-right  u-icon-r"></i></a></li>
-								<li><a href="###">升级条款<i class="glyphicon glyphicon-menu-right  u-icon-r"></i></a></li>
-							</ul>
-						</li>
-						<li class="lv1">
-							<a href="###">精彩活动<i class="glyphicon glyphicon-menu-down u-icon-arrow_d "></i></a>
-							<ul class="drop-menu">
-							<i class="u-icon u-icon-tri"></i>
-								<li><a href="###">会员权利与义务<i class="glyphicon glyphicon-menu-right  u-icon-r"></i></a></li>
-								<li><a href="###">会员卡服务内容<i class="glyphicon glyphicon-menu-right  u-icon-r"></i></a></li>
-								<li><a href="###">升级条款<i class="glyphicon glyphicon-menu-right  u-icon-r"></i></a></li>
-							</ul>
-						</li>
-					</ul>
-				<div class="col-xs-3">
-				<span class="f-ib slogo">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="renderer" content="webkit">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <!--  <meta name="viewport" id="viewport" content="width=400">-->
+  <meta name="keywords" content="首页" />
+  <meta name="description" content="雷诺会员系统首页" />
+  <title>登陆页</title>
+  <link href="res/bootstrap.css" rel="stylesheet">
+  <link href="res/a.css" rel="stylesheet">
+  <script src="lib/jquery.js"></script>
+  <script src="lib/respond.js"></script>
+  <script src="res/bootstrap.min.js"></script>
+  <!--  <script type="text/javascript" src="res/app.js"></script>-->
+
+  <link type="image/x-icon" href="favicon.ico" rel="shortcut icon" />
+  <link href="favicon.ico" rel="bookmark icon" />
+</head>
+
+<body>
+  <div class="m-header">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-3">
+          <a class="logo" href="index.html">
+            <i class="u-icon u-icon-logo"></i>
+          </a>
+        </div>
+
+        <ul class="navbar col-xs-6">
+          <li class="lv1"><a href="index.html">首页</a></li>
+          <li class="lv1">
+            <a href="###">诺生活<i class="glyphicon glyphicon-menu-down u-icon-arrow_d "></i></a>
+            <ul class="drop-menu">
+              <i class="u-icon u-icon-tri "></i>
+              <li><a href="###">雷诺品牌<i class="glyphicon glyphicon-menu-right  u-icon-r"></i></a></li>
+              <li><a href="###">俱乐部简介<i class="glyphicon glyphicon-menu-right  u-icon-r"></i></a></li>
+              <li><a href="###">如何成为会员<i class="glyphicon glyphicon-menu-right  u-icon-r"></i></a></li>
+              <li><a href="###">会员权利与义务<i class="glyphicon glyphicon-menu-right  u-icon-r"></i></a></li>
+              <li><a href="###">会员卡服务内容<i class="glyphicon glyphicon-menu-right  u-icon-r"></i></a></li>
+              <li><a href="###">升级条款<i class="glyphicon glyphicon-menu-right  u-icon-r"></i></a></li>
+            </ul>
+          </li>
+          <li class="lv1">
+            <a href="###">会员服务<i class="glyphicon glyphicon-menu-down u-icon-arrow_d "></i></a>
+            <ul class="drop-menu">
+              <i class="u-icon u-icon-tri"></i>
+              <li><a href="###">如何成为会员<i class="glyphicon glyphicon-menu-right  u-icon-r"></i></a></li>
+              <li><a href="###">会员权利与义务<i class="glyphicon glyphicon-menu-right  u-icon-r"></i></a></li>
+              <li><a href="###">会员卡服务内容<i class="glyphicon glyphicon-menu-right  u-icon-r"></i></a></li>
+              <li><a href="###">升级条款<i class="glyphicon glyphicon-menu-right  u-icon-r"></i></a></li>
+            </ul>
+          </li>
+          <li class="lv1">
+            <a href="###">精彩活动<i class="glyphicon glyphicon-menu-down u-icon-arrow_d "></i></a>
+            <ul class="drop-menu">
+              <i class="u-icon u-icon-tri"></i>
+              <li><a href="###">会员权利与义务<i class="glyphicon glyphicon-menu-right  u-icon-r"></i></a></li>
+              <li><a href="###">会员卡服务内容<i class="glyphicon glyphicon-menu-right  u-icon-r"></i></a></li>
+              <li><a href="###">升级条款<i class="glyphicon glyphicon-menu-right  u-icon-r"></i></a></li>
+            </ul>
+          </li>
+        </ul>
+        <div class="col-xs-3">
+          <span class="f-ib slogo">
 					<i class="u-icon u-icon-slogo "></i>
 				</span>
-				</div>
-			</div>
-		</div>
-  	</div>
-    <div class="g-body">
-    	<div class="container">
-    	<div class=" col-xs-4">
-    		<div class="m-personalInfo">
-				<ul class=" ">
-					<li class="top row">
-						<i class=" u-icon u-icon-head"></i>
-						<i class=" u-icon u-icon-lv"></i>
-						<span class=" ">欢迎您：</span>
-						<span class=" ">管理员</span>
-						<a class="u-link-right ">[退出]</a>
-					</li>
-					<li class="row">
-						<span class="tt">会员卡号：</span><span class="cc">D23050000086</span>
-					</li>
-					<li class="row">
-						<span class="tt">厂家可用积分：</span><span class="cc">1636</span>
-						<a><span class="u-link-right ">积分详情<i class="glyphicon glyphicon-menu-right u-icon-menu_d"></i></a></span>
-					</li>
-					<li class="row">
-						<span class="tt">专营店可用积分：</span><span class="cc">100</span>
-					</li>
-					<li class="row">
-						<span class="tt">当前等级名称：</span><span class="cc">会员银卡VIP</span>
-					</li>
-					<li class="row">
-						<span class="tt">升级积分：</span><span class="cc">100</span>
-					</li>
-					<li class="row">
-						<span class="tt">升级等级名称：</span><span class="cc">会员金卡VIP</span>
-					</li>
-					<li class="row">
-						<span class="tt">成功推荐购车数：</span><span class="cc">0</span>
-					</li>
-					<li class="row tips_down"><a>我的个人信息<i class="glyphicon glyphicon-menu-down u-icon-menu_d"></i></a></li>
-					<li class="row tips_down"><a>代办、预约服务<i class="glyphicon glyphicon-menu-down u-icon-menu_d"></i></a></li>
-					<li class="row tips_down"><a>置换、推荐、增购<i class="glyphicon glyphicon-menu-down u-icon-menu_d"></i></a></li>
-					<li class="row tips_down"><a>积分兑换专区<i class="glyphicon glyphicon-menu-down u-icon-menu_d"></i></a></li>
-				</dl>
-
-				</ul>
-				
-			</div>
-			<div class="m-info">
-				<ul>
-					<li>最新公告</li>
-					<li>公告内容开始内容内容内容内容内容</li>
-					<li>公告内容开始内容内容内容内容内容内容过多会变成省略号</li>
-					<li>公告内容开始内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</li>
-					<li><a>了解更多<span></span></a></li>
-				</ul>
-			</div>
-		</div>
-			
-    	</div>
+        </div>
+      </div>
     </div>
-		
-		<div class="m-footer ">
-			<div class="container ">
-				<div class="col-xs-6">
-					<dl class="col-xs-3">
-						<dt class=" u-link-tt ">企业信息</dt>
-						<dd class=""><a href="">企业简介</a></dd>
-						<dd class=""><a href="">企业文化</a></dd>
-						<dd class=""><a href="">企业规划</a></dd>
-					</dl>
-					<dl class="col-xs-3">
-						<dt class=" u-link-tt">客户服务</dt>
-						<dd class=""><a href="">售后活动</a></dd>
-						<dd class=""><a href="">精品配件</a></dd>
-						<dd class=""><a href="">联系我们</a></dd>
-						<dd class=""><a href="">诺相随</a></dd>
-						<dd class=""><a href="">促销信息</a></dd>
-					</dl>
-					<dl class="col-xs-3">
-						<dt class=" u-link-tt">经销商网络</dt>
-						<dd class=""><a href="">经销商网络</a></dd>
-						<dd class=""><a href="">经销商查询</a></dd>
-					</dl>
-					
-				</div>
-					<div class="col-xs-6">
-						<dl class="col-xs-5">
-							<dd class="f-mb30">雷诺贵宾专线 <span class="s-color-y">400-800-8886</span></dd>
-							<dd class="">分享你的雷诺</dd>
-							<dd class="">
-								<i class="u-icon u-icon-wb"></i>
-								<i class="u-icon u-icon-wx"></i>
-								<i class="u-icon u-icon-qq"></i>
-								<i class="u-icon u-icon-db"></i>
-							</dd>
-						</dl>
-						<dl class="col-xs-7">
-							<dd class="col-xs-6 f-tc">
-								<i class="u-code-wx"></i>
-								<span class="u-text">关注雷诺官方微信</span>
-							</dd>
-							<dd class="col-xs-6 f-tc">
-								<i class="u-code-wb"></i>
-								<span class="u-text">关注雷诺官方微博</span>
-							</dd>
-						</dl>
-					</div>
-			</div>
-		</div>
-		<div class="m-footer-copyright">
-			<div class="container ">
-				<dl class="col-xs-4">
-					<dt class=" col-xs-3">
+  </div>
+  <div class="g-body">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-md-push-4">
+          <div class="f-mb-mg">
+            <div id="sld" class="carousel slide" data-ride="carousel">
+              <!-- Indicators -->
+              <ol class="carousel-indicators">
+                <li data-target="#sld" data-slide-to="0" class="active"></li>
+                <li data-target="#sld" data-slide-to="1"></li>
+              </ol>
+
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                  <img src="upload/slide1.png" alt="...">
+                </div>
+                <div class="item">
+                  <img src="upload/slide2.png" alt="...">
+                </div>
+              </div>
+              <!-- Controls -->
+              <a class="left carousel-control" data-target="#sld" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="right carousel-control" data-target="#sld" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+          <div class="f-mt-lg s-box clearfix">
+            <ul class="u-nav nav nav-tabs nav-justified" role="tablist">
+              <li role="presentation" class="active">
+                <a href="#vender" aria-controls="home" role="tab" data-toggle="tab">
+                  厂家优惠活动
+                 <i class="u-icon u-icon-tu bg"></i>
+                </a>
+              </li>
+              <li role="presentation">
+                <a href="#store" aria-controls="home" role="tab" data-toggle="tab">
+                 专营店优惠活动
+                 <i class="u-icon u-icon-tu bg"></i>
+                </a>
+              </li>
+            </ul>
+            <div class="tab-content">
+              <div role="tabpanel" class="tab-pane active" id="vender">
+                <div class="col-sm-12 f-wrap-re">
+                  <div id="sld2" class="carousel slide m-carousel-imgs" data-ride="carousel">
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                      <ul class="item clearfix active">
+                        <li class="col-xs-6 col-md-4">
+                          <a href="###"><img src="upload/sp/1.jpg" alt=""></a>
+                        </li>
+                        <li class="col-xs-6 col-md-4">
+                          <a href="###"><img src="upload/sp/2.jpg" alt=""></a>
+                        </li>
+                        <li class="col-xs-6 col-md-4">
+                          <a href="###"><img src="upload/sp/3.jpg" alt=""></a>
+                        </li>
+                        <li class="col-xs-6 col-md-4">
+                          <a href="###"><img src="upload/sp/4.jpg" alt=""></a>
+                        </li>
+                        <li class="col-xs-6 col-md-4">
+                          <a href="###"><img src="upload/sp/3.jpg" alt=""></a>
+                        </li>
+                        <li class="col-xs-6 col-md-4">
+                          <a href="###"><img src="upload/sp/5.jpg" alt=""></a>
+                        </li>
+                      </ul>
+                      <ul class="item clearfix">
+                        <li class="col-xs-6 col-md-4">
+                          <a href="###"><img src="upload/sp/1.jpg" alt=""></a>
+                        </li>
+                        <li class="col-xs-6 col-md-4">
+                          <a href="###"><img src="upload/sp/2.jpg" alt=""></a>
+                        </li>
+                        <li class="col-xs-6 col-md-4">
+                          <a href="###"><img src="upload/sp/3.jpg" alt=""></a>
+                        </li>
+                        <li class="col-xs-6 col-md-4">
+                          <a href="###"><img src="upload/sp/4.jpg" alt=""></a>
+                        </li>
+                        <li class="col-xs-6 col-md-4">
+                          <a href="###"><img src="upload/sp/3.jpg" alt=""></a>
+                        </li>
+                        <li class="col-xs-6 col-md-4">
+                          <a href="###"><img src="upload/sp/5.jpg" alt=""></a>
+                        </li>
+                      </ul>
+                    </div>
+                    <!-- Controls -->
+                    <a class="left carousel-control hidden-xs" data-target="#sld2" role="button" data-slide="prev">
+                      <span class="glyphicon glyphicon-chevron-left glyphicon-menu-left" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control hidden-xs" data-target="#sld2" role="button" data-slide="next">
+                      <span class="glyphicon glyphicon-chevron-right glyphicon-menu-right" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+                  <div class="col-sm-12 hidden-lg hidden-md">
+                    <div class="m-mb-more clearfix">了解更多<i class="glyphicon glyphicon-menu-right pull-right"></i></div>
+                  </div>
+                </div>
+              </div>
+              <div role="tabpanel" class="tab-pane" id="store">
+                <div class="col-sm-12 f-wrap-re">
+                  <div id="sld3" class="carousel slide m-carousel-imgs" data-ride="carousel">
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                      <ul class="item clearfix active">
+                        <li class="col-xs-6 col-md-4">
+                          <a href="###"><img src="upload/sp/4.jpg" alt=""></a>
+                        </li>
+                        <li class="col-xs-6 col-md-4">
+                          <a href="###"><img src="upload/sp/2.jpg" alt=""></a>
+                        </li>
+                        <li class="col-xs-6 col-md-4">
+                          <a href="###"><img src="upload/sp/2.jpg" alt=""></a>
+                        </li>
+                        <li class="col-xs-6 col-md-4">
+                          <a href="###"><img src="upload/sp/1.jpg" alt=""></a>
+                        </li>
+                        <li class="col-xs-6 col-md-4">
+                          <a href="###"><img src="upload/sp/3.jpg" alt=""></a>
+                        </li>
+                        <li class="col-xs-6 col-md-4">
+                          <a href="###"><img src="upload/sp/5.jpg" alt=""></a>
+                        </li>
+                      </ul>
+                      <ul class="item clearfix">
+                        <li class="col-xs-6 col-md-4">
+                          <a href="###"><img src="upload/sp/5.jpg" alt=""></a>
+                        </li>
+                        <li class="col-xs-6 col-md-4">
+                          <a href="###"><img src="upload/sp/5.jpg" alt=""></a>
+                        </li>
+                        <li class="col-xs-6 col-md-4">
+                          <a href="###"><img src="upload/sp/3.jpg" alt=""></a>
+                        </li>
+                        <li class="col-xs-6 col-md-4">
+                          <a href="###"><img src="upload/sp/4.jpg" alt=""></a>
+                        </li>
+                        <li class="col-xs-6 col-md-4">
+                          <a href="###"><img src="upload/sp/3.jpg" alt=""></a>
+                        </li>
+                        <li class="col-xs-6 col-md-4">
+                          <a href="###"><img src="upload/sp/5.jpg" alt=""></a>
+                        </li>
+                      </ul>
+                    </div>
+                    <!-- Controls -->
+                    <a class="left carousel-control hidden-xs" data-target="#sld3" role="button" data-slide="prev">
+                      <span class="glyphicon glyphicon-chevron-left glyphicon-menu-left" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control hidden-xs" data-target="#sld3" role="button" data-slide="next">
+                      <span class="glyphicon glyphicon-chevron-right glyphicon-menu-right" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+                  <div class="col-sm-12 hidden-lg hidden-md">
+                    <div class="m-mb-more clearfix">了解更多<i class="glyphicon glyphicon-menu-right pull-right"></i></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="f-mt-lg s-box clearfix">
+            <ul class="u-nav nav nav-tabs nav-justified" role="tablist">
+              <li role="presentation" class="active">
+                <a href="#vender-gift" aria-controls="home" role="tab" data-toggle="tab">
+                  厂商专区
+                 <i class="u-icon u-icon-tu bg"></i>
+                </a>
+              </li>
+              <li role="presentation">
+                <a href="#store-gift" aria-controls="home" role="tab" data-toggle="tab">
+                 专营店专区
+                 <i class="u-icon u-icon-tu bg"></i>
+                </a>
+              </li>
+            </ul>
+            <div class="tab-content">
+              <div role="tabpanel" class="tab-pane active" id="vender-gift">
+                <div class="col-sm-12 m-gift s-border-b">
+                  <div class="u-title">
+                    推荐兑换礼品专区
+                    <div class="more hidden-xs">
+                      <a class="wrap" href="###">1<i class="u-icon u-icon-td"></i></a>
+                      <span class="glyphicon glyphicon-menu-right"></span>
+                    </div>
+                  </div>
+                  <div class="row f-wrap">
+                    <div class="col-xs-6 col-sm-6 col-md-4">
+                      <div class="thumbnail">
+                        <img src="http://lorempixel.com/200/116/" alt="...">
+                        <div class="caption">
+                          <h3>雷诺钥匙扣</h3>
+                          <i class="u-icon u-icon-ug"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-6 col-md-4">
+                      <div class="thumbnail">
+                        <img src="http://lorempixel.com/200/116/" alt="...">
+                        <div class="caption">
+                          <h3>雷诺专用钥匙包</h3>
+                          <i class="u-icon u-icon-ug"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-6 col-md-4">
+                      <div class="thumbnail">
+                        <img src="http://lorempixel.com/200/116/" alt="...">
+                        <div class="caption">
+                          <h3>Thumbnail label</h3>
+                          <i class="u-icon u-icon-ug"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-12 hidden-lg hidden-md">
+                      <div class="m-mb-more clearfix">了解更多<i class="glyphicon glyphicon-menu-right pull-right"></i></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-12 m-gift">
+                  <div class="u-title">
+                    兑换礼品排行
+                    <div class="more hidden-xs">
+                      <a class="wrap" href="###">1<i class="u-icon u-icon-td"></i></a>
+                      <span class="glyphicon glyphicon-menu-right"></span>
+                    </div>
+                  </div>
+                  <div class="row f-wrap">
+                    <div class="col-xs-6 col-sm-6 col-md-4">
+                      <div class="thumbnail">
+                        <span class="label">01</span>
+                        <img src="http://lorempixel.com/200/116/" alt="...">
+                        <div class="caption">
+                          <h3>雷诺钥匙扣</h3>
+                          <i class="u-icon u-icon-ug"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-6 col-md-4">
+                      <div class="thumbnail">
+                        <span class="label">02</span>
+                        <img src="http://lorempixel.com/200/116/" alt="...">
+                        <div class="caption">
+                          <h3>雷诺专用钥匙包雷诺多余会隐藏</h3>
+                          <i class="u-icon u-icon-ug"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-6 col-md-4">
+                      <div class="thumbnail">
+                        <span class="label">03</span>
+                        <img src="http://lorempixel.com/200/116/" alt="...">
+                        <div class="caption">
+                          <h3>Thumbnail label</h3>
+                          <i class="u-icon u-icon-ug"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-12 hidden-lg hidden-md">
+                      <div class="m-mb-more clearfix">了解更多<i class="glyphicon glyphicon-menu-right pull-right"></i></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div role="tabpanel" class="tab-pane" id="store-gift">
+                <div class="col-sm-12">
+                  1212
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-md-pull-8">
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="m-personalInfo">
+                <ul class=" ">
+                  <li class="top row">
+                    <i class=" u-icon u-icon-head"></i>
+                    <i class=" u-icon u-icon-lv"></i>
+                    <span class=" ">欢迎您：</span>
+                    <span class=" ">管理员</span>
+                    <a class="u-link-right ">[退出]</a>
+                  </li>
+                  <li class="row">
+                    <span class="tt">会员卡号：</span><span class="cc">D23050000086</span>
+                  </li>
+                  <li class="row">
+                    <span class="tt">厂家可用积分：</span>
+                    <span class="cc">1636</span>
+                    <a><span class="u-link-right ">积分详情<i class="glyphicon glyphicon-menu-right u-icon-menu_d"></i></span></a>
+                  </li>
+                  <li class="row">
+                    <span class="tt">专营店可用积分：</span><span class="cc">100</span>
+                  </li>
+                  <li class="row">
+                    <span class="tt">当前等级名称：</span><span class="cc">会员银卡VIP</span>
+                  </li>
+                  <li class="row">
+                    <span class="tt">升级积分：</span><span class="cc">100</span>
+                  </li>
+                  <li class="row">
+                    <span class="tt">升级等级名称：</span><span class="cc">会员金卡VIP</span>
+                  </li>
+                  <li class="row">
+                    <span class="tt">成功推荐购车数：</span><span class="cc">0</span>
+                  </li>
+                  <li class="row tips_down"><a>我的个人信息<i class="glyphicon glyphicon-menu-down u-icon-menu_d"></i></a></li>
+                  <li class="row tips_down"><a>代办、预约服务<i class="glyphicon glyphicon-menu-down u-icon-menu_d"></i></a></li>
+                  <li class="row tips_down"><a>置换、推荐、增购<i class="glyphicon glyphicon-menu-down u-icon-menu_d"></i></a></li>
+                  <li class="row tips_down"><a>积分兑换专区<i class="glyphicon glyphicon-menu-down u-icon-menu_d"></i></a></li>
+                </ul>
+
+              </div>
+              <div class="s-box">
+                <div class="u-title">最新公告<i class="u-icon u-icon-tu bg"></i></div>
+                <div class="m-list-news clearfix">
+                  <div class="item"><a href="###">再续 115 年赛道传奇</a></div>
+                  <div class="item"><a href="###">雷诺设计哲学的革新之作，雷诺设计哲学的革新之作，雷诺设计哲学的革新之作，雷诺设计哲学的革新之作，</a></div>
+                  <div class="item"><a href="###">雷诺设计哲学的革新之作，雷诺设计哲学的革新之作，雷诺设计哲学的革新之作，雷诺设计哲学的革新之作，</a></div>
+                  <div class="item z-last text-right"><a href="###">了解更多<span class="glyphicon glyphicon-menu-right"></span></a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="m-footer f-mt-lg">
+    <div class="container ">
+      <div class="col-xs-6">
+        <dl class="col-xs-3">
+          <dt class=" u-link-tt ">企业信息</dt>
+          <dd class=""><a href="">企业简介</a></dd>
+          <dd class=""><a href="">企业文化</a></dd>
+          <dd class=""><a href="">企业规划</a></dd>
+        </dl>
+        <dl class="col-xs-3">
+          <dt class=" u-link-tt">客户服务</dt>
+          <dd class=""><a href="">售后活动</a></dd>
+          <dd class=""><a href="">精品配件</a></dd>
+          <dd class=""><a href="">联系我们</a></dd>
+          <dd class=""><a href="">诺相随</a></dd>
+          <dd class=""><a href="">促销信息</a></dd>
+        </dl>
+        <dl class="col-xs-3">
+          <dt class=" u-link-tt">经销商网络</dt>
+          <dd class=""><a href="">经销商网络</a></dd>
+          <dd class=""><a href="">经销商查询</a></dd>
+        </dl>
+
+      </div>
+      <div class="col-xs-6">
+        <dl class="col-xs-5">
+          <dd class="f-mb30">雷诺贵宾专线 <span class="s-color-y">400-800-8886</span></dd>
+          <dd class="">分享你的雷诺</dd>
+          <dd class="">
+            <i class="u-icon u-icon-wb"></i>
+            <i class="u-icon u-icon-wx"></i>
+            <i class="u-icon u-icon-qq"></i>
+            <i class="u-icon u-icon-db"></i>
+          </dd>
+        </dl>
+        <dl class="col-xs-7">
+          <dd class="col-xs-6 f-tc">
+            <i class="u-code-wx"></i>
+            <span class="u-text">关注雷诺官方微信</span>
+          </dd>
+          <dd class="col-xs-6 f-tc">
+            <i class="u-code-wb"></i>
+            <span class="u-text">关注雷诺官方微博</span>
+          </dd>
+        </dl>
+      </div>
+    </div>
+  </div>
+  <div class="m-footer-copyright">
+    <div class="container ">
+      <dl class="col-xs-4">
+        <dt class=" col-xs-3">
 						加入我们
 					</dt>
-					<dt class="col-xs-3">
+        <dt class="col-xs-3">
 						隐私条款
 					</dt>
-					<dt class="col-xs-3">
+        <dt class="col-xs-3">
 						站点地图
 					</dt>
-					<dt class="col-xs-3">
+        <dt class="col-xs-3">
 						法律声明
 					</dt>
-				</dl>
-				<div class="col-xs-4"></div>
-				<div class="text-center col-xs-4">
-         © 2015 东风雷诺汽车有限公司 鄂1CP备14001556号-1
-         		</div>
-			</div>
-		</div>
-	</body>
+      </dl>
+      <div class="col-xs-4"></div>
+      <div class="text-center col-xs-4">
+        © 2015 东风雷诺汽车有限公司 鄂1CP备14001556号-1
+      </div>
+    </div>
+  </div>
+</body>
+
 </html>
