@@ -652,3 +652,137 @@ ul,li{
 .s-border-b{
   border-bottom: 1px dashed #e2e2e2;
 }
+
+.m-title{
+	position: relative;
+	@media(min-width:860px){
+		.u-arc{
+			position: absolute;
+			top: 100%;
+			left: 49%;
+			height: 20px;
+			width: 30px;
+			background: url(../upload/icons.png) no-repeat center;
+			background-position: -182px -3px;
+		}
+	}
+	@media(max-width:860px){
+		.u-arc{
+			position: absolute;
+			top: 11%;
+			right: 0;
+			height: 30px;
+			width: 30px;
+			background: url(../res/icons/icons.png) no-repeat center;
+			background-position: -360px 3px;
+		}
+	}
+}
+.m-form{
+	margin: 30px auto 0 auto;
+	border: 1px solid #e2e2e2;
+	border-bottom: none;
+	@media (min-width:860px){
+		width: 40%;
+		padding: 40px 8% 20px 3% ;
+	}
+	@media (max-width:860px){
+		width: 80%;
+		padding: 40px 0;
+	}
+	.f-input{
+		margin-bottom: 30px;
+		padding: 10px 0;
+		@media (min-width:860px){
+			.f-la{
+				text-align: right;
+				margin-top: 10px;
+			}
+			.f-txt{
+				height: 40px;
+			}
+		}
+		@media (max-width:860px){
+			.f-la{
+				display: block;
+				float: none;
+				width: 50%;
+				padding: 0;
+				margin: 0 0 0 10%;
+			}
+			.f-txt{
+				height: 40px;
+				float: none;
+				width: 80%;
+				padding: 0;
+				margin: 0 0 0 10%;
+			}
+		}
+		span{
+			padding-right: 3px;
+		}
+	}
+}
+.m-btn{
+	@media(min-width:860px){
+		width: 40%;
+	}
+	@media(max-width:860px){
+		width: 80%;
+	}
+	margin:0 auto 40px auto;
+	border: 1px solid #e2e2d2;
+	border-top: 1px dotted #e2e2e2;
+	padding:20px 0;
+	.f-btn{
+		display: inline-block;
+		@media(min-width:860px){
+			width: 27%;
+		}
+		@media(max-width:860px){
+			width:40%;
+		}
+		height: 40px;
+		text-align: center;
+		line-height: 40px;
+	}
+	.u-getPw{
+		@media(min-width:860px){
+			margin-left: 24%;
+			margin-right: 4%;
+		}
+		@media(max-width:860px){
+			margin-left: 5%;
+			margin-right: 5%;
+		}
+		background-color:rgb(255,205,13);
+		color: black;
+		text-indent: 10px;
+		span{
+			display: block;
+			float:right;
+			height: 20px;
+			width: 10px;
+			margin-top: 10px;
+			margin-right: 5px;
+			background: url(../res/icons/icons.png) no-repeat center;
+			background-position: -200px 0;
+		}
+	}
+	.u-goBack{
+		background-color:rgb(102,102,120);
+		color: aliceblue;
+		text-indent: 10px;
+		span{
+			display: block;
+			float:right;
+			height: 20px;
+			width: 10px;
+			margin-top: 10px;
+			margin-right: 5px;
+			background: url(../res/icons/icons.png) no-repeat center;
+			background-position: -185px 0;
+		}
+	}
+}
+
