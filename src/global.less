@@ -6,6 +6,7 @@
 @import './u-icon';
 @import './unit';
 @color1:#333;
+@color6:#666;
 @color2:#999;
 @color3:#ddd;
 @bg:#f0f0f0;
@@ -17,7 +18,7 @@ body{
 a:hover {
   text-decoration: none;
 }
-ul li{
+ul,li{
   list-style: none;
 }
 ul,li{
@@ -529,9 +530,10 @@ ul,li{
   img{
     display: block;
     margin: 20px auto;
+    max-width: 100%;
   }
 }
-
+/* lisen:regis and findPw */
 .m-title{
 	position: relative;
 	@media(min-width:992px){
@@ -544,16 +546,18 @@ ul,li{
 			background: url(../upload/icons.png) no-repeat center;
 			background-position: -182px -3px;
 		}
+		.u-arrow{
+			display: none;
+		}
 	}
 	@media(max-width:992px){
 		.u-arc{
+			display: none;
+		}
+		.u-arrow{
 			position: absolute;
-			top: 11%;
-			right: 0;
-			height: 30px;
-			width: 30px;
-			background: url(../res/icons/icons.png) no-repeat center;
-			background-position: -360px 3px;
+			top: 30%;
+			right: 5%;
 		}
 	}
 }
@@ -566,7 +570,7 @@ ul,li{
 		padding: 40px 50px 20px 50px ;
 	}
 	@media (max-width:992px){
-		width: 80%;
+		width: 90%;
 		padding: 40px 0;
 	}
 	.f-input{
@@ -624,6 +628,7 @@ ul,li{
 				line-height: 40px;
 			}
 			.u-code{
+				font-size: 10px;
 				width: 20%;
 				margin-right: 10%;
 			}
@@ -640,7 +645,9 @@ ul,li{
 			width: 508px;
 		}
 		@media(max-width:992px){
-
+			width: 80%;
+			margin-left: 10%;
+			padding: 4% 4%;
 		}
 		::-webkit-scrollbar{
 			width: 20px;
@@ -662,13 +669,32 @@ ul,li{
 	}
 	.u-radio{
 		display:inline-block;
-		margin-left: 112px;
 		margin-top: 10px;
 		font-size: 14px;
   		font-family: "SourceHanSansCN";
   		color: rgb(102, 102, 102);
+		cursor: pointer;
+		@media(min-width:992px){
+			margin-left: 112px;
+		}
+		@media(max-width:992px){
+			margin-left: 10%;
+		}
 		.u-icon{
-
+			margin-right: 10px;
+			width: 15px;
+			height: 15px;
+			background: url(../upload/icons.png) no-repeat center;
+			background-position: -220px -25px;
+		}
+		.u-unchecked{
+			display: inline-block;
+			vertical-align: middle;
+			margin-right:10px;
+			width: 15px;
+			height: 15px;
+			background: url(../upload/icons.png) no-repeat center;
+			background-position: -220px -40px;
 		}
 	}
 }
@@ -677,7 +703,7 @@ ul,li{
 		width:800px;
 	}
 	@media(max-width:992px){
-		width: 80%;
+		width: 90%;
 	}
 	margin:0 auto 40px auto;
 	border: 1px solid #e2e2d2;
@@ -706,32 +732,29 @@ ul,li{
 		}
 		background-color:rgb(255,205,13);
 		color: black;
-		text-indent: 10px;
+		padding-left: 20px;
+		cursor: pointer;
 		span{
 			display: block;
 			float:right;
-			height: 20px;
-			width: 10px;
 			margin-top: 10px;
 			margin-right: 5px;
-			background: url(../res/icons/icons.png) no-repeat center;
-			background-position: -200px 0;
 		}
 	}
 	.u-goBack{
 		background-color:rgb(102,102,120);
 		color: aliceblue;
-		text-indent: 10px;
+		padding-left: 20px;
+		cursor: pointer;
 		span{
 			display: block;
 			float:right;
-			height: 20px;
-			width: 10px;
 			margin-top: 10px;
 			margin-right: 5px;
-			background: url(../res/icons/icons.png) no-repeat center;
-			background-position: -185px 0;
 		}
 	}
 }
+
+/* lisen:appointment */
+
 @import './media';
