@@ -21,6 +21,8 @@ a:hover {
 ul,
 li {
   list-style: none;
+}
+ul,li{
   padding: 0;
   margin: 0;
 }
@@ -174,7 +176,7 @@ li {
   }
   .lv1> a {
     padding: 5px 0;
-    margin: 0 30px;
+    margin: 0 25px;
     font-weight: bold;
     position: relative;
     color: #333;
@@ -288,10 +290,14 @@ li {
   .u-back {
     height: 53px;
   }
+<<<<<<< HEAD
   .u-left-x {
     float: left;
   }
   .u-menu-text {
+=======
+  .u-menu-text{
+>>>>>>> origin/master
     width: 89px;
     height: 38px;
     line-height: 40px;
@@ -367,6 +373,7 @@ li {
     text-align: center;
     font-weight: bold;
     margin: 0;
+    padding: 0;
   }
   a {
     color: #333;
@@ -529,170 +536,169 @@ li {
 }
 
 /* lisen:regis and findPw */
-
-.m-title {
-  position: relative;
-  @media(min-width: 992px) {
-    .u-arc {
-      position: absolute;
-      top: 100%;
-      left: 49%;
-      height: 20px;
-      width: 30px;
-      background: url(../upload/icons.png) no-repeat center;
-      background-position: -182px -3px;
-    }
-    .u-arrow {
-      display: none;
-    }
-  }
-  @media(max-width:992px) {
-    .u-arc {
-      display: none;
-    }
-    .u-arrow {
-      position: absolute;
-      top: 30%;
-      right: 5%;
-    }
-  }
+.m-title{
+	position: relative;
+	@media(min-width:992px){
+		.u-arc{
+			position: absolute;
+			top: 100%;
+			left: 49%;
+			height: 20px;
+			width: 30px;
+			background: url(./img/icons.png) no-repeat center;
+			background-position: -182px -3px;
+		}
+		.u-arrow{
+			display: none;
+		}
+	}
+	@media(max-width:992px){
+		.u-arc{
+			display: none;
+		}
+		.u-arrow{
+			position: absolute;
+			top: 30%;
+			right: 5%;
+		}
+	}
 }
-.m-form {
-  margin: 30px auto 0 auto;
-  border: 1px solid #e2e2e2;
-  border-bottom: none;
-  @media (min-width: 992px) {
-    width: 800px;
-    padding: 40px 50px 20px 50px;
-  }
-  @media (max-width:992px) {
-    width: 90%;
-    padding: 40px 0;
-  }
-  .f-input {
-    margin-bottom: 15px;
-    padding: 10px 0;
-    .u-code {
-      float: right;
-      height: 40px;
-      line-height: 40px;
-      background: #000;
-      text-align: center;
-      font-size: 16px;
-      font-family: "SourceHanSansCN";
-      color: rgb(255, 255, 255);
-      font-weight: bold;
-    }
-    @media (min-width:992px) {
-      .f-la {
-        width: 100px;
-        text-align: right;
-        margin-top: 10px;
-        margin-right: 10px;
-      }
-      .f-txt {
-        width: 500px;
-        height: 40px;
-      }
-      .u-validate {
-        width: 320px;
-        margin-right: 10px;
-      }
-      .u-code {
-        width: 170px;
-        margin-right: 82px;
-      }
-    }
-    @media (max-width:992px) {
-      .f-la {
-        display: block;
-        float: none;
-        width: 50%;
-        padding: 0;
-        margin: 0 0 0 10%;
-      }
-      .f-txt {
-        height: 40px;
-        float: none;
-        width: 80%;
-        padding: 0;
-        margin: 0 0 0 10%;
-      }
-      .u-validate {
-        width: 58%;
-        margin-right: 2%;
-        line-height: 40px;
-      }
-      .u-code {
-        font-size: 10px;
-        width: 20%;
-        margin-right: 10%;
-      }
-    }
-    span {
-      padding-right: 3px;
-    }
-  }
-  .m-item {
-    padding: 20px;
-    border: 1px solid #e2e2e2;
-    @media(min-width: 992px) {
-      margin-left: 112px;
-      width: 508px;
-    }
-    @media(max-width:992px) {
-      width: 80%;
-      margin-left: 10%;
-      padding: 4% 4%;
-    }
-    ::-webkit-scrollbar {
-      width: 20px;
-      height: 200px;
-      background-color: rgb(225, 225, 225);
-    }
-    ::-webkit-scrollbar-thumb {
-      background-color: rgb(205, 205, 205);
-    }
-    .u-content {
-      padding-right: 10px;
-      height: 230px;
-      font-size: 12px;
-      font-family: "SourceHanSansCN";
-      color: rgb(153, 153, 153);
-      line-height: 20px;
-      overflow-y: scroll;
-    }
-  }
-  .u-radio {
-    display: inline-block;
-    margin-top: 10px;
-    font-size: 14px;
-    font-family: "SourceHanSansCN";
-    color: rgb(102, 102, 102);
-    cursor: pointer;
-    @media(min-width: 992px) {
-      margin-left: 112px;
-    }
-    @media(max-width:992px) {
-      margin-left: 10%;
-    }
-    .u-icon {
-      margin-right: 10px;
-      width: 15px;
-      height: 15px;
-      background: url(../upload/icons.png) no-repeat center;
-      background-position: -220px -25px;
-    }
-    .u-unchecked {
-      display: inline-block;
-      vertical-align: middle;
-      margin-right: 10px;
-      width: 15px;
-      height: 15px;
-      background: url(../upload/icons.png) no-repeat center;
-      background-position: -220px -40px;
-    }
-  }
+.m-form{
+	margin: 30px auto 0 auto;
+	border: 1px solid #e2e2e2;
+	border-bottom: none;
+	@media (min-width:992px){
+		width: 800px;
+		padding: 40px 50px 20px 50px ;
+	}
+	@media (max-width:992px){
+		width: 90%;
+		padding: 40px 0;
+	}
+	.f-input{
+		margin-bottom: 15px;
+		padding: 10px 0;
+		.u-code{
+			float: right;
+			height: 40px;
+			line-height: 40px;
+			background: #000;
+			text-align: center;
+			font-size: 16px;
+  			font-family: "SourceHanSansCN";
+  			color: rgb(255, 255, 255);
+  			font-weight: bold;
+		}
+		@media (min-width:992px){
+			.f-la{
+				width: 100px;
+				text-align: right;
+				margin-top: 10px;
+				margin-right: 10px;
+			}
+			.f-txt{
+				width: 500px;
+				height: 40px;
+			}
+			.u-validate{
+				width: 320px;
+				margin-right: 10px;
+			}
+			.u-code{
+				width: 170px;
+				margin-right: 82px;
+			}
+		}
+		@media (max-width:992px){
+			.f-la{
+				display: block;
+				float: none;
+				width: 50%;
+				padding: 0;
+				margin: 0 0 0 10%;
+			}
+			.f-txt{
+				height: 40px;
+				float: none;
+				width: 80%;
+				padding: 0;
+				margin: 0 0 0 10%;
+			}
+			.u-validate{
+				width: 58%;
+				margin-right: 2%;
+				line-height: 40px;
+			}
+			.u-code{
+				font-size: 10px;
+				width: 20%;
+				margin-right: 10%;
+			}
+		}
+		span{
+			padding-right: 3px;
+		}
+	}
+	.m-item{
+		padding: 20px ;
+		border: 1px solid #e2e2e2;
+		@media(min-width:992px){
+			margin-left: 112px;
+			width: 508px;
+		}
+		@media(max-width:992px){
+			width: 80%;
+			margin-left: 10%;
+			padding: 4% 4%;
+		}
+		::-webkit-scrollbar{
+			width: 20px;
+			height: 200px;
+			background-color: rgb(225,225,225);
+		}
+		::-webkit-scrollbar-thumb{
+			background-color: rgb(205,205,205);
+		}
+		.u-content{
+			padding-right: 10px;
+			height: 230px;
+			font-size: 12px;
+  			font-family: "SourceHanSansCN";
+  			color: rgb(153, 153, 153);
+  			line-height: 20px;
+			overflow-y: scroll;
+		}
+	}
+	.u-radio{
+		display:inline-block;
+		margin-top: 10px;
+		font-size: 14px;
+  		font-family: "SourceHanSansCN";
+  		color: rgb(102, 102, 102);
+		cursor: pointer;
+		@media(min-width:992px){
+			margin-left: 112px;
+		}
+		@media(max-width:992px){
+			margin-left: 10%;
+		}
+		.u-icon{
+			margin-right: 10px;
+			width: 15px;
+			height: 15px;
+			background: url(./img/icons.png) no-repeat center;
+			background-position: -220px -25px;
+		}
+		.u-unchecked{
+			display: inline-block;
+			vertical-align: middle;
+			margin-right:10px;
+			width: 15px;
+			height: 15px;
+			background: url(./img/icons.png) no-repeat center;
+			background-position: -220px -40px;
+		}
+	}
 }
 .m-btn {
   @media(min-width: 992px) {
