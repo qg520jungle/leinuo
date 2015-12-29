@@ -567,7 +567,7 @@ ul li{
 		padding: 40px 50px 20px 50px ;
 	}
 	@media (max-width:992px){
-		width: 80%;
+		width: 90%;
 		padding: 40px 0;
 	}
 	.f-input{
@@ -625,6 +625,7 @@ ul li{
 				line-height: 40px;
 			}
 			.u-code{
+				font-size: 10px;
 				width: 20%;
 				margin-right: 10%;
 			}
@@ -641,7 +642,9 @@ ul li{
 			width: 508px;
 		}
 		@media(max-width:992px){
-
+			width: 80%;
+			margin-left: 10%;
+			padding: 4% 4%;
 		}
 		::-webkit-scrollbar{
 			width: 20px;
@@ -663,13 +666,32 @@ ul li{
 	}
 	.u-radio{
 		display:inline-block;
-		margin-left: 112px;
 		margin-top: 10px;
 		font-size: 14px;
   		font-family: "SourceHanSansCN";
   		color: rgb(102, 102, 102);
+		cursor: pointer;
+		@media(min-width:992px){
+			margin-left: 112px;
+		}
+		@media(max-width:992px){
+			margin-left: 10%;
+		}
 		.u-icon{
-
+			margin-right: 10px;
+			width: 15px;
+			height: 15px;
+			background: url(../upload/icons.png) no-repeat center;
+			background-position: -220px -25px;
+		}
+		.u-unchecked{
+			display: inline-block;
+			vertical-align: middle;
+			margin-right:10px;
+			width: 15px;
+			height: 15px;
+			background: url(../upload/icons.png) no-repeat center;
+			background-position: -220px -40px;
 		}
 	}
 }
@@ -678,7 +700,7 @@ ul li{
 		width:800px;
 	}
 	@media(max-width:992px){
-		width: 80%;
+		width: 90%;
 	}
 	margin:0 auto 40px auto;
 	border: 1px solid #e2e2d2;
