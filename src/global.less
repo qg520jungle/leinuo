@@ -2,7 +2,6 @@
 @import './bootstrap-alter';
 @import './btn';
 @import './function';
-@import './media';
 @import './skin';
 @import './u-icon';
 @import './unit';
@@ -534,3 +533,228 @@ ul,li{
     max-width: 100%;
   }
 }
+/* lisen:regis and findPw */
+.m-title{
+	position: relative;
+	@media(min-width:992px){
+		.u-arc{
+			position: absolute;
+			top: 100%;
+			left: 49%;
+			height: 20px;
+			width: 30px;
+			background: url(../upload/icons.png) no-repeat center;
+			background-position: -182px -3px;
+		}
+		.u-arrow{
+			display: none;
+		}
+	}
+	@media(max-width:992px){
+		.u-arc{
+			display: none;
+		}
+		.u-arrow{
+			position: absolute;
+			top: 30%;
+			right: 5%;
+		}
+	}
+}
+.m-form{
+	margin: 30px auto 0 auto;
+	border: 1px solid #e2e2e2;
+	border-bottom: none;
+	@media (min-width:992px){
+		width: 800px;
+		padding: 40px 50px 20px 50px ;
+	}
+	@media (max-width:992px){
+		width: 90%;
+		padding: 40px 0;
+	}
+	.f-input{
+		margin-bottom: 15px;
+		padding: 10px 0;
+		.u-code{
+			float: right;
+			height: 40px;
+			line-height: 40px;
+			background: #000;
+			text-align: center;
+			font-size: 16px;
+  			font-family: "SourceHanSansCN";
+  			color: rgb(255, 255, 255);
+  			font-weight: bold;
+		}
+		@media (min-width:992px){
+			.f-la{
+				width: 100px;
+				text-align: right;
+				margin-top: 10px;
+				margin-right: 10px;
+			}
+			.f-txt{
+				width: 500px;
+				height: 40px;
+			}
+			.u-validate{
+				width: 320px;
+				margin-right: 10px;
+			}
+			.u-code{
+				width: 170px;
+				margin-right: 82px;
+			}
+		}
+		@media (max-width:992px){
+			.f-la{
+				display: block;
+				float: none;
+				width: 50%;
+				padding: 0;
+				margin: 0 0 0 10%;
+			}
+			.f-txt{
+				height: 40px;
+				float: none;
+				width: 80%;
+				padding: 0;
+				margin: 0 0 0 10%;
+			}
+			.u-validate{
+				width: 58%;
+				margin-right: 2%;
+				line-height: 40px;
+			}
+			.u-code{
+				font-size: 10px;
+				width: 20%;
+				margin-right: 10%;
+			}
+		}
+		span{
+			padding-right: 3px;
+		}
+	}
+	.m-item{
+		padding: 20px ;
+		border: 1px solid #e2e2e2;
+		@media(min-width:992px){
+			margin-left: 112px;
+			width: 508px;
+		}
+		@media(max-width:992px){
+			width: 80%;
+			margin-left: 10%;
+			padding: 4% 4%;
+		}
+		::-webkit-scrollbar{
+			width: 20px;
+			height: 200px;
+			background-color: rgb(225,225,225);
+		}
+		::-webkit-scrollbar-thumb{
+			background-color: rgb(205,205,205);
+		}
+		.u-content{
+			padding-right: 10px;
+			height: 230px;
+			font-size: 12px;
+  			font-family: "SourceHanSansCN";
+  			color: rgb(153, 153, 153);
+  			line-height: 20px;
+			overflow-y: scroll;
+		}
+	}
+	.u-radio{
+		display:inline-block;
+		margin-top: 10px;
+		font-size: 14px;
+  		font-family: "SourceHanSansCN";
+  		color: rgb(102, 102, 102);
+		cursor: pointer;
+		@media(min-width:992px){
+			margin-left: 112px;
+		}
+		@media(max-width:992px){
+			margin-left: 10%;
+		}
+		.u-icon{
+			margin-right: 10px;
+			width: 15px;
+			height: 15px;
+			background: url(../upload/icons.png) no-repeat center;
+			background-position: -220px -25px;
+		}
+		.u-unchecked{
+			display: inline-block;
+			vertical-align: middle;
+			margin-right:10px;
+			width: 15px;
+			height: 15px;
+			background: url(../upload/icons.png) no-repeat center;
+			background-position: -220px -40px;
+		}
+	}
+}
+.m-btn{
+	@media(min-width:992px){
+		width:800px;
+	}
+	@media(max-width:992px){
+		width: 90%;
+	}
+	margin:0 auto 40px auto;
+	border: 1px solid #e2e2d2;
+	border-top: 1px dotted #e2e2e2;
+	padding:20px 0;
+	.f-btn{
+		display: inline-block;
+		@media(min-width:992px){
+			width: 240px;
+		}
+		@media(max-width:992px){
+			width:37%;
+		}
+		height: 40px;
+		text-align: center;
+		line-height: 40px;
+	}
+	.u-getPw{
+		@media(min-width:992px){
+			margin-left: 160px;
+			margin-right: 25px;
+		}
+		@media(max-width:992px){
+			margin-left: 10%;
+			margin-right: 5%;
+		}
+		background-color:rgb(255,205,13);
+		color: black;
+		padding-left: 20px;
+		cursor: pointer;
+		span{
+			display: block;
+			float:right;
+			margin-top: 10px;
+			margin-right: 5px;
+		}
+	}
+	.u-goBack{
+		background-color:rgb(102,102,120);
+		color: aliceblue;
+		padding-left: 20px;
+		cursor: pointer;
+		span{
+			display: block;
+			float:right;
+			margin-top: 10px;
+			margin-right: 5px;
+		}
+	}
+}
+
+/* lisen:appointment */
+
+@import './media';
