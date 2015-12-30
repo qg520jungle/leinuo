@@ -922,8 +922,11 @@ ul,li{
 			background-position: -175px -4px;
 	}
 	.u-txt{
+		display: inline-block;
 		width: 350px;
 		height: 50px;
+		line-height: 50px;
+		text-indent: 20px;
 		margin-right: 10px;
 		margin-bottom: 20px;
 	}
@@ -1154,6 +1157,41 @@ ul,li{
 	}
 	.s-last{
 		border-bottom: none !important;
+	}
+}
+
+/* lisen:myAppointmentDetail */
+.s-gray{
+	background: rgb(240,240,240);
+	border: 1px solid #e2e2e2;
+	font-size: 14px;
+  	font-family: "SourceHanSansCN";
+  	color: rgb(102, 102, 102);
+	position: relative;
+	.u-down{
+		position: absolute;
+		display: block;
+		width: 20px;
+		height: 20px;
+		top: 20px;
+		right: 20px;
+	}
+	.glyphicon{
+		color: rgb(168,168,168);
+	}
+}
+.m-appbtn{
+	.u-goback{
+		width: 400px;
+		margin: 0 auto;
+		background: rgb(102,102,102);
+		font-size: 16px;
+  		font-family: "SourceHanSansCN";
+  		color: rgb(255, 255, 255);
+  		font-weight: bold;
+		padding-left: 40px;
+		margin-left: 30px;
+		cursor: pointer;
 	}
 }
 @import './media';
