@@ -131,13 +131,20 @@ ul,li{
       top: 0;
       color: @color2;
     }
-    a {
+    a{
       color: @color2;
       display: block;
       width: 100%;
       overflow: hidden;
       text-overflow: ellipsis;
       white-space: nowrap;
+    }
+    .btn{
+      position: absolute;
+      top: 15px;
+      right: 10px;
+      font-size: 14px;
+      font-weight: bold;
     }
   }
   &.m-list-news-1{
@@ -1159,6 +1166,7 @@ ul,li{
 		border-bottom: none !important;
 	}
 }
+<<<<<<< HEAD
 
 /* lisen:myAppointmentDetail */
 .s-gray{
@@ -1195,6 +1203,8 @@ ul,li{
 	}
 }
 @import './media';
+=======
+>>>>>>> origin/master
 
 .nav-tabs.nav-justified > .active > a,
 .nav-tabs.nav-justified > .active > a:hover,
@@ -1257,9 +1267,44 @@ ul,li{
     font-size: 18px;
     font-weight: normal;
     color: #333;
+    margin-bottom: 10px;
     span.b{
       vertical-align: middle;
       margin-right: 5px;
+    }
+  }
+}
+.m-table-list{
+  .icon{
+    border: 1px solid #333;
+    padding: 8px;
+    position: relative;
+    margin-right: 10px;
+    i{
+      position: absolute;
+      top: 12px;
+      right: -8px;
+    }
+  }
+  .left{
+    padding: 22px 8px!important;
+    p{
+      display: inline-block;
+      *display: inline;
+      zoom:1;
+      width: 450px;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      margin-bottom: 0;
+    }
+  }
+  .right{
+    text-align: center;
+    width: 220px;
+    .btn{
+      color: #000;
+      font-weight: bold;
     }
   }
 }
