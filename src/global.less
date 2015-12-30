@@ -71,7 +71,7 @@ ul,li{
       .glyphicon {
         position: absolute;
         top: 15px;
-        right: 0;
+        right: 15px;
       }
     }
   }
@@ -138,6 +138,13 @@ ul,li{
       overflow: hidden;
       text-overflow: ellipsis;
       white-space: nowrap;
+    }
+  }
+  &.m-list-news-1{
+    .item{
+      a{
+        width: 61.8%;
+      }
     }
   }
   .z-last {
@@ -495,6 +502,15 @@ ul,li{
   padding: 20px 0;
   border-top: 1px dashed #e2e2e2;
   text-align: center;
+  .btn{
+    position: relative;
+    .glyphicon-menu-right{
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      letter-spacing: 0;
+    }
+  }
 }
 .m-article-head {
   text-align: center;
@@ -962,6 +978,19 @@ ul,li{
     	}
 	}
 }
+	.s-special{
+		color: #000;
+		font-weight: bolder;
+	}
+	.u-appTitle{
+		height: 60px;
+		text-align: left;
+		text-indent: 20px;
+		font-size: 18px;
+		font-family: "SourceHanSansCN";
+		color: rgb(0, 0, 0);
+		font-weight: bold;
+	}
 @import './media';
 
 .nav-tabs.nav-justified > .active > a,
@@ -974,4 +1003,60 @@ ul,li{
 }
 .m-carousel-imgs {
   padding: 10px 40px;
+}
+.m-btns{
+  .btn{
+    margin-right: 20px;
+  }
+}
+.pager{
+  border-top: 1px dashed #e2e2e2;
+  border-bottom: 1px dashed #e2e2e2;
+  padding: 20px 0;
+  margin: 0;
+  li{
+    margin-right: 10px;
+    a{
+      border-radius: 0;
+      padding: 15px;
+      margin-bottom: 10px;
+    }
+    a.page{
+      color: @color6;
+      font-weight: bold;
+    }
+    a.grey{
+      background-color: @color6;
+      color: #fff;
+    }
+  }
+  li.active{
+    a{
+    background-color: @main-c;
+    border-color: @main-c;
+    color: #000;
+    }
+  }
+}
+.m-info-content{
+  border: 1px solid #e2e2e2;
+  padding: 20px;
+  .content{
+    height: 200px;
+    overflow-y: scroll;
+    line-height: 24px;
+    font-size: 14px;
+    color: @color6;
+  }
+}
+.form-group{
+  label{
+    font-size: 18px;
+    font-weight: normal;
+    color: #333;
+    span.b{
+      vertical-align: middle;
+      margin-right: 5px;
+    }
+  }
 }
