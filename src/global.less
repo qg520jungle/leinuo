@@ -1002,6 +1002,25 @@ ul,li{
   		color: #FFF;
   		font-weight: bold;
 	}
+	.u-query{
+		background: rgb(255,205,0);
+		font-size: 16px;
+  		font-family: "SourceHanSansCN";
+  		color: rgb(0, 0, 0);
+  		font-weight: bold;
+		height: 50px;
+		padding-left: 50px;
+		letter-spacing: 20px;
+		text-align: center;
+		line-height: 50px;
+		cursor: pointer;
+		span {
+      		display: block;
+      		float: right;
+      		margin-top: 15px;
+      		margin-right:-25px;
+    	}
+	}
 	.s-btn{
 		display: inline-block;
 		width: 220px;
@@ -1031,6 +1050,68 @@ ul,li{
 		color: rgb(0, 0, 0);
 		font-weight: bold;
 	}
+
+/* lisen:myAppointment */
+.m-apptable{
+	margin-top: 40px;
+	border: 1px solid #e2e2e2;
+	.m-describe{
+		border-right: 1px solid #e2e2e2;
+		padding: 0;
+	}
+	.s-describe{
+		height: 60px;
+		line-height: 60px;
+		text-align: left;
+		font-size: 14px;
+  		font-family: "SourceHanSansCN";
+  		color: rgb(102, 102, 102);
+		font-weight: normal;
+		border-bottom: 1px solid #e2e2e2;
+		text-indent: 20px;
+		margin-bottom: 0;
+		.billing{
+			float: left;
+			width: 60px;
+			height: 40px;
+			margin-top: 5px;
+			margin-left: 20px;
+			background: url(../res/img/icons.png) no-repeat center;
+			background-position: -245px -140px;
+		}
+	}
+	.m-operation{
+		padding: 0;
+		.s-operation{
+			height: 60px;
+			text-align: center;
+			font-size: 14px;
+			font-family: "SourceHanSansCN";
+			color: rgb(102, 102, 102);
+			font-weight: normal;
+			border-bottom: 1px solid #e2e2e2;
+			margin-bottom: 0;
+			a{
+				display: inline-block;
+				height: 20px;
+				line-height: 20px;
+				margin-top: 20px;
+				width: 50px;
+				font-size: 14px;
+  				font-family: "SourceHanSansCN";
+				font-weight: 700;
+  				color: rgb(0, 0, 0);
+				cursor: pointer;
+			}
+			.vertical-line{
+				border-right: 1px solid #e2e2e2;
+			}
+		}
+	}
+	.s-last{
+		border-bottom: none !important;
+	}
+}
 @import './media';
 
 .nav-tabs.nav-justified > .active > a,
