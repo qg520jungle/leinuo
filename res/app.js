@@ -79,27 +79,13 @@ $(document).ready(function(){
       }
       });
 	}
-//
-//	$('.nav_mb > li').click(function(){
-//		if($(this).hasClass('z-cur')){
-//			$(this).removeClass('z-cur');
-//		}else{
-//			$('.z-mb .z-cur').removeClass('z-cur');
-//			$(this).addClass('z-cur');
-//		}
-//
-//	})
-//	$('.m-header .toggle').click(function(){
-//		$('.z-mb .navbar-body').show(function(){
-//			$('.nav_mb').addClass('open');
-//		});
-//	})
-//	$('.clo,.col').click(function(){
-//		$('.nav_mb').removeClass('open');
-//		setTimeout(function(){
-//			$('.z-mb .navbar-body').hide();
-//		},500)
-//	})
-//  $('')
+$('#accordion').on('shown.bs.collapse', function () {
+  console.log(this);
+  $('.in').prev().find('i').removeClass('glyphicon-menu-right').addClass('glyphicon-menu-down');
+});
+$('#accordion').on('hidden.bs.collapse', function () {
+  $('.panel-title i').removeClass('glyphicon-menu-down').addClass('glyphicon-menu-right');
+});
+
 
 });
