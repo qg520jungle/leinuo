@@ -7,9 +7,9 @@
   <meta name="renderer" content="webkit">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <!--  <meta name="viewport" id="viewport" content="width=400">-->
-  <meta name="keywords" content="公告管理" />
-  <meta name="description" content="雷诺会员系统公告管理详情" />
-  <title>公告管理详情</title>
+  <meta name="keywords" content="车主消费历史查询" />
+  <meta name="description" content="车主消费历史查询" />
+  <title>车主消费历史查询</title>
   <link href="res/bootstrap.css" rel="stylesheet">
   <link href="res/global.css" rel="stylesheet">
   <script src="lib/jquery.js"></script>
@@ -79,25 +79,73 @@
         <div class="col-md-8 col-md-push-4">
           <div class="s-box">
             <div class="u-crumbs">
-              最新公告<span class="m">&lt;</span><span class="b">公告详情</span>
+              首页<span class="m">&lt;</span>车辆维修&保养<span class="m">&lt;</span><span class="b">车主消费记录</span>
             </div>
-            <div class="m-article-head">
-              <h3>王者归来 雷诺成功收购路特斯 宣布重返F1赛场<a class="back" href="###">返回<i class="u-icon u-icon-back"></i></a></h3>
-              <p>编辑：管理员    时间：2015.12.04  15:30</p>
-            </div>
-            <div class="m-article-body">
-              <p>（2015年12月4日 北京）王者归来！雷诺于12月3日成功签署收购路特斯车队的合同，并正式宣布雷诺车队将重返世界一级方程式锦标赛(F1)赛场，角逐2016赛季。</p>
-              <p>“雷诺有两个选择——以厂商车队身份重返赛场，或者彻底离开。”雷诺集团主席兼首席执行官卡洛斯·戈恩(Carlos GHOSN)表示，“我们最终决定选择回归。F1股东提供的最终细节给了我们接受全新挑战的信心。我们的目标就是赢得比赛。”</p>
-              <img src="http://lorempixel.com/550/300/" alt="">
-              <p>雷诺与路特斯F1车队的再次携手，是信任使然，更是多年合作的默契。此前雷诺和路特斯F1车队已经相交15年，更在2005年和2006年合作拿下世界冠军。</p>
-              <p>F1是雷诺品牌永恒的光荣与梦想。作为重要参与者，雷诺数十年来始终积极推动着F1运动的发展。1977年，雷诺为F1首创涡轮增压技术，打造赛事里程碑的标杆。自此，在近40年的F1历程中，雷诺征战逾600场，共夺得168场比赛冠军。搭载雷诺发动机的车队共获得12次车队总冠军，7位车手11次斩获冠军车手头衔，充分印证了雷诺F1发动机的可靠性及雷诺F1运动部门的专业性。</p>
-              <p>作为汽车运动的顶级盛事，F1大奖赛每年能够吸引全球4.5亿观众，同时也是汽车运动尖端技术的展示平台。雷诺重返F1赛场，继续挥洒它对赛道的激情，将“passion for life”的品牌口号付诸实践。这一决定将不仅进一步提升雷诺在全球范围内的知名度及品牌形象，更加速了其创新步伐及运动车型的开发。同时，雷诺将借助F1这一全球性平台，展示其世界领先的赛车技术，并将其运用于乘用车的研发中。为了兑现这一承诺，雷诺将加大对R.S.系列产品的投入，以满足全球各细分市场的不同需求。</p>
-              <p>更多关于雷诺F1计划的详细信息，将于明年1月份正式对外公布。</p>
-            </div>
-            <div class="m-btn-wrap">
-                <button type="submit" class="btn btn-grey btn-lg btn-l btn-b">返回<span class="glyphicon glyphicon-menu-right"></span></button>
+            <div class="u-title u-title-1">车主消费记录</div>
+            <form class="clearfix">
+              <div class="col-md-4 col-xs-12 form-group">
+                <label>消费日期从</label>
+                <select class="form-control">
+                  <option>2015-08-21</option>
+                </select>
               </div>
+              <div class="col-md-4 col-xs-12 form-group">
+                <label>到</label>
+                <select class="form-control">
+                  <option>2015-09-21</option>
+                </select>
+              </div>
+              <div class="col-md-4 col-xs-12 form-group">
+                <label>消费类型</label>
+                <select class="form-control">
+                  <option>--请选择--</option>
+                </select>
+              </div>
+            </form>
+            <div class="m-btn-wrap m-btns">
+               <button type="submit" class="btn btn-app btn-lg btn-m">查询<span class="glyphicon glyphicon-menu-right"></span></button>
+                <button type="submit" class="btn btn-grey btn-lg btn-b btn-m">导出<span class="glyphicon glyphicon-menu-right"></span></button>
+            </div>
           </div>
+            <table class="table table-hover table-striped table-bordered text-center f-mt-lg">
+              <tr>
+                <th>序号</th>
+                <th>工时编码</th>
+                <th>消费时间</th>
+                <th>消费类型</th>
+                <th>费用</th>
+                <th>车牌号</th>
+                <th>消费店</th>
+              </tr>
+              <tr>
+                <td>01</td>
+                <td>CPAPV15910N4549</td>
+                <td>2015-09-21</td>
+                <td>专营店积分</td>
+                <td>100</td>
+                <td>粤BH2222</td>
+                <td>本店</td>
+              </tr>
+              <tr>
+                <td>02</td>
+                <td>CPAPV15910N4549</td>
+                <td>2015-09-21</td>
+                <td>专营店积分</td>
+                <td>100</td>
+                <td>粤BH2222</td>
+                <td>本店</td>
+              </tr>
+            </table>
+            <p class="u-page">第1页/共3页</p>
+            <ul class="pager">
+              <li><a class="grey" href="#">首页</a></li>
+              <li><a class="grey" href="#">上页</a></li>
+              <li class="active"><a class="page" href="#">01</a></li>
+              <li><a class="page" href="#">02</a></li>
+              <li><a class="page" href="#">03</a></li>
+              <li><a class="grey" href="#">下页</a></li>
+              <li><a class="grey" href="#">尾页</a></li>
+            </ul>
         </div>
         <div class="col-md-4 col-md-pull-8">
           <div class="row">

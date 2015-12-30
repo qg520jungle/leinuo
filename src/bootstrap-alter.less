@@ -1,12 +1,8 @@
 // out: null
-@color2:#999;
-@main-c:#ffcb33;
-.btn{
-  border-radius: 0;
-}
 .form-control{
   border-radius: 0;
   height: 50px;
+  padding: 15px;
 }
 .carousel-indicators li {
   background-color: @color2;
@@ -46,5 +42,29 @@
 .nav-tabs.nav-justified > .active > a:focus {
   .bg {
     display: block;
+  }
+}
+.panel{
+  border-radius: 0;
+}
+.table{
+  th{
+    text-align: center;
+    background-color: #ededed;
+    padding: 18px 8px!important;
+  }
+  td{
+    padding: 18px 8px!important;
+  }
+  caption{
+    color:@color1;
+    font-size: 16px;
+    a{
+      font-size: 14px;
+      color: @color6;
+      .glyphicon-menu-right{
+        margin-left: 8px;
+      }
+    }
   }
 }
