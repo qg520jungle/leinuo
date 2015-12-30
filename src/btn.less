@@ -1,4 +1,14 @@
 // out: null
+.btn{
+  border-radius: 0;
+  position: relative;
+  .glyphicon-menu-right {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    letter-spacing: 0;
+  }
+}
 .btn-app {
   color: @color1;
   background-color: @main-c;
@@ -16,7 +26,18 @@
     color: #fff;
   }
 }
-.u-btn {
+.btn-grey{
+  color: #fff;
+  background-color: @color6;
+  border-color: @color6;
+  &:hover {
+    color: #fff;
+  }
+  &:focus {
+    color: #fff;
+  }
+}
+.u-btn{
   display: inline-block;
   text-align: center;
 }
@@ -38,13 +59,13 @@
 }
 .btn-m {
   width: 240px;
-  height: 50px;
-  line-height: 50px;
+//  height: 50px;
+//  line-height: 50px;
 }
 .btn-l {
   width: 400px;
-  height: 50px;
-  line-height: 50px;
+//  height: 50px;
+//  line-height: 50px;
 }
 .btn-more{
   width: 142px;
@@ -54,12 +75,6 @@
   font-weight: bold;
   padding: 0;
 }
-.btn {
-  position: relative;
+.btn-b{
   letter-spacing: 24px;
-  .glyphicon-menu-right {
-    position: absolute;
-    top: 15px;
-    right: 0;
-  }
 }
