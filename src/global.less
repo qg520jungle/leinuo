@@ -304,6 +304,9 @@ ul,li{
   .u-back {
     height: 53px;
   }
+  .u-left-x {
+    float: left;
+  }
   .u-menu-text{
     width: 89px;
     height: 38px;
@@ -378,7 +381,6 @@ ul,li{
   .tips_down {
     background-color: #ddd;
     text-align: center;
-    font-weight: bold;
     margin: 0;
     padding: 0;
   }
@@ -387,6 +389,77 @@ ul,li{
   }
   a:hover {
     color: #111;
+  }
+  .u-news{
+    height: 80px;
+    line-height: 80px;
+    background-color: #ffcc33;
+    padding: 0;
+    padding-left: 20px;
+    margin: 0;
+    font-weight: bold;
+  }
+  .u-news>a{
+    display: block;
+  }
+  .panel-group{
+    margin-bottom: 0;
+  }
+  .panel-group .panel{
+    border: 0;
+    border-bottom: 1px solid #fff;
+    border-radius: 0;
+    margin-top: 0;
+  }
+  .panel-heading{
+    background-color: #ddd;
+    padding: 12px 15px;
+  }
+  h4{
+    font-weight: bold;
+  }
+  h4>a{
+    display: block;
+  }
+  a,a:hover{
+    text-decoration: none;
+  }
+  .panel-body {
+    padding: 0;
+    background-color: #333333;
+    ul{
+      background-color: #333333;
+    }
+    li{
+      border: 0;
+      padding: 0;
+    }
+    a{
+      display: block;
+      padding:12px 20px 12px 20px;
+      background-color: #333333;
+      color: #ffffff;
+    }
+    a:hover{
+      background-color: #ffcc33;
+      color: #000000;
+    }
+  }
+  .list-left{
+    width: 50%;
+    float: left;
+    a{
+      border-bottom: 1px solid #444444;
+      border-right:  1px solid #444444;
+    }
+
+  }
+  .list-right{
+    width: 50%;
+    float: right;
+    a{
+      border-bottom: 1px solid #444444;
+    }
   }
 }
 .m-personalPad {
@@ -561,7 +634,7 @@ ul,li{
 			left: 49%;
 			height: 20px;
 			width: 30px;
-			background: url(./img/icons.png) no-repeat center;
+			background: url(../res/img/icons.png) no-repeat center;
 			background-position: -182px -3px;
 		}
 		.u-arrow{
@@ -702,7 +775,7 @@ ul,li{
 			margin-right: 10px;
 			width: 15px;
 			height: 15px;
-			background: url(./img/icons.png) no-repeat center;
+			background: url(../res/img/icons.png) no-repeat center;
 			background-position: -220px -25px;
 		}
 		.u-unchecked{
@@ -711,7 +784,7 @@ ul,li{
 			margin-right:10px;
 			width: 15px;
 			height: 15px;
-			background: url(./img/icons.png) no-repeat center;
+			background: url(../res/img/icons.png) no-repeat center;
 			background-position: -220px -40px;
 		}
 	}
@@ -822,15 +895,15 @@ ul,li{
 			display: inline-block;
 			height:40px;
 			line-height: 40px;
-			width: 50px;
-			background-color: rgb(255,206,0);
-			text-align: center;
+			width: 60px;
+			background: url(../res/img/icons.png) no-repeat center;
+			background-position: -245px -90px;
+			text-indent: 12px;
 			font-size: 24px;
   			font-family: "RenaultLife";
   			color: rgb(0, 0, 0);
   			font-weight: bold;
 			margin-right: 20px;
-			border-right: 2px solid #FFF;
 		}
 	}
 	.s-la{
@@ -852,7 +925,7 @@ ul,li{
 			right: 20px;
 			width: 40px;
 			height: 20px;
-			background: url(../img/icons.png) no-repeat center;
+			background: url(../res/img/icons.png) no-repeat center;
 			background-position: -175px -4px;
 	}
 	.u-txt{
@@ -882,11 +955,14 @@ ul,li{
 		}
 	}
 	.s-marginR{
-		margin-right: 10px;
+		margin-right: 18px;
 	}
 	.u-serDetail{
 		display: block;
 		clear: both;
+		font-size: 18px;
+  		font-family: "SourceHanSansCN";
+  		color: rgb(51, 51, 51);
 	}
 	.s-star{
 		float: left;
@@ -894,10 +970,198 @@ ul,li{
 		padding-top: 5px;
 		margin-right: 10px;
 	}
+	.m-item{
+		padding: 20px ;
+		border: 1px solid #e2e2e2;
+		width: 718px;
+		::-webkit-scrollbar{
+			width: 20px;
+			height: 200px;
+			background-color: rgb(225,225,225);
+		}
+		::-webkit-scrollbar-thumb{
+			background-color: rgb(205,205,205);
+		}
+		.u-content{
+			padding-right: 10px;
+			height: 230px;
+			font-size: 12px;
+  			font-family: "SourceHanSansCN";
+  			color: rgb(153, 153, 153);
+  			line-height: 20px;
+			overflow-y: scroll;
+		}
+	}
+	.u-contact{
+		height: 60px;
+		line-height: 60px;
+		text-align: center;
+		border-top:1px dotted #e2e2e2;
+		border-bottom: 1px dotted #e2e2e2;
+		margin-top: 20px;
+		label{
+			display: inline-block;
+			margin-right: 20px;
+			font-size: 14px;
+  			font-family: "SourceHanSansCN";
+  			color: rgb(51, 51, 51);
+  			font-weight: bold;
+		}
+		span{
+			display: inline-block;
+			margin-right: 20px;
+			font-size: 14px;
+  			font-family: "SourceHanSansCN";
+  			color: rgb(153, 153, 153);
+		}
+		.u-yes{
+			display: inline-block;
+			width: 20px;
+			height: 15px;
+			background:url(../res/img/icons.png) no-repeat center;
+			background-position: -220px -37px;
+		}
+		.u-no{
+			display: inline-block;
+			width: 20px;
+			height: 15px;
+			background:url(../res/img/icons.png) no-repeat center;
+			background-position: -220px -23px;
+		}
+	}
+	.f-cb{
+		clear: both;
+	}
 }
 .m-appbtn{
+	height: 90px;
+	padding: 20px 140px;
 	border: 1px solid #e2e2e2;
-	border-top:1ps dotted #e2e2e2;
+	border-top:1px dotted #e2e2e2;
+	.u-save{
+		margin-right: 20px;
+		background: rgb(255,205,0);
+		font-size: 16px;
+  		font-family: "SourceHanSansCN";
+  		color: rgb(0, 0, 0);
+  		font-weight: bold;
+	}
+	.u-reset{
+		background: rgb(102,102,102);
+		font-size: 16px;
+  		font-family: "SourceHanSansCN";
+  		color: #FFF;
+  		font-weight: bold;
+	}
+	.u-query{
+		background: rgb(255,205,0);
+		font-size: 16px;
+  		font-family: "SourceHanSansCN";
+  		color: rgb(0, 0, 0);
+  		font-weight: bold;
+		height: 50px;
+		padding-left: 50px;
+		letter-spacing: 20px;
+		text-align: center;
+		line-height: 50px;
+		cursor: pointer;
+		span {
+      		display: block;
+      		float: right;
+      		margin-top: 15px;
+      		margin-right:-25px;
+    	}
+	}
+	.s-btn{
+		display: inline-block;
+		width: 220px;
+		height: 50px;
+		padding-left: 20px;
+		text-align: center;
+		line-height: 50px;
+		cursor: pointer;
+		span {
+      		display: block;
+      		float: right;
+      		margin-top: 15px;
+      		margin-right: 5px;
+    	}
+	}
+}
+	.s-special{
+		color: #000;
+		font-weight: bolder;
+	}
+	.u-appTitle{
+		height: 60px;
+		text-align: left;
+		text-indent: 20px;
+		font-size: 18px;
+		font-family: "SourceHanSansCN";
+		color: rgb(0, 0, 0);
+		font-weight: bold;
+	}
+
+/* lisen:myAppointment */
+.m-apptable{
+	margin-top: 40px;
+	border: 1px solid #e2e2e2;
+	.m-describe{
+		border-right: 1px solid #e2e2e2;
+		padding: 0;
+	}
+	.s-describe{
+		height: 60px;
+		line-height: 60px;
+		text-align: left;
+		font-size: 14px;
+  		font-family: "SourceHanSansCN";
+  		color: rgb(102, 102, 102);
+		font-weight: normal;
+		border-bottom: 1px solid #e2e2e2;
+		text-indent: 20px;
+		margin-bottom: 0;
+		.billing{
+			float: left;
+			width: 60px;
+			height: 40px;
+			margin-top: 5px;
+			margin-left: 20px;
+			background: url(../res/img/icons.png) no-repeat center;
+			background-position: -245px -140px;
+		}
+	}
+	.m-operation{
+		padding: 0;
+		.s-operation{
+			height: 60px;
+			text-align: center;
+			font-size: 14px;
+			font-family: "SourceHanSansCN";
+			color: rgb(102, 102, 102);
+			font-weight: normal;
+			border-bottom: 1px solid #e2e2e2;
+			margin-bottom: 0;
+			a{
+				display: inline-block;
+				height: 20px;
+				line-height: 20px;
+				margin-top: 20px;
+				width: 50px;
+				font-size: 14px;
+  				font-family: "SourceHanSansCN";
+				font-weight: 700;
+  				color: rgb(0, 0, 0);
+				cursor: pointer;
+			}
+			.vertical-line{
+				border-right: 1px solid #e2e2e2;
+			}
+		}
+	}
+	.s-last{
+		border-bottom: none !important;
+	}
 }
 
 .nav-tabs.nav-justified > .active > a,

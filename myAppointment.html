@@ -77,85 +77,82 @@
     <div class="container">
       <div class="row">
         <div class="m-order col-md-8 col-md-push-4">
-        	<div class="m-title">
-				<p class="u-position">首页<span class="glyphicon glyphicon-menu-right s-arrow"></span>会员服务<span class="glyphicon glyphicon-menu-right s-arrow"></span><span class="s-special">预约服务</span></p>
-        		<p class="u-appTitle">预约服务</p>
+        	<div class="row m-title">
+				<p class="col-md-12 u-position">首页<span class="glyphicon glyphicon-menu-right s-arrow"></span>会员服务<span class="glyphicon glyphicon-menu-right s-arrow"></span><span class="s-special">预约服务</span></p>
+        		<p class="col-md-12 u-appTitle">我的预约服务</p>
         	</div>
-        	<form class="m-appForm">
-				<h3 class="s-subtitle"><span class="u-num">01</span>选择预约店</h3>
-				<label class="s-la"><span class="s-star">*</span>预约专营店</label>
-				<select class="form-control">
-					<option>请选择</option>
-				</select>
-				<h3 class="s-subtitle"><span class="u-num">02</span>填写车辆和服务信息</h3>
-				<label class="s-la"><span class="s-star">*</span>车辆号码</label>
-				<input class="u-txt" type="text"/>
-				<span class="u-tip">格式：粤BYXXXX</span>
-				<div class="s-marginR m-serDetails">
-					<label>汽车车型</label>
+        	<form class="row m-appForm">
+        		<div class="col-md-6">
+        			<label class="s-la">预约时间从</label>
+        			<select class="form-control">
+        				<option>2014-03-10</option>
+        			</select>
+        		</div>
+        		<div class="col-md-6">
+        			<label class="s-la">至</label>
+					<select class="form-control">
+						<option>2014-03-10</option>
+					</select>
+        		</div>
+        		<div class="col-md-6">
+        			<label class="s-la">服务类别</label>
+        			<select class="form-control">
+        				<option>请选择</option>
+        			</select>
+        		</div>
+        		<div class="col-md-6">
+        			<label class="s-la">预约状态</label>
 					<select class="form-control">
 						<option>请选择</option>
 					</select>
-				</div>
-				<div class="m-serDetails">
-					<label><span class="s-star">*</span>车辆品牌</label>
-					<select class="form-control">
-						<option>请选择</option>
-					</select>
-					<span class="s-down"></span>
-				</div>
-				<div class="s-marginR m-serDetails">
-					<label><span class="s-star">*</span>服务类别</label>
-					<select class="form-control">
-						<option>请选择</option>
-					</select>
-					<span class="s-down"></span>
-				</div>
-				<div class="m-serDetails">
-					<label>预约时间</label>
-					<select class="form-control">
-						<option>请选择</option>
-					</select>
-					<span class="s-down"></span>
-				</div>
-				<label class="u-serDetail">服务描述</label>
-				<div class="m-item">
-					<p class="u-content">
-			DRAC通过网站登录数据表和内容点击情况来设计网站，找出网页内容受欢迎的原因，进一步完善网站使其对访问者更加实用。所保存下来网站登录数据是一种序列文件，通常情况下将不会通过分析数据表来识别访问者个人身份。但是，如果发现有人试图侵占、干扰或破坏本网站，我们将通过网站登录数据表将肇事者的身份查出来
-			DRAC通过网站登录数据表和内容点击情况来设计网站，找出网页内容受欢迎的原因，进一步完善网站使其对访问者更加实用。所保存下来网站登录数据是一种序列文件，通常情况下将不会通过分析数据表来识别访问者个人身份。但是，如果发现有人试图侵占、干扰或破坏本网站，我们将通过网站登录数据表将肇事者的身份查出来
-			DRAC通过网站登录数据表和内容点击情况来设计网站，找出网页内容受欢迎的原因，进一步完善网站使其对访问者更加实用。所保存下来网站登录数据是一种序列文件，通常情况下将不会通过分析数据表来识别访问者个人身份。但是，如果发现有人试图侵占、干扰或破坏本网站，我们将通过网站登录数据表将肇事者的身份查出来
-			DRAC通过网站登录数据表和内容点击情况来设计网站，找出网页内容受欢迎的原因，进一步完善网站使其对访问者更加实用。所保存下来网站登录数据是一种序列文件，通常情况下将不会通过分析数据表来识别访问者个人身份。但是，如果发现有人试图侵占、干扰或破坏本网站，我们将通过网站登录数据表将肇事者的身份查出来
-					</p>
-				</div>
-				<div class="u-contact">
-					<label>是否联系</label>
-					<span><i class="u-yes"></i>是</span>
-					<span><i class="u-no"></i>否</span>
-				</div>
-				<h3 class="s-subtitle"><span class="u-num">03</span>填写联系人信息</h3>
-				<div class="s-marginR m-serDetails">
-					<label><span class="s-star">*</span>联系人</label>
-					<input class="s-select" type="text" placeholder="朱云飞">
-				</div>
-				<div class="m-serDetails">
-					<label><span class="s-star">*</span>手机号码</span></label>
-					<input class="s-select" type="text" placeholder="13800138000">
-				</div>
-				<div class="s-marginR m-serDetails">
-					<label>固定号码</label>
-					<input type="text" class="s-select" placeholder="010-80870010">
-				</div>
-				<div class="m-serDetails">
-					<label>电子邮箱</label>
-					<input type="text" class="s-select" placeholder="13800138000@163.com">
-				</div>
-       			<div class="f-cb"></div>
+        		</div>
         	</form>
-        	<div class="m-appbtn">
-        		<a class="s-btn u-save">保存<span class="glyphicon glyphicon-chevron-right"></span></a>
-        		<a class="s-btn u-reset">重置<span class="glyphicon glyphicon-chevron-right"></span></a>
+        	<div class="row m-appbtn">
+        		<a class="col-md-8 col-md-push-2 u-query">查询<span class="glyphicon glyphicon-chevron-right"></span></a>
         	</div>
-		</div>
+        	<div class="row m-apptable">
+        		<div class="col-md-9 m-describe">
+        			<p class="s-describe">
+        				<span class="billing"></span>
+        				您于2015/9/14在XX提交的代办业务已开单
+        			</p>
+        			<p class="s-describe">
+        				<span class="billing"></span>
+						代办服务02雷诺设计哲学的革新之作，科雷嘉承袭雷诺...
+        			</p>
+        			<p class="s-describe">
+        				<span class="billing"></span>
+        				代办服务03再续115赛道传奇，挑战你未知的激情...
+        			</p>
+        			<p class="s-describe s-last">
+        				<span class="billing"></span>
+						代办服务04再续115赛道传奇
+        			</p>
+        		</div>
+        		<div class="col-md-3 m-operation">
+        			<p class="s-operation">
+        				<a class="vertical-line">详情</a>
+						<a class="vertical-line">修改</a>
+						<a>删除</a>
+        			</p>
+        			<p class="s-operation">
+        				<a class="vertical-line">详情</a>
+						<a class="vertical-line">修改</a>
+						<a>删除</a>
+        			</p>
+        			<p class="s-operation">
+        				<a class="vertical-line">详情</a>
+						<a class="vertical-line">修改</a>
+						<a>删除</a>
+        			</p>
+        			<p class="s-operation s-last">
+        				<a class="vertical-line">详情</a>
+						<a class="vertical-line">修改</a>
+						<a>删除</a>
+        			</p>
+        		</div>
+        	</div>
+		  </div>
           <div class="col-md-4 col-md-pull-8 ">
           <div class="row">
             <div class="col-xs-12 ">
