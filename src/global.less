@@ -131,13 +131,20 @@ ul,li{
       top: 0;
       color: @color2;
     }
-    a {
+    a{
       color: @color2;
       display: block;
       width: 100%;
       overflow: hidden;
       text-overflow: ellipsis;
       white-space: nowrap;
+    }
+    .btn{
+      position: absolute;
+      top: 15px;
+      right: 10px;
+      font-size: 14px;
+      font-weight: bold;
     }
   }
   &.m-list-news-1{
@@ -936,8 +943,11 @@ ul,li{
 			background-position: -175px -4px;
 	}
 	.u-txt{
+		display: inline-block;
 		width: 350px;
 		height: 50px;
+		line-height: 50px;
+		text-indent: 20px;
 		margin-right: 10px;
 		margin-bottom: 20px;
 	}
@@ -1060,6 +1070,25 @@ ul,li{
   		color: #FFF;
   		font-weight: bold;
 	}
+	.u-query{
+		background: rgb(255,205,0);
+		font-size: 16px;
+  		font-family: "SourceHanSansCN";
+  		color: rgb(0, 0, 0);
+  		font-weight: bold;
+		height: 50px;
+		padding-left: 50px;
+		letter-spacing: 20px;
+		text-align: center;
+		line-height: 50px;
+		cursor: pointer;
+		span {
+      		display: block;
+      		float: right;
+      		margin-top: 15px;
+      		margin-right:-25px;
+    	}
+	}
 	.s-btn{
 		display: inline-block;
 		width: 220px;
@@ -1089,6 +1118,308 @@ ul,li{
 		color: rgb(0, 0, 0);
 		font-weight: bold;
 	}
+
+/* lisen:myAppointment */
+.m-apptable{
+	margin-top: 40px;
+	border: 1px solid #e2e2e2;
+	.m-describe{
+		border-right: 1px solid #e2e2e2;
+		padding: 0;
+	}
+	.s-describe{
+		height: 60px;
+		line-height: 60px;
+		text-align: left;
+		font-size: 14px;
+  		font-family: "SourceHanSansCN";
+  		color: rgb(102, 102, 102);
+		font-weight: normal;
+		border-bottom: 1px solid #e2e2e2;
+		text-indent: 20px;
+		margin-bottom: 0;
+		.billing{
+			float: left;
+			width: 60px;
+			height: 40px;
+			margin-top: 5px;
+			margin-left: 20px;
+			background: url(../res/img/icons.png) no-repeat center;
+			background-position: -245px -140px;
+		}
+	}
+	.m-operation{
+		padding: 0;
+		.s-operation{
+			height: 60px;
+			text-align: center;
+			font-size: 14px;
+			font-family: "SourceHanSansCN";
+			color: rgb(102, 102, 102);
+			font-weight: normal;
+			border-bottom: 1px solid #e2e2e2;
+			margin-bottom: 0;
+			a{
+				display: inline-block;
+				height: 20px;
+				line-height: 20px;
+				margin-top: 20px;
+				width: 50px;
+				font-size: 14px;
+  				font-family: "SourceHanSansCN";
+				font-weight: 700;
+  				color: rgb(0, 0, 0);
+				cursor: pointer;
+			}
+			.vertical-line{
+				border-right: 1px solid #e2e2e2;
+			}
+		}
+	}
+	.s-last{
+		border-bottom: none !important;
+	}
+}
+/* lisen:myAppointmentDetail */
+.s-gray{
+	background: rgb(240,240,240);
+	border: 1px solid #e2e2e2;
+	font-size: 14px;
+  	font-family: "SourceHanSansCN";
+  	color: rgb(102, 102, 102);
+	position: relative;
+	.u-down{
+		position: absolute;
+		display: block;
+		width: 20px;
+		height: 20px;
+		top: 20px;
+		right: 20px;
+	}
+	.glyphicon{
+		color: rgb(168,168,168);
+	}
+}
+.m-appbtn{
+	.u-goback{
+		width: 400px;
+		margin: 0 auto;
+		background: rgb(102,102,102);
+		font-size: 16px;
+  		font-family: "SourceHanSansCN";
+  		color: rgb(255, 255, 255);
+  		font-weight: bold;
+		padding-left: 40px;
+		margin-left: 30px;
+		cursor: pointer;
+	}
+}
+
+/* lisen:sfAcitvity */
+.m-position{
+	min-width: 750px;
+	height: 70px;
+	line-height: 70px;
+  	font-size: 16px;
+  	font-family: "SourceHanSansCN";
+  	color: rgb(102, 102, 102);
+	border: 1px solid #e2e2e2;
+	padding-left: 20px;
+	border-bottom: none;
+	margin-bottom:0;
+}
+.m-news{
+	margin: 40px 0 20px 0;
+	border: 1px solid #e2e2e2;
+	padding: 20px;
+	min-width: 750px;
+	.u-newsImg{
+		width: 30%;
+		margin-right: 20px;
+	}
+	.u-newsContent{
+		width: 67%;
+		p{
+			font-size: 14px;
+  			font-family: "SourceHanSansCN";
+  			color: rgb(102, 102, 102);
+			margin-bottom: 0;
+		}
+	}
+}
+.m-page{
+	padding: 20px 0;
+	border-top: 1px dotted #e2e2e2;
+	border-bottom: 1px dotted #e2e2e2;
+	padding-left: 15%;
+	margin: 0 auto 20px 0;
+	min-width: 750px;
+	li{
+		float: left;
+	}
+	.f-page{
+		height: 50px;
+		width: 80px;
+		text-align: center;
+		line-height: 50px;
+		background: rgb(102,102,102);
+		margin-right: 10px;
+		a{
+			font-size: 16px;
+  			font-family: "SourceHanSansCN";
+			font-weight: bold;
+  			color: rgb(255, 255, 255);
+			cursor: pointer;
+		}
+		a:hover{
+			background: rgb(102,102,102);
+			font-size: 16px;
+  			font-family: "SourceHanSansCN";
+  			color: rgb(255, 255, 255);
+			cursor: pointer;
+		}
+	}
+	.f-num{
+		display: inline-block;
+		width: 50px;
+		height: 50px;
+		line-height: 50px;
+		text-align: center;
+		border: 1px solid #e2e2e2;
+		margin-right: 10px;
+		font-size: 16px;
+  		font-family: "RenaultLife";
+  		color: rgb(102, 102, 102);
+  		font-weight: bold;
+	}
+	a:hover{
+		font-size: 16px;
+  		font-family: "RenaultLife";
+  		color: rgb(0, 0, 0);
+  		font-weight: bold;
+		background:rgb(255,206,0);
+	}
+}
+
+/* lisen:sfAcitivityInf */
+.m-titleInf{
+	height: 100px;
+	border: 1px solid #e2e2e2;
+	border-bottom: none;
+	padding: 30px 20px 15px 20px;
+	position: relative;
+	h3{
+		margin-top: 0;
+		text-align: center;
+		font-size: 20px;
+  		font-family: "SourceHanSansCN";
+  		color: rgb(51, 51, 51);
+  		font-weight: bold;
+	}
+	span{
+		position: absolute;
+		top: 30px;
+		right: 20px;
+		font-size: 14px;
+  		font-family: "SourceHanSansCN";
+  		color: rgb(102, 102, 102);
+		i{
+			display: inline-block;
+			width: 20px;
+			height: 20px;
+			background: url(../res/img/icons.png) no-repeat center;
+			background-position: -185px -48px;
+		}
+	}
+	p{
+		text-align: center;
+		font-size: 14px;
+  		font-family: "SourceHanSansCN";
+  		color: rgb(102, 102, 102);
+  		font-weight: normal;
+	}
+}
+.m-tab{
+	border: 1px solid #e2e2e2;
+	border-top: 1px dotted #e2e2e2;
+	border-bottom:none;
+	padding: 20px;
+	.u-myTab{
+		margin-left: 30px;
+
+	}
+}
+.s-lab{
+		font-size: 14px;
+  		font-family: "SourceHanSansCN";
+  		color: rgb(102, 102, 102);
+	}
+.s-content{
+		font-size: 14px;
+  		font-family: "SourceHanSansCN";
+  		color: #000;
+		font-weight: bold;
+}
+
+.m-actInf{
+	border: 1px solid #e2e2e2;
+	border-top: 1px dotted #e2e2e2;
+	border-bottom: none;
+	padding: 30px 20px;
+	.m-newsImg{
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	.m-newsContent{
+		font-size: 14px;
+  		font-family: "SourceHanSansCN";
+  		color: rgb(102, 102, 102);
+		text-indent: 2em;
+		margin-bottom: 30px;
+	}
+}
+.m-actBtn{
+	border: 1px solid #e2e2e2;
+	border-top-style: dotted;
+	padding: 20px 0;
+	.u-goBack{
+		display: block;
+		height: 50px;
+		line-height: 50px;
+		width: 50%;
+		margin-left: 25%;
+		background: rgb(255,204,51);
+		text-align: center;
+		font-size: 16px;
+  		font-family: "SourceHanSansCN";
+  		color: rgb(0, 0, 0);
+  		font-weight: bold;
+		span{
+			margin-top: 15px;
+			margin-right: 10px;
+			font-weight: normal;
+		}
+	}
+}
+
+/* lisen:actRegis */
+.m-actInfRis{
+	border: 1px solid #e2e2e2;
+	padding: 40px 20px;
+	margin-bottom: 40px;
+}
+.s-risTitle{
+	height: 60px;
+	line-height: 60px;
+}
+.s-color{
+	color: rgb(191,191,191);
+	text-indent: 20px;
+}
+.s-alone{
+	width: 100% !important;
+}
+
 @import './media';
 
 .nav-tabs.nav-justified > .active > a,
@@ -1152,9 +1483,44 @@ ul,li{
     font-size: 18px;
     font-weight: normal;
     color: #333;
+    margin-bottom: 10px;
     span.b{
       vertical-align: middle;
       margin-right: 5px;
+    }
+  }
+}
+.m-table-list{
+  .icon{
+    border: 1px solid #333;
+    padding: 8px;
+    position: relative;
+    margin-right: 10px;
+    i{
+      position: absolute;
+      top: 12px;
+      right: -8px;
+    }
+  }
+  .left{
+    padding: 22px 8px!important;
+    p{
+      display: inline-block;
+      *display: inline;
+      zoom:1;
+      width: 450px;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      margin-bottom: 0;
+    }
+  }
+  .right{
+    text-align: center;
+    width: 220px;
+    .btn{
+      color: #000;
+      font-weight: bold;
     }
   }
 }
