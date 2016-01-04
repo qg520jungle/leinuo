@@ -171,6 +171,13 @@ ul,li{
   text-align: center;
   font-weight: bold;
 }
+.m-mid-title {
+  background-color: #ededed;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-weight: bold;
+}
 .m-header {
   margin-top: 35px;
   border-bottom: 1px solid #eee;
@@ -465,7 +472,7 @@ ul,li{
 .m-personalPad {
   background-color: @color3;
 }
-.m-title {
+.m-mid-title {
   position: relative;
 }
 .m-contentMain {
@@ -640,7 +647,7 @@ ul,li{
 }
 
 /* lisen:regis and findPw */
-.m-title{
+.m-mid-title{
 	position: relative;
 	@media(min-width:992px){
 		.u-arc{
@@ -883,6 +890,13 @@ ul,li{
 			color: #000;
 			font-weight: bolder;
 		}
+        .b{
+          font-weights: bold;
+        }
+        .m{
+          margin: 0 6px;
+          font-family: "sans-serif";
+        }
 	}
 	.u-appTitle{
 		height: 60px;
@@ -1141,12 +1155,12 @@ ul,li{
 		margin-bottom: 0;
 		.billing{
 			float: left;
-			width: 60px;
+			width: 80px;
 			height: 40px;
 			margin-top: 5px;
 			margin-left: 20px;
 			background: url(../res/img/icons.png) no-repeat center;
-			background-position: -245px -140px;
+			background-position: -235px -140px;
 		}
 	}
 	.m-operation{
@@ -1424,6 +1438,66 @@ ul,li{
 /* lisen:venderActInf */
 .s-bottom{
 	border-bottom: 1px solid #e2e2e2;
+}
+
+/* lisen:myVReplacement */
+.m-vRForm{
+	padding: 30px 20px;
+	border: 1px solid #e2e2e2;
+	border-bottom: none;
+	.s-VRLab{
+		display: block;
+		font-size: 18px;
+  		font-family: "SourceHanSansCN";
+  		color: rgb(51, 51, 51);
+		margin-bottom: 10px;
+	}
+}
+.s-selColor{
+	background: rgb(255,204,51) !important;
+	color: #000 !important;
+}
+.noVLine{
+	border-right: none !important;
+}
+.m-VRInf{
+	height: 60px;
+	text-indent: 20px;
+	line-height: 60px;
+	margin-bottom: 0;
+	font-size: 14px;
+  	font-family: "SourceHanSansCN";
+  	color: rgb(102, 102, 102);
+	.tSituation{
+		float: left;
+		width: 80px;
+		height: 40px;
+		background: url(../res/img/icons.png) no-repeat center;
+		background-position: -235px -140px;
+		margin-left: 20px;
+		margin-top: 5px;
+	}
+}
+
+/* lisen:vehicleInf */
+
+@import './media';
+
+.nav-tabs.nav-justified > .active > a,
+.nav-tabs.nav-justified > .active > a:hover,
+.nav-tabs.nav-justified > .active > a:focus {
+  border-bottom-color: #e2e2e2;
+  .bg {
+    display: block;
+  }
+}
+.m-carousel-imgs {
+  padding: 10px 40px;
+}
+.m-btns{
+  .btn{
+    margin-right: 20px;
+  }
 }
 .pager{
   border-top: 1px dashed #e2e2e2;
