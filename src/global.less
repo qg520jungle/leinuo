@@ -909,6 +909,7 @@ li {
     font-weight: bold;
   }
 }
+
 .m-appForm {
   border: 1px solid #e2e2e2;
   border-bottom: none;
@@ -971,7 +972,6 @@ li {
     display: inline-block;
     height: 50px;
     line-height: 50px;
-    width: 350px;
     font-size: 14px;
     font-family: "SourceHanSansCN";
     color: rgb(153, 153, 153);
@@ -1125,6 +1125,82 @@ li {
   color: #000;
   font-weight: bolder;
 }
+.m-item{
+		padding: 20px ;
+		border: 1px solid #e2e2e2;
+		width: 718px;
+		::-webkit-scrollbar{
+			width: 20px;
+			height: 200px;
+			background-color: rgb(225,225,225);
+		}
+		::-webkit-scrollbar-thumb{
+			background-color: rgb(205,205,205);
+		}
+		.u-content{
+			padding-right: 10px;
+			height: 230px;
+			font-size: 12px;
+  			font-family: "SourceHanSansCN";
+  			color: rgb(153, 153, 153);
+  			line-height: 20px;
+			overflow-y: scroll;
+		}
+	}
+.m-appbtn{
+	height: 90px;
+	padding: 20px 140px;
+	border: 1px solid #e2e2e2;
+	border-top:1px dotted #e2e2e2;
+	.u-save{
+		margin-right: 20px;
+		background: rgb(255,205,0);
+		font-size: 16px;
+  		font-family: "SourceHanSansCN";
+  		color: rgb(0, 0, 0);
+  		font-weight: bold;
+	}
+	.u-reset{
+		background: rgb(102,102,102);
+		font-size: 16px;
+  		font-family: "SourceHanSansCN";
+  		color: #FFF;
+  		font-weight: bold;
+	}
+	.u-query{
+		background: rgb(255,205,0);
+		font-size: 16px;
+  		font-family: "SourceHanSansCN";
+  		color: rgb(0, 0, 0);
+  		font-weight: bold;
+		height: 50px;
+		padding-left: 50px;
+		letter-spacing: 20px;
+		text-align: center;
+		line-height: 50px;
+		cursor: pointer;
+		span {
+      		display: block;
+      		float: right;
+      		margin-top: 15px;
+      		margin-right:-25px;
+    	}
+	}
+	.s-btn{
+		display: inline-block;
+		width: 220px;
+		height: 50px;
+		padding-left: 20px;
+		text-align: center;
+		line-height: 50px;
+		cursor: pointer;
+		span {
+      		display: block;
+      		float: right;
+      		margin-top: 15px;
+      		margin-right: 5px;
+    	}
+	}
 .u-appTitle {
   height: 60px;
   text-align: left;
@@ -1235,7 +1311,6 @@ li {
 }
 
 /* lisen:sfAcitvity */
-
 .m-position {
   min-width: 750px;
   height: 70px;
@@ -1247,6 +1322,10 @@ li {
   padding-left: 20px;
   border-bottom: none;
   margin-bottom: 0;
+  .m{
+    margin: 0 6px;
+    font-family: "san"
+  }
 }
 .m-news {
   margin: 40px 0 20px 0;
@@ -1523,7 +1602,45 @@ li {
   }
 }
 
-/* lisen:vehicleInf */
+/* lisen:recommendCar */
+.m-recommend{
+		text-align: center;
+		font-size: 14px;
+  	color: rgb(102, 102, 102);
+  	font-weight: bold;
+		border-top: 1px dotted #e2e2e2;
+		border-bottom: 1px dotted #e2e2e2;
+		padding: 20px 0;
+		margin-bottom: 40px;
+}
+.u-yes{
+		font-size: 14px;
+  	font-family: "SourceHanSansCN";
+ 		color: rgb(153, 153, 153);
+		cursor: pointer;
+		i{
+				display: inline-block;
+				width: 20px;
+				height: 20px;
+				margin:0 10px 0 20px;
+				background: url(../res/img/icons.png) no-repeat;
+				background-position: -220px -17px;
+		}
+}
+.u-no{
+		font-size: 14px;
+  	font-family: "SourceHanSansCN";
+  	color: rgb(153, 153, 153);
+		cursor: pointer;
+		i{
+				display: inline-block;
+				width: 20px;
+				height: 15px;
+				margin:0 10px 0 20px;
+				background: url(../res/img/icons.png) no-repeat;
+				background-position: -218px -37px;
+		}
+}
 
 .nav-tabs.nav-justified > .active > a,
 .nav-tabs.nav-justified > .active > a:hover,
