@@ -595,6 +595,7 @@ ul,li{
   text-align: center;
   .btn{
     position: relative;
+    margin-right: 20px;
     .glyphicon-menu-right{
       position: absolute;
       top: 15px;
@@ -1482,6 +1483,24 @@ ul,li{
   }
 }
 .m-table-list{
+  border: 1px solid #ddd;
+  dl{
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 0;
+    &:last-child{
+      border: none;
+    }
+  }
+  dt,dd{
+    display: inline-block;
+    *display: inline;
+    zoom:1;
+    vertical-align: middle;
+    padding: 15px 8px;
+  }
+  dt{
+    border-right: 1px solid #ddd;
+  }
   .icon{
     border: 1px solid #333;
     padding: 8px;
@@ -1494,16 +1513,13 @@ ul,li{
     }
   }
   .left{
-    padding: 22px 8px!important;
     p{
-      display: inline-block;
-      *display: inline;
-      zoom:1;
-      width: 450px;
+      width: 500px;
       overflow: hidden;
       white-space: nowrap;
       text-overflow: ellipsis;
       margin-bottom: 0;
+      padding: 9px;
     }
   }
   .right{
