@@ -22,7 +22,8 @@ ul,
 li {
   list-style: none;
 }
-ul,li{
+ul,
+li {
   padding: 0;
   margin: 0;
 }
@@ -131,7 +132,7 @@ ul,li{
       top: 0;
       color: @color2;
     }
-    a{
+    a {
       color: @color2;
       display: block;
       width: 100%;
@@ -139,7 +140,7 @@ ul,li{
       text-overflow: ellipsis;
       white-space: nowrap;
     }
-    .btn{
+    .btn {
       position: absolute;
       top: 15px;
       right: 10px;
@@ -147,9 +148,9 @@ ul,li{
       font-weight: bold;
     }
   }
-  &.m-list-news-1{
-    .item{
-      a{
+  &.m-list-news-1 {
+    .item {
+      a {
         width: 61.8%;
       }
     }
@@ -314,7 +315,7 @@ ul,li{
   .u-left-x {
     float: left;
   }
-  .u-menu-text{
+  .u-menu-text {
     width: 89px;
     height: 38px;
     line-height: 40px;
@@ -397,7 +398,7 @@ ul,li{
   a:hover {
     color: #111;
   }
-  .u-news{
+  .u-news {
     height: 80px;
     line-height: 80px;
     background-color: #ffcc33;
@@ -406,65 +407,65 @@ ul,li{
     margin: 0;
     font-weight: bold;
   }
-  .u-news>a{
+  .u-news>a {
     display: block;
   }
-  .panel-group{
+  .panel-group {
     margin-bottom: 0;
   }
-  .panel-group .panel{
+  .panel-group .panel {
     border: 0;
     border-bottom: 1px solid #fff;
     border-radius: 0;
     margin-top: 0;
   }
-  .panel-heading{
+  .panel-heading {
     background-color: #ddd;
     padding: 12px 15px;
   }
-  h4{
+  h4 {
     font-weight: bold;
   }
-  h4>a{
+  h4>a {
     display: block;
   }
-  a,a:hover{
+  a,
+  a:hover {
     text-decoration: none;
   }
   .panel-body {
     padding: 0;
     background-color: #333333;
-    ul{
+    ul {
       background-color: #333333;
     }
-    li{
+    li {
       border: 0;
       padding: 0;
     }
-    a{
+    a {
       display: block;
-      padding:12px 20px 12px 20px;
+      padding: 12px 20px 12px 20px;
       background-color: #333333;
       color: #ffffff;
     }
-    a:hover{
+    a:hover {
       background-color: #ffcc33;
       color: #000000;
     }
   }
-  .list-left{
+  .list-left {
     width: 50%;
     float: left;
-    a{
+    a {
       border-bottom: 1px solid #444444;
-      border-right:  1px solid #444444;
+      border-right: 1px solid #444444;
     }
-
   }
-  .list-right{
+  .list-right {
     width: 50%;
     float: right;
-    a{
+    a {
       border-bottom: 1px solid #444444;
     }
   }
@@ -531,7 +532,6 @@ ul,li{
     }
   }
 }
-
 .m-gift {
   padding: 0 0 20px 0;
   .u-title {
@@ -540,8 +540,8 @@ ul,li{
     font-weight: normal;
     font-size: 24px;
   }
-  .u-border{
-    border-bottom:1px solid #e2e2e2;
+  .u-border {
+    border-bottom: 1px solid #e2e2e2;
   }
   .thumbnail {
     padding: 0;
@@ -579,15 +579,15 @@ ul,li{
     }
   }
 }
-.m-giftlist{
+.m-giftlist {
   margin-top: 20px;
   padding: 0;
   border: 1px solid #e2e2e2;
-  .bg{
-      position: absolute;
-      bottom: -2px;
-      left: 40px;
-    }
+  .bg {
+    position: absolute;
+    bottom: -2px;
+    left: 40px;
+  }
 }
 .m-mb-more {
   background-color: @color3;
@@ -600,9 +600,9 @@ ul,li{
   padding: 20px 0;
   border-top: 1px dashed #e2e2e2;
   text-align: center;
-  .btn{
+  .btn {
     position: relative;
-    .glyphicon-menu-right{
+    .glyphicon-menu-right {
       position: absolute;
       top: 15px;
       right: 15px;
@@ -646,169 +646,170 @@ ul,li{
 }
 
 /* lisen:regis and findPw */
-.m-mid-title{
-	position: relative;
-	@media(min-width:992px){
-		.u-arc{
-			position: absolute;
-			top: 100%;
-			left: 49%;
-			height: 20px;
-			width: 30px;
-			background: url(../res/img/icons.png) no-repeat center;
-			background-position: -182px -3px;
-		}
-		.u-arrow{
-			display: none;
-		}
-	}
-	@media(max-width:992px){
-		.u-arc{
-			display: none;
-		}
-		.u-arrow{
-			position: absolute;
-			top: 30%;
-			right: 5%;
-		}
-	}
+
+.m-mid-title {
+  position: relative;
+  @media(min-width: 992px) {
+    .u-arc {
+      position: absolute;
+      top: 100%;
+      left: 49%;
+      height: 20px;
+      width: 30px;
+      background: url(../res/img/icons.png) no-repeat center;
+      background-position: -182px -3px;
+    }
+    .u-arrow {
+      display: none;
+    }
+  }
+  @media(max-width:992px) {
+    .u-arc {
+      display: none;
+    }
+    .u-arrow {
+      position: absolute;
+      top: 30%;
+      right: 5%;
+    }
+  }
 }
-.m-form{
-	margin: 30px auto 0 auto;
-	border: 1px solid #e2e2e2;
-	border-bottom: none;
-	@media (min-width:992px){
-		width: 800px;
-		padding: 40px 50px 20px 50px ;
-	}
-	@media (max-width:992px){
-		width: 90%;
-		padding: 40px 0;
-	}
-	.f-input{
-		margin-bottom: 15px;
-		padding: 10px 0;
-		.u-code{
-			float: right;
-			height: 40px;
-			line-height: 40px;
-			background: #000;
-			text-align: center;
-			font-size: 16px;
-  			font-family: "SourceHanSansCN";
-  			color: rgb(255, 255, 255);
-  			font-weight: bold;
-		}
-		@media (min-width:992px){
-			.f-la{
-				width: 100px;
-				text-align: right;
-				margin-top: 10px;
-				margin-right: 10px;
-			}
-			.f-txt{
-				width: 500px;
-				height: 40px;
-			}
-			.u-validate{
-				width: 320px;
-				margin-right: 10px;
-			}
-			.u-code{
-				width: 170px;
-				margin-right: 82px;
-			}
-		}
-		@media (max-width:992px){
-			.f-la{
-				display: block;
-				float: none;
-				width: 50%;
-				padding: 0;
-				margin: 0 0 0 10%;
-			}
-			.f-txt{
-				height: 40px;
-				float: none;
-				width: 80%;
-				padding: 0;
-				margin: 0 0 0 10%;
-			}
-			.u-validate{
-				width: 58%;
-				margin-right: 2%;
-				line-height: 40px;
-			}
-			.u-code{
-				font-size: 10px;
-				width: 20%;
-				margin-right: 10%;
-			}
-		}
-		span{
-			padding-right: 3px;
-		}
-	}
-	.m-item{
-		padding: 20px ;
-		border: 1px solid #e2e2e2;
-		@media(min-width:992px){
-			margin-left: 112px;
-			width: 508px;
-		}
-		@media(max-width:992px){
-			width: 80%;
-			margin-left: 10%;
-			padding: 4% 4%;
-		}
-		::-webkit-scrollbar{
-			width: 20px;
-			height: 200px;
-			background-color: rgb(225,225,225);
-		}
-		::-webkit-scrollbar-thumb{
-			background-color: rgb(205,205,205);
-		}
-		.u-content{
-			padding-right: 10px;
-			height: 230px;
-			font-size: 12px;
-  			font-family: "SourceHanSansCN";
-  			color: rgb(153, 153, 153);
-  			line-height: 20px;
-			overflow-y: scroll;
-		}
-	}
-	.u-radio{
-		display:inline-block;
-		margin-top: 10px;
-		font-size: 14px;
-  		font-family: "SourceHanSansCN";
-  		color: rgb(102, 102, 102);
-		cursor: pointer;
-		@media(min-width:992px){
-			margin-left: 112px;
-		}
-		@media(max-width:992px){
-			margin-left: 10%;
-		}
-		.u-icon{
-			margin-right: 10px;
-			width: 15px;
-			height: 15px;
-			background: url(../res/img/icons.png) no-repeat center;
-			background-position: -220px -25px;
-		}
-		.u-unchecked{
-			display: inline-block;
-			vertical-align: middle;
-			margin-right:10px;
-			width: 15px;
-			height: 15px;
-			background: url(../res/img/icons.png) no-repeat center;
-			background-position: -220px -40px;
-		}
-	}
+.m-form {
+  margin: 30px auto 0 auto;
+  border: 1px solid #e2e2e2;
+  border-bottom: none;
+  @media (min-width: 992px) {
+    width: 800px;
+    padding: 40px 50px 20px 50px;
+  }
+  @media (max-width:992px) {
+    width: 90%;
+    padding: 40px 0;
+  }
+  .f-input {
+    margin-bottom: 15px;
+    padding: 10px 0;
+    .u-code {
+      float: right;
+      height: 40px;
+      line-height: 40px;
+      background: #000;
+      text-align: center;
+      font-size: 16px;
+      font-family: "SourceHanSansCN";
+      color: rgb(255, 255, 255);
+      font-weight: bold;
+    }
+    @media (min-width:992px) {
+      .f-la {
+        width: 100px;
+        text-align: right;
+        margin-top: 10px;
+        margin-right: 10px;
+      }
+      .f-txt {
+        width: 500px;
+        height: 40px;
+      }
+      .u-validate {
+        width: 320px;
+        margin-right: 10px;
+      }
+      .u-code {
+        width: 170px;
+        margin-right: 82px;
+      }
+    }
+    @media (max-width:992px) {
+      .f-la {
+        display: block;
+        float: none;
+        width: 50%;
+        padding: 0;
+        margin: 0 0 0 10%;
+      }
+      .f-txt {
+        height: 40px;
+        float: none;
+        width: 80%;
+        padding: 0;
+        margin: 0 0 0 10%;
+      }
+      .u-validate {
+        width: 58%;
+        margin-right: 2%;
+        line-height: 40px;
+      }
+      .u-code {
+        font-size: 10px;
+        width: 20%;
+        margin-right: 10%;
+      }
+    }
+    span {
+      padding-right: 3px;
+    }
+  }
+  .m-item {
+    padding: 20px;
+    border: 1px solid #e2e2e2;
+    @media(min-width: 992px) {
+      margin-left: 112px;
+      width: 508px;
+    }
+    @media(max-width:992px) {
+      width: 80%;
+      margin-left: 10%;
+      padding: 4% 4%;
+    }
+    ::-webkit-scrollbar {
+      width: 20px;
+      height: 200px;
+      background-color: rgb(225, 225, 225);
+    }
+    ::-webkit-scrollbar-thumb {
+      background-color: rgb(205, 205, 205);
+    }
+    .u-content {
+      padding-right: 10px;
+      height: 230px;
+      font-size: 12px;
+      font-family: "SourceHanSansCN";
+      color: rgb(153, 153, 153);
+      line-height: 20px;
+      overflow-y: scroll;
+    }
+  }
+  .u-radio {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 14px;
+    font-family: "SourceHanSansCN";
+    color: rgb(102, 102, 102);
+    cursor: pointer;
+    @media(min-width: 992px) {
+      margin-left: 112px;
+    }
+    @media(max-width:992px) {
+      margin-left: 10%;
+    }
+    .u-icon {
+      margin-right: 10px;
+      width: 15px;
+      height: 15px;
+      background: url(../res/img/icons.png) no-repeat center;
+      background-position: -220px -25px;
+    }
+    .u-unchecked {
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 10px;
+      width: 15px;
+      height: 15px;
+      background: url(../res/img/icons.png) no-repeat center;
+      background-position: -220px -40px;
+    }
+  }
 }
 .m-btn {
   @media(min-width: 992px) {
@@ -868,650 +869,658 @@ ul,li{
 }
 
 /* lisen:appointment */
-.m-title{
-	height: 130px;
-	border: 1px solid #e2e2e2;
-	border-bottom: none;
-	.u-position{
-		height: 70px;
-		line-height: 70px;
-		text-align: left;
-		background-color: #FFF;
-		padding-left: 20px;
-		font-size: 16px;
-		font-weight: normal;
-		font-family: "SourceHanSansCN";
-		color: rgb(102, 102, 102);
-		.s-arrow{
-			margin-right: 2px;
-		}
-		.s-special{
-			color: #000;
-			font-weight: bolder;
-		}
-        .b{
-          font-weights: bold;
-        }
-        .m{
-          margin: 0 6px;
-          font-family: "sans-serif";
-        }
-	}
-	.u-appTitle{
-		height: 60px;
-		text-align: left;
-		text-indent: 20px;
-		font-size: 18px;
-		font-family: "SourceHanSansCN";
-		color: rgb(0, 0, 0);
-		font-weight: bold;
-	}
+
+.m-title {
+  height: 130px;
+  border: 1px solid #e2e2e2;
+  border-bottom: none;
+  .u-position {
+    height: 70px;
+    line-height: 70px;
+    text-align: left;
+    background-color: #FFF;
+    padding-left: 20px;
+    font-size: 16px;
+    font-weight: normal;
+    font-family: "SourceHanSansCN";
+    color: rgb(102, 102, 102);
+    .s-arrow {
+      margin-right: 2px;
+    }
+    .s-special {
+      color: #000;
+      font-weight: bolder;
+    }
+    .b {
+      font-weights: bold;
+    }
+    .m {
+      margin: 0 6px;
+      font-family: "sans-serif";
+    }
+  }
+  .u-appTitle {
+    height: 60px;
+    text-align: left;
+    text-indent: 20px;
+    font-size: 18px;
+    font-family: "SourceHanSansCN";
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+  }
 }
-.m-appForm{
-	border: 1px solid #e2e2e2;
-	border-bottom: none;
-	padding: 20px 15px;
-	position: relative;
-	.s-subtitle{
-		height:40px;
-		line-height: 40px;
-		background: rgb(237,237,237);
-		font-size: 18px;
-  		font-family: "SourceHanSansCN";
-  		color: rgb(0, 0, 0);
-		.u-num{
-			display: inline-block;
-			height:40px;
-			line-height: 40px;
-			width: 60px;
-			background: url(../res/img/icons.png) no-repeat center;
-			background-position: -245px -90px;
-			text-indent: 12px;
-			font-size: 24px;
-  			font-family: "RenaultLife";
-  			color: rgb(0, 0, 0);
-  			font-weight: bold;
-			margin-right: 20px;
-		}
-	}
-	.s-la{
-		display: block;
-		font-size: 18px;
-  		font-family: "RenaultLife";
-  		color: rgb(51, 51, 51);
-		margin: 20px 0 10px 0;
-	}
-	.s-select{
-		height: 50px;
-		line-height: 50px;
-		width: 100%;
-		text-indent: 20px;
-	}
-	.u-downSrc{
-			position: absolute;
-			top: 160px;
-			right: 20px;
-			width: 40px;
-			height: 20px;
-			background: url(../res/img/icons.png) no-repeat center;
-			background-position: -175px -4px;
-	}
-	.u-txt{
-		display: inline-block;
-		width: 350px;
-		height: 50px;
-		line-height: 50px;
-		text-indent: 20px;
-		margin-right: 10px;
-		margin-bottom: 20px;
-	}
-	.u-tip{
-		display: inline-block;
-		height: 50px;
-		line-height: 50px;
-		width: 350px;
-		font-size: 14px;
-  		font-family: "SourceHanSansCN";
-  		color: rgb(153, 153, 153);
-	}
-	.m-serDetails{
-		width:350px;
-		float: left;
-		margin-bottom: 20px;
-		position: relative;
-		label{
-			font-size: 18px;
-  			font-family: "SourceHanSansCN";
-  			color: rgb(51, 51, 51);
-		}
-	}
-	.s-marginR{
-		margin-right: 18px;
-	}
-	.u-serDetail{
-		display: block;
-		clear: both;
-		font-size: 18px;
-  		font-family: "SourceHanSansCN";
-  		color: rgb(51, 51, 51);
-	}
-	.s-star{
-		float: left;
-		height: 20px;
-		padding-top: 5px;
-		margin-right: 10px;
-	}
-	.m-item{
-		padding: 20px ;
-		border: 1px solid #e2e2e2;
-		width: 718px;
-		::-webkit-scrollbar{
-			width: 20px;
-			height: 200px;
-			background-color: rgb(225,225,225);
-		}
-		::-webkit-scrollbar-thumb{
-			background-color: rgb(205,205,205);
-		}
-		.u-content{
-			padding-right: 10px;
-			height: 230px;
-			font-size: 12px;
-  			font-family: "SourceHanSansCN";
-  			color: rgb(153, 153, 153);
-  			line-height: 20px;
-			overflow-y: scroll;
-		}
-	}
-	.u-contact{
-		height: 60px;
-		line-height: 60px;
-		text-align: center;
-		border-top:1px dotted #e2e2e2;
-		border-bottom: 1px dotted #e2e2e2;
-		margin-top: 20px;
-		label{
-			display: inline-block;
-			margin-right: 20px;
-			font-size: 14px;
-  			font-family: "SourceHanSansCN";
-  			color: rgb(51, 51, 51);
-  			font-weight: bold;
-		}
-		span{
-			display: inline-block;
-			margin-right: 20px;
-			font-size: 14px;
-  			font-family: "SourceHanSansCN";
-  			color: rgb(153, 153, 153);
-		}
-		.u-yes{
-			display: inline-block;
-			width: 20px;
-			height: 15px;
-			background:url(../res/img/icons.png) no-repeat center;
-			background-position: -220px -37px;
-		}
-		.u-no{
-			display: inline-block;
-			width: 20px;
-			height: 15px;
-			background:url(../res/img/icons.png) no-repeat center;
-			background-position: -220px -23px;
-		}
-	}
-	.f-cb{
-		clear: both;
-	}
+.m-appForm {
+  border: 1px solid #e2e2e2;
+  border-bottom: none;
+  padding: 20px 15px;
+  position: relative;
+  .s-subtitle {
+    height: 40px;
+    line-height: 40px;
+    background: rgb(237, 237, 237);
+    font-size: 18px;
+    font-family: "SourceHanSansCN";
+    color: rgb(0, 0, 0);
+    .u-num {
+      display: inline-block;
+      height: 40px;
+      line-height: 40px;
+      width: 60px;
+      background: url(../res/img/icons.png) no-repeat center;
+      background-position: -245px -90px;
+      text-indent: 12px;
+      font-size: 24px;
+      font-family: "RenaultLife";
+      color: rgb(0, 0, 0);
+      font-weight: bold;
+      margin-right: 20px;
+    }
+  }
+  .s-la {
+    display: block;
+    font-size: 18px;
+    font-family: "RenaultLife";
+    color: rgb(51, 51, 51);
+    margin: 20px 0 10px 0;
+  }
+  .s-select {
+    height: 50px;
+    line-height: 50px;
+    width: 100%;
+    text-indent: 20px;
+  }
+  .u-downSrc {
+    position: absolute;
+    top: 160px;
+    right: 20px;
+    width: 40px;
+    height: 20px;
+    background: url(../res/img/icons.png) no-repeat center;
+    background-position: -175px -4px;
+  }
+  .u-txt {
+    display: inline-block;
+    width: 350px;
+    height: 50px;
+    line-height: 50px;
+    text-indent: 20px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+  }
+  .u-tip {
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+    width: 350px;
+    font-size: 14px;
+    font-family: "SourceHanSansCN";
+    color: rgb(153, 153, 153);
+  }
+  .m-serDetails {
+    width: 350px;
+    float: left;
+    margin-bottom: 20px;
+    position: relative;
+    label {
+      font-size: 18px;
+      font-family: "SourceHanSansCN";
+      color: rgb(51, 51, 51);
+    }
+  }
+  .s-marginR {
+    margin-right: 18px;
+  }
+  .u-serDetail {
+    display: block;
+    clear: both;
+    font-size: 18px;
+    font-family: "SourceHanSansCN";
+    color: rgb(51, 51, 51);
+  }
+  .s-star {
+    float: left;
+    height: 20px;
+    padding-top: 5px;
+    margin-right: 10px;
+  }
+  .m-item {
+    padding: 20px;
+    border: 1px solid #e2e2e2;
+    width: 718px;
+    ::-webkit-scrollbar {
+      width: 20px;
+      height: 200px;
+      background-color: rgb(225, 225, 225);
+    }
+    ::-webkit-scrollbar-thumb {
+      background-color: rgb(205, 205, 205);
+    }
+    .u-content {
+      padding-right: 10px;
+      height: 230px;
+      font-size: 12px;
+      font-family: "SourceHanSansCN";
+      color: rgb(153, 153, 153);
+      line-height: 20px;
+      overflow-y: scroll;
+    }
+  }
+  .u-contact {
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    border-top: 1px dotted #e2e2e2;
+    border-bottom: 1px dotted #e2e2e2;
+    margin-top: 20px;
+    label {
+      display: inline-block;
+      margin-right: 20px;
+      font-size: 14px;
+      font-family: "SourceHanSansCN";
+      color: rgb(51, 51, 51);
+      font-weight: bold;
+    }
+    span {
+      display: inline-block;
+      margin-right: 20px;
+      font-size: 14px;
+      font-family: "SourceHanSansCN";
+      color: rgb(153, 153, 153);
+    }
+    .u-yes {
+      display: inline-block;
+      width: 20px;
+      height: 15px;
+      background: url(../res/img/icons.png) no-repeat center;
+      background-position: -220px -37px;
+    }
+    .u-no {
+      display: inline-block;
+      width: 20px;
+      height: 15px;
+      background: url(../res/img/icons.png) no-repeat center;
+      background-position: -220px -23px;
+    }
+  }
+  .f-cb {
+    clear: both;
+  }
 }
-.m-appbtn{
-	height: 90px;
-	padding: 20px 140px;
-	border: 1px solid #e2e2e2;
-	border-top:1px dotted #e2e2e2;
-	.u-save{
-		margin-right: 20px;
-		background: rgb(255,205,0);
-		font-size: 16px;
-  		font-family: "SourceHanSansCN";
-  		color: rgb(0, 0, 0);
-  		font-weight: bold;
-	}
-	.u-reset{
-		background: rgb(102,102,102);
-		font-size: 16px;
-  		font-family: "SourceHanSansCN";
-  		color: #FFF;
-  		font-weight: bold;
-	}
-	.u-query{
-		background: rgb(255,205,0);
-		font-size: 16px;
-  		font-family: "SourceHanSansCN";
-  		color: rgb(0, 0, 0);
-  		font-weight: bold;
-		height: 50px;
-		padding-left: 50px;
-		letter-spacing: 20px;
-		text-align: center;
-		line-height: 50px;
-		cursor: pointer;
-		span {
-      		display: block;
-      		float: right;
-      		margin-top: 15px;
-      		margin-right:-25px;
-    	}
-	}
-	.s-btn{
-		display: inline-block;
-		width: 220px;
-		height: 50px;
-		padding-left: 20px;
-		text-align: center;
-		line-height: 50px;
-		cursor: pointer;
-		span {
-      		display: block;
-      		float: right;
-      		margin-top: 15px;
-      		margin-right: 5px;
-    	}
-	}
+.m-appbtn {
+  height: 90px;
+  padding: 20px 140px;
+  border: 1px solid #e2e2e2;
+  border-top: 1px dotted #e2e2e2;
+  .u-save {
+    margin-right: 20px;
+    background: rgb(255, 205, 0);
+    font-size: 16px;
+    font-family: "SourceHanSansCN";
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+  }
+  .u-reset {
+    background: rgb(102, 102, 102);
+    font-size: 16px;
+    font-family: "SourceHanSansCN";
+    color: #FFF;
+    font-weight: bold;
+  }
+  .u-query {
+    background: rgb(255, 205, 0);
+    font-size: 16px;
+    font-family: "SourceHanSansCN";
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    height: 50px;
+    padding-left: 50px;
+    letter-spacing: 20px;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+    span {
+      display: block;
+      float: right;
+      margin-top: 15px;
+      margin-right: -25px;
+    }
+  }
+  .s-btn {
+    display: inline-block;
+    width: 220px;
+    height: 50px;
+    padding-left: 20px;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+    span {
+      display: block;
+      float: right;
+      margin-top: 15px;
+      margin-right: 5px;
+    }
+  }
 }
-	.s-special{
-		color: #000;
-		font-weight: bolder;
-	}
-	.u-appTitle{
-		height: 60px;
-		text-align: left;
-		text-indent: 20px;
-		font-size: 18px;
-		font-family: "SourceHanSansCN";
-		color: rgb(0, 0, 0);
-		font-weight: bold;
-	}
+.s-special {
+  color: #000;
+  font-weight: bolder;
+}
+.u-appTitle {
+  height: 60px;
+  text-align: left;
+  text-indent: 20px;
+  font-size: 18px;
+  font-family: "SourceHanSansCN";
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
 
 /* lisen:myAppointment */
-.m-apptable{
-	margin-top: 40px;
-	border: 1px solid #e2e2e2;
-	.m-describe{
-		border-right: 1px solid #e2e2e2;
-		padding: 0;
-	}
-	.s-describe{
-		height: 60px;
-		line-height: 60px;
-		text-align: left;
-		font-size: 14px;
-  		font-family: "SourceHanSansCN";
-  		color: rgb(102, 102, 102);
-		font-weight: normal;
-		border-bottom: 1px solid #e2e2e2;
-		text-indent: 20px;
-		margin-bottom: 0;
-		.billing{
-			float: left;
-			width: 80px;
-			height: 40px;
-			margin-top: 5px;
-			margin-left: 20px;
-			background: url(../res/img/icons.png) no-repeat center;
-			background-position: -235px -140px;
-		}
-	}
-	.m-operation{
-		padding: 0;
-		.s-operation{
-			height: 60px;
-			text-align: center;
-			font-size: 14px;
-			font-family: "SourceHanSansCN";
-			color: rgb(102, 102, 102);
-			font-weight: normal;
-			border-bottom: 1px solid #e2e2e2;
-			margin-bottom: 0;
-			a{
-				display: inline-block;
-				height: 20px;
-				line-height: 20px;
-				margin-top: 20px;
-				width: 50px;
-				font-size: 14px;
-  				font-family: "SourceHanSansCN";
-				font-weight: 700;
-  				color: rgb(0, 0, 0);
-				cursor: pointer;
-			}
-			.vertical-line{
-				border-right: 1px solid #e2e2e2;
-			}
-		}
-	}
-	.s-last{
-		border-bottom: none !important;
-	}
+
+.m-apptable {
+  margin-top: 40px;
+  border: 1px solid #e2e2e2;
+  .m-describe {
+    border-right: 1px solid #e2e2e2;
+    padding: 0;
+  }
+  .s-describe {
+    height: 60px;
+    line-height: 60px;
+    text-align: left;
+    font-size: 14px;
+    font-family: "SourceHanSansCN";
+    color: rgb(102, 102, 102);
+    font-weight: normal;
+    border-bottom: 1px solid #e2e2e2;
+    text-indent: 20px;
+    margin-bottom: 0;
+    .billing {
+      float: left;
+      width: 80px;
+      height: 40px;
+      margin-top: 5px;
+      margin-left: 20px;
+      background: url(../res/img/icons.png) no-repeat center;
+      background-position: -235px -140px;
+    }
+  }
+  .m-operation {
+    padding: 0;
+    .s-operation {
+      height: 60px;
+      text-align: center;
+      font-size: 14px;
+      font-family: "SourceHanSansCN";
+      color: rgb(102, 102, 102);
+      font-weight: normal;
+      border-bottom: 1px solid #e2e2e2;
+      margin-bottom: 0;
+      a {
+        display: inline-block;
+        height: 20px;
+        line-height: 20px;
+        margin-top: 20px;
+        width: 50px;
+        font-size: 14px;
+        font-family: "SourceHanSansCN";
+        font-weight: 700;
+        color: rgb(0, 0, 0);
+        cursor: pointer;
+      }
+      .vertical-line {
+        border-right: 1px solid #e2e2e2;
+      }
+    }
+  }
+  .s-last {
+    border-bottom: none !important;
+  }
 }
+
 /* lisen:myAppointmentDetail */
-.s-gray{
-	background: rgb(240,240,240);
-	border: 1px solid #e2e2e2;
-	font-size: 14px;
-  	font-family: "SourceHanSansCN";
-  	color: rgb(102, 102, 102);
-	position: relative;
-	.u-down{
-		position: absolute;
-		display: block;
-		width: 20px;
-		height: 20px;
-		top: 20px;
-		right: 20px;
-	}
-	.glyphicon{
-		color: rgb(168,168,168);
-	}
+
+.s-gray {
+  background: rgb(240, 240, 240);
+  border: 1px solid #e2e2e2;
+  font-size: 14px;
+  font-family: "SourceHanSansCN";
+  color: rgb(102, 102, 102);
+  position: relative;
+  .u-down {
+    position: absolute;
+    display: block;
+    width: 20px;
+    height: 20px;
+    top: 20px;
+    right: 20px;
+  }
+  .glyphicon {
+    color: rgb(168, 168, 168);
+  }
 }
-.m-appbtn{
-	.u-goback{
-		width: 400px;
-		margin: 0 auto;
-		background: rgb(102,102,102);
-		font-size: 16px;
-  		font-family: "SourceHanSansCN";
-  		color: rgb(255, 255, 255);
-  		font-weight: bold;
-		padding-left: 40px;
-		margin-left: 30px;
-		cursor: pointer;
-	}
+.m-appbtn {
+  .u-goback {
+    width: 400px;
+    margin: 0 auto;
+    background: rgb(102, 102, 102);
+    font-size: 16px;
+    font-family: "SourceHanSansCN";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    padding-left: 40px;
+    margin-left: 30px;
+    cursor: pointer;
+  }
 }
 
 /* lisen:sfAcitvity */
-.m-position{
-	min-width: 750px;
-	height: 70px;
-	line-height: 70px;
-  	font-size: 16px;
-  	font-family: "SourceHanSansCN";
-  	color: rgb(102, 102, 102);
-	border: 1px solid #e2e2e2;
-	padding-left: 20px;
-	border-bottom: none;
-	margin-bottom:0;
+
+.m-position {
+  min-width: 750px;
+  height: 70px;
+  line-height: 70px;
+  font-size: 16px;
+  font-family: "SourceHanSansCN";
+  color: rgb(102, 102, 102);
+  border: 1px solid #e2e2e2;
+  padding-left: 20px;
+  border-bottom: none;
+  margin-bottom: 0;
 }
-.m-news{
-	margin: 40px 0 20px 0;
-	border: 1px solid #e2e2e2;
-	padding: 20px;
-	min-width: 750px;
-	.u-newsImg{
-		width: 30%;
-		margin-right: 20px;
-	}
-	.u-newsContent{
-		width: 67%;
-		p{
-			font-size: 14px;
-  			font-family: "SourceHanSansCN";
-  			color: rgb(102, 102, 102);
-			margin-bottom: 0;
-		}
-	}
+.m-news {
+  margin: 40px 0 20px 0;
+  border: 1px solid #e2e2e2;
+  padding: 20px;
+  min-width: 750px;
+  .u-newsImg {
+    width: 30%;
+    margin-right: 20px;
+  }
+  .u-newsContent {
+    width: 67%;
+    p {
+      font-size: 14px;
+      font-family: "SourceHanSansCN";
+      color: rgb(102, 102, 102);
+      margin-bottom: 0;
+    }
+  }
 }
-.m-page{
-	padding: 20px 0;
-	border-top: 1px dotted #e2e2e2;
-	border-bottom: 1px dotted #e2e2e2;
-	padding-left: 15%;
-	margin: 0 auto 20px 0;
-	min-width: 750px;
-	li{
-		float: left;
-	}
-	.f-page{
-		height: 50px;
-		width: 80px;
-		text-align: center;
-		line-height: 50px;
-		background: rgb(102,102,102);
-		margin-right: 10px;
-		a{
-			font-size: 16px;
-  			font-family: "SourceHanSansCN";
-			font-weight: bold;
-  			color: rgb(255, 255, 255);
-			cursor: pointer;
-		}
-		a:hover{
-			background: rgb(102,102,102);
-			font-size: 16px;
-  			font-family: "SourceHanSansCN";
-  			color: rgb(255, 255, 255);
-			cursor: pointer;
-		}
-	}
-	.f-num{
-		display: inline-block;
-		width: 50px;
-		height: 50px;
-		line-height: 50px;
-		text-align: center;
-		border: 1px solid #e2e2e2;
-		margin-right: 10px;
-		font-size: 16px;
-  		font-family: "RenaultLife";
-  		color: rgb(102, 102, 102);
-  		font-weight: bold;
-	}
-	a:hover{
-		font-size: 16px;
-  		font-family: "RenaultLife";
-  		color: rgb(0, 0, 0);
-  		font-weight: bold;
-		background:rgb(255,206,0);
-	}
+.m-page {
+  padding: 20px 0;
+  border-top: 1px dotted #e2e2e2;
+  border-bottom: 1px dotted #e2e2e2;
+  padding-left: 15%;
+  margin: 0 auto 20px 0;
+  min-width: 750px;
+  li {
+    float: left;
+  }
+  .f-page {
+    height: 50px;
+    width: 80px;
+    text-align: center;
+    line-height: 50px;
+    background: rgb(102, 102, 102);
+    margin-right: 10px;
+    a {
+      font-size: 16px;
+      font-family: "SourceHanSansCN";
+      font-weight: bold;
+      color: rgb(255, 255, 255);
+      cursor: pointer;
+    }
+    a:hover {
+      background: rgb(102, 102, 102);
+      font-size: 16px;
+      font-family: "SourceHanSansCN";
+      color: rgb(255, 255, 255);
+      cursor: pointer;
+    }
+  }
+  .f-num {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border: 1px solid #e2e2e2;
+    margin-right: 10px;
+    font-size: 16px;
+    font-family: "RenaultLife";
+    color: rgb(102, 102, 102);
+    font-weight: bold;
+  }
+  a:hover {
+    font-size: 16px;
+    font-family: "RenaultLife";
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    background: rgb(255, 206, 0);
+  }
 }
 
 /* lisen:sfAcitivityInf */
-.m-titleInf{
-	height: 100px;
-	border: 1px solid #e2e2e2;
-	border-bottom: none;
-	padding: 30px 20px 15px 20px;
-	position: relative;
-	h3{
-		margin-top: 0;
-		text-align: center;
-		font-size: 20px;
-  		font-family: "SourceHanSansCN";
-  		color: rgb(51, 51, 51);
-  		font-weight: bold;
-	}
-	span{
-		position: absolute;
-		top: 30px;
-		right: 20px;
-		font-size: 14px;
-  		font-family: "SourceHanSansCN";
-  		color: rgb(102, 102, 102);
-		i{
-			display: inline-block;
-			width: 20px;
-			height: 20px;
-			background: url(../res/img/icons.png) no-repeat center;
-			background-position: -185px -48px;
-		}
-	}
-	p{
-		text-align: center;
-		font-size: 14px;
-  		font-family: "SourceHanSansCN";
-  		color: rgb(102, 102, 102);
-  		font-weight: normal;
-	}
-}
-.m-tab{
-	border: 1px solid #e2e2e2;
-	border-top: 1px dotted #e2e2e2;
-	border-bottom:none;
-	padding: 20px;
-	.u-myTab{
-		margin-left: 30px;
 
-	}
+.m-titleInf {
+  height: 100px;
+  border: 1px solid #e2e2e2;
+  border-bottom: none;
+  padding: 30px 20px 15px 20px;
+  position: relative;
+  h3 {
+    margin-top: 0;
+    text-align: center;
+    font-size: 20px;
+    font-family: "SourceHanSansCN";
+    color: rgb(51, 51, 51);
+    font-weight: bold;
+  }
+  span {
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    font-size: 14px;
+    font-family: "SourceHanSansCN";
+    color: rgb(102, 102, 102);
+    i {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      background: url(../res/img/icons.png) no-repeat center;
+      background-position: -185px -48px;
+    }
+  }
+  p {
+    text-align: center;
+    font-size: 14px;
+    font-family: "SourceHanSansCN";
+    color: rgb(102, 102, 102);
+    font-weight: normal;
+  }
 }
-.s-lab{
-		font-size: 14px;
-  		font-family: "SourceHanSansCN";
-  		color: rgb(102, 102, 102);
-	}
-.s-content{
-		font-size: 14px;
-  		font-family: "SourceHanSansCN";
-  		color: #000;
-		font-weight: bold;
+.m-tab {
+  border: 1px solid #e2e2e2;
+  border-top: 1px dotted #e2e2e2;
+  border-bottom: none;
+  padding: 20px;
+  .u-myTab {
+    margin-left: 30px;
+  }
 }
-
-.m-actInf{
-	border: 1px solid #e2e2e2;
-	border-top: 1px dotted #e2e2e2;
-	border-bottom: none;
-	padding: 30px 20px;
-	.m-newsImg{
-		width: 100%;
-		margin-bottom: 20px;
-	}
-	.m-newsContent{
-		font-size: 14px;
-  		font-family: "SourceHanSansCN";
-  		color: rgb(102, 102, 102);
-		text-indent: 2em;
-		margin-bottom: 30px;
-	}
+.s-lab {
+  font-size: 14px;
+  font-family: "SourceHanSansCN";
+  color: rgb(102, 102, 102);
 }
-.m-actBtn{
-	border: 1px solid #e2e2e2;
-	border-top-style: dotted;
-	padding: 20px 0;
-	.u-goBack{
-		display: block;
-		height: 50px;
-		line-height: 50px;
-		width: 50%;
-		margin-left: 25%;
-		background: rgb(255,204,51);
-		text-align: center;
-		font-size: 16px;
-  		font-family: "SourceHanSansCN";
-  		color: rgb(0, 0, 0);
-  		font-weight: bold;
-		span{
-			margin-top: 15px;
-			margin-right: 10px;
-			font-weight: normal;
-		}
-	}
+.s-content {
+  font-size: 14px;
+  font-family: "SourceHanSansCN";
+  color: #000;
+  font-weight: bold;
+}
+.m-actInf {
+  border: 1px solid #e2e2e2;
+  border-top: 1px dotted #e2e2e2;
+  border-bottom: none;
+  padding: 30px 20px;
+  .m-newsImg {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .m-newsContent {
+    font-size: 14px;
+    font-family: "SourceHanSansCN";
+    color: rgb(102, 102, 102);
+    text-indent: 2em;
+    margin-bottom: 30px;
+  }
+}
+.m-actBtn {
+  border: 1px solid #e2e2e2;
+  border-top-style: dotted;
+  padding: 20px 0;
+  .u-goBack {
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    width: 50%;
+    margin-left: 25%;
+    background: rgb(255, 204, 51);
+    text-align: center;
+    font-size: 16px;
+    font-family: "SourceHanSansCN";
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    span {
+      margin-top: 15px;
+      margin-right: 10px;
+      font-weight: normal;
+    }
+  }
 }
 
 /* lisen:actRegis */
-.m-actInfRis{
-	border: 1px solid #e2e2e2;
-	padding: 40px 20px;
-	margin-bottom: 40px;
+
+.m-actInfRis {
+  border: 1px solid #e2e2e2;
+  padding: 40px 20px;
+  margin-bottom: 40px;
 }
-.s-risTitle{
-	height: 60px;
-	line-height: 60px;
+.s-risTitle {
+  height: 60px;
+  line-height: 60px;
 }
-.s-color{
-	color: rgb(191,191,191);
-	text-indent: 20px;
+.s-color {
+  color: rgb(191, 191, 191);
+  text-indent: 20px;
 }
-.s-alone{
-	width: 100% !important;
+.s-alone {
+  width: 100% !important;
 }
 
 /* lisen:venderActInf */
-.s-bottom{
-	border-bottom: 1px solid #e2e2e2;
+
+.s-bottom {
+  border-bottom: 1px solid #e2e2e2;
 }
 
 /* lisen:myVReplacement */
-.m-vRForm{
-	padding: 30px 20px;
-	border: 1px solid #e2e2e2;
-	border-bottom: none;
-	.s-VRLab{
-		display: block;
-		font-size: 18px;
-  		font-family: "SourceHanSansCN";
-  		color: rgb(51, 51, 51);
-		margin-bottom: 10px;
-	}
-}
-/* lisen:vehicleIng */
-.m-vtable{
-	margin-top: 40px;
-	padding: 20px;
-	border: 1px solid #e2e2e2;
-	.u-handle{
-		font-size: 16px;
-  		font-family: "SourceHanSansCN";
-  		color: rgb(0, 0, 0);
-		span{
-			float: right;
-			font-size: 14px;
-  			font-family: "SourceHanSansCN";
-  			color: rgb(153, 153, 153);
-		}
-		i{
-			display: inline-block;
-			height: 20px;
-			width: 20px;
-			background: url(../res/img/icons.png) no-repeat center;
-			background-position: -219px -17px;
-		}
-	}
-	.u-tr{
-			border: 1px solid #e2e2e2;
-			border-right: none;
-		p{
-			height:50px;
-			line-height: 50px;
-			text-align: center;
-			margin-bottom: 0;
-			border-right: 1px solid #e2e2e2;
-		}
-	}
+
+.m-vRForm {
+  padding: 30px 20px;
+  border: 1px solid #e2e2e2;
+  border-bottom: none;
+  .s-VRLab {
+    display: block;
+    font-size: 18px;
+    font-family: "SourceHanSansCN";
+    color: rgb(51, 51, 51);
+    margin-bottom: 10px;
+  }
 }
 
-.s-selColor{
-	background: rgb(255,204,51) !important;
-	color: #000 !important;
+/* lisen:vehicleIng */
+
+.m-vtable {
+  margin-top: 40px;
+  padding: 20px;
+  border: 1px solid #e2e2e2;
+  .u-handle {
+    font-size: 16px;
+    font-family: "SourceHanSansCN";
+    color: rgb(0, 0, 0);
+    span {
+      float: right;
+      font-size: 14px;
+      font-family: "SourceHanSansCN";
+      color: rgb(153, 153, 153);
+    }
+    i {
+      display: inline-block;
+      height: 20px;
+      width: 20px;
+      background: url(../res/img/icons.png) no-repeat center;
+      background-position: -219px -17px;
+    }
+  }
+  .u-tr {
+    border: 1px solid #e2e2e2;
+    border-right: none;
+    p {
+      height: 50px;
+      line-height: 50px;
+      text-align: center;
+      margin-bottom: 0;
+      border-right: 1px solid #e2e2e2;
+    }
+  }
 }
-.noVLine{
-	border-right: none !important;
+.s-selColor {
+  background: rgb(255, 204, 51) !important;
+  color: #000 !important;
 }
-.m-VRInf{
-	height: 60px;
-	text-indent: 20px;
-	line-height: 60px;
-	margin-bottom: 0;
-	font-size: 14px;
-  	font-family: "SourceHanSansCN";
-  	color: rgb(102, 102, 102);
-	.tSituation{
-		float: left;
-		width: 80px;
-		height: 40px;
-		background: url(../res/img/icons.png) no-repeat center;
-		background-position: -235px -140px;
-		margin-left: 20px;
-		margin-top: 5px;
-	}
+.noVLine {
+  border-right: none !important;
+}
+.m-VRInf {
+  height: 60px;
+  text-indent: 20px;
+  line-height: 60px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-family: "SourceHanSansCN";
+  color: rgb(102, 102, 102);
+  .tSituation {
+    float: left;
+    width: 80px;
+    height: 40px;
+    background: url(../res/img/icons.png) no-repeat center;
+    background-position: -235px -140px;
+    margin-left: 20px;
+    margin-top: 5px;
+  }
 }
 
 /* lisen:vehicleInf */
@@ -1527,100 +1536,101 @@ ul,li{
 .m-carousel-imgs {
   padding: 10px 40px;
 }
-.m-btns{
-  .btn{
+.m-btns {
+  .btn {
     margin-right: 20px;
   }
 }
-.pager{
+.pager {
   border-top: 1px dashed #e2e2e2;
   border-bottom: 1px dashed #e2e2e2;
   padding: 20px 0;
   margin: 0;
-  li{
+  li {
     margin-right: 10px;
-    a{
+    a {
       border-radius: 0;
       padding: 15px;
       margin-bottom: 10px;
     }
-    a.page{
+    a.page {
       color: @color6;
       font-weight: bold;
     }
-    a.grey{
+    a.grey {
       background-color: @color6;
       color: #fff;
     }
   }
-  li.active{
-    a{
-    background-color: @main-c;
-    border-color: @main-c;
-    color: #000;
+  li.active {
+    a {
+      background-color: @main-c;
+      border-color: @main-c;
+      color: #000;
     }
   }
 }
-.m-info-content{
+.m-info-content {
   border: 1px solid #e2e2e2;
   padding: 20px;
-  .content{
+  .content {
     height: 200px;
     overflow-y: scroll;
     line-height: 24px;
     font-size: 14px;
     color: @color6;
   }
-  textarea{
+  textarea {
     border: none;
     box-shadow: none;
     padding: 0;
   }
 }
-.form-group{
-  label{
+.form-group {
+  label {
     font-size: 18px;
     font-weight: normal;
     color: #333;
     margin-bottom: 10px;
-    span.b{
+    span.b {
       vertical-align: middle;
       margin-right: 5px;
     }
   }
 }
-.m-table-list{
+.m-table-list {
   border: 1px solid #ddd;
-  dl{
+  dl {
     border-bottom: 1px solid #ddd;
     margin-bottom: 0;
-    &:last-child{
+    &:last-child {
       border: none;
     }
   }
-  dt,dd{
+  dt,
+  dd {
     display: inline-block;
     *display: inline;
-    zoom:1;
+    zoom: 1;
     vertical-align: middle;
     padding: 15px 8px;
   }
-  dt{
+  dt {
     border-right: 1px solid #ddd;
   }
-  .icon{
+  .icon {
     border: 1px solid #333;
     padding: 8px;
     position: relative;
     margin-right: 10px;
-    i{
+    i {
       position: absolute;
       top: 12px;
       right: -8px;
     }
   }
-  .left{
-    p{
+  .left {
+    p {
       width: 500px;
       overflow: hidden;
       white-space: nowrap;
@@ -1629,10 +1639,10 @@ ul,li{
       padding: 9px;
     }
   }
-  .right{
+  .right {
     text-align: center;
     width: 220px;
-    .btn{
+    .btn {
       color: #000;
       font-weight: bold;
     }
