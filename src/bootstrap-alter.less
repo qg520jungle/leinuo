@@ -55,9 +55,6 @@ textarea {
     display: block;
   }
 }
-.panel {
-  border-radius: 0;
-}
 .table {
   th {
     text-align: center;
@@ -77,5 +74,21 @@ textarea {
         margin-left: 8px;
       }
     }
+  }
+}
+.panel {
+  border-radius: 0;
+  .panel-body{
+    padding: 0;
+  }
+}
+.panel-footer{
+  background: #fff;
+  border-top: 1px dashed #e2e2e2;
+  .more{
+    display: block;
+    padding: 12px;
+    text-align: right;
+    color: @color6;
   }
 }
