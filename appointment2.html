@@ -9,7 +9,7 @@
   <!--  <meta name="viewport" id="viewport" content="width=400">-->
   <meta name="keywords" content="车辆增购" />
   <meta name="description" content="雷诺会员车辆增购" />
-  <title>车辆增购详情</title>
+  <title>预约服务</title>
   <link href="res/bootstrap.css" rel="stylesheet">
   <link href="res/global.css" rel="stylesheet">
   <script src="res/bootstrap.min.js"></script>
@@ -79,66 +79,107 @@
         <div class="col-md-8 col-md-push-4">
           <div class="s-box">
             <div class="u-crumbs">
-              首页<span class="m">&gt;</span>精彩活动<span class="m">&gt;</span><span class="b">车辆增购</span>
+              首页<span class="m">&gt;</span>会员服务<span class="m">&gt;</span><span class="b">预约服务</span>
             </div>
-            <div class="u-title u-title-1">车辆增购</div>
+            <div class="u-title u-title-1">预约服务</div>
             <form class="clearfix">
               <div class="col-xs-12">
                 <div class="u-title-th">
                   <span class="th">
                  01
                  <i class="u-icon u-icon-th"></i>
-               </span> 选择车系和经销商
+               </span> 选择预约店
                 </div>
               </div>
-              <div class="col-md-6 form-group">
-                <label><span class="b">*</span>请选择车系</label>
-                <select class="form-control" readonly>
-                  <option>科雷傲</option>
+              <div class="col-md-12 form-group">
+                <label><span class="b">*</span>预约专营店</label>
+                <select class="form-control" >
+                  <option>花都店</option>
                 </select>
               </div>
-              <div class="col-md-6 form-group">
-                <label><span class="b">*</span>所在省份</label>
-                <select class="form-control" readonly>
-                  <option>北京</option>
-                </select>
-              </div>
-              <div class="col-md-6 col-xs-12 form-group">
-                <label><span class="b">*</span>选择经销商</label>
-                <select class="form-control" readonly>
-                  <option>北京长久博宇汽车销售服务有限公司</option>
-                </select>
-              </div>
+
               <div class="col-xs-12">
                 <div class="u-title-th">
                   <span class="th">
                  02
                  <i class="u-icon u-icon-th"></i>
-               </span> 选择车系和经销商
+               </span> 填写车辆和服务信息
                 </div>
               </div>
-              <div class="col-md-6 col-xs-12 form-group">
-                <label><span class="b">*</span>姓名</label>
-                <input class="form-control" value='小张' readonly/>
+              <div class="col-md-12 col-xs-12 form-group">
+
+                <label><span class="b">*</span>车辆号码</label>
+                <div>
+                <input class="form-control u-input-half f-ib" value='' />
+                <span class="f-ib">格式：粤BYXXXX</span>
+                </div>
               </div>
+
               <div class="col-md-6 col-xs-12 form-group">
-                <label><span class="b">*</span>性别</label>
-                <select class="form-control" readonly>
-                  <option>男</option>
+                <label><span class="b"></span>汽车车型</label>
+                <select class="form-control" >
+                  <option>请选择</option>
+                  <option>雷诺</option>
                 </select>
               </div>
               <div class="col-md-6 col-xs-12 form-group">
-                <label><span class="b">*</span>联系电话</label>
-                <input class="form-control" value='13800138000' readonly/>
+                <label><span class="b">*</span>车辆品牌</label>
+                <select class="form-control" >
+                  <option>请选择</option>
+                  <option>雷诺</option>
+                </select>
+              </div>
+              <div class="col-md-6 col-xs-12 form-group">
+                <label><span class="b">*</span>服务类型</label>
+                <select class="form-control" >
+                  <option>请选择</option>
+                  <option></option>
+                </select>
+              </div>
+              <div class="col-md-6 col-xs-12 form-group">
+                <label><span class="b"></span>预约时间</label>
+                <select class="form-control" >
+                  <option>请选择</option>
+                  <option></option>
+                </select>
               </div>
               <div class="col-md-12 col-xs-12 form-group">
-                <label>备注</label>
-                <textarea class="form-control" name="" id="" cols="10" rows="10" readonly></textarea>
+                <label>服务描述</label>
+                <textarea class="form-control" name="" id="" cols="10" rows="10" ></textarea>
+              </div>
+             <div class="u-contact col-md-12 col-xs-12 form-group">
+					<label>是否联系</label>
+					<span><i class="u-icon u-yes"></i>是</span>
+					<span><i class="u-icon u-no"></i>否</span>
+				</div>
+              <div class="col-xs-12">
+                <div class="u-title-th">
+                  <span class="th">
+                 03
+                 <i class="u-icon u-icon-th"></i>
+               </span> 填写联系人信息
+                </div>
+              </div>
+              <div class="col-md-6 col-xs-12 form-group">
+                <label><span class="b">*</span>联系人</label>
+                 <input class="form-control" placeholder='朱云飞' />
+              </div>
+              <div class="col-md-6 col-xs-12 form-group">
+                <label><span class="b">*</span>手机号码</label>
+                 <input class="form-control" placeholder='13800138000' />
+              </div>
+              <div class="col-md-6 col-xs-12 form-group">
+                <label><span class="b"></span>固定号码</label>
+                 <input class="form-control" placeholder='010-80870010' />
+              </div>
+              <div class="col-md-6 col-xs-12 form-group">
+                <label><span class="b"></span>电子邮箱</label>
+                 <input class="form-control" placeholder='13800138000@163.com' />
               </div>
             </form>
             <div class="m-btn-wrap m-btns">
               <button type="submit" class="btn btn-app btn-lg btn-b btn-m">保存<span class="glyphicon glyphicon-menu-right"></span></button>
-              <button type="submit" class="btn btn-grey btn-lg btn-b btn-m">返回<span class="glyphicon glyphicon-menu-right"></span></button>
+              <button type="submit" class="btn btn-grey btn-lg btn-b btn-m">重置<span class="glyphicon glyphicon-menu-right"></span></button>
             </div>
           </div>
         </div>
