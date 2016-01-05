@@ -7,9 +7,9 @@
   <meta name="renderer" content="webkit">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <!--  <meta name="viewport" id="viewport" content="width=400">-->
-  <meta name="keywords" content="车辆增购" />
-  <meta name="description" content="雷诺会员车辆增购" />
-  <title>预约服务</title>
+  <meta name="keywords" content="车辆置换" />
+  <meta name="description" content="雷诺会员车辆置换" />
+  <title>我的车辆置换</title>
   <link href="res/bootstrap.css" rel="stylesheet">
   <link href="res/global.css" rel="stylesheet">
   <script src="res/bootstrap.min.js"></script>
@@ -79,22 +79,28 @@
         <div class="col-md-8 col-md-push-4">
           <div class="s-box">
             <div class="u-crumbs">
-              首页<span class="m">&gt;</span>会员服务<span class="m">&gt;</span><span class="b">预约服务</span>
+              首页<span class="m">&gt;</span>精彩活动<span class="m">&gt;</span><span class="b">车辆置换</span>
             </div>
-            <div class="u-title u-title-1">预约服务</div>
+            <div class="u-title u-title-1">二手车信息</div>
             <form class="clearfix">
               <div class="col-xs-12">
                 <div class="u-title-th">
                   <span class="th">
                  01
                  <i class="u-icon u-icon-th"></i>
-               </span> 选择预约店
+               </span> 二手车信息
                 </div>
               </div>
-              <div class="col-md-12 form-group">
-                <label><span class="b">*</span>预约专营店</label>
-                <select class="form-control" readonly >
-                  <option>花都店</option>
+              <div class="col-md-6 form-group">
+                <label><span class="b">*</span>车型</label>
+                <select class="form-control" readonly>
+                  <option>科雷傲</option>
+                </select>
+              </div>
+              <div class="col-md-6 form-group">
+                <label><span class="b">*</span>购买日期</label>
+                <select class="form-control" readonly>
+                  <option>2015-02-25</option>
                 </select>
               </div>
 
@@ -103,85 +109,56 @@
                   <span class="th">
                  02
                  <i class="u-icon u-icon-th"></i>
-               </span> 填写车辆和服务信息
+               </span> 选择车系和经销商
                 </div>
               </div>
-              <div class="col-md-12 col-xs-12 form-group">
-
-                <label><span class="b">*</span>车辆号码</label>
-                <div>
-                <input class="form-control u-input-half f-ib" value=''  readonly/>
-                <span class="f-ib">格式：粤BYXXXX</span>
-                </div>
-              </div>
-
               <div class="col-md-6 col-xs-12 form-group">
-                <label><span class="b"></span>汽车车型</label>
-                <select class="form-control" readonly >
-                  <option>请选择</option>
-                  <option>雷诺</option>
-                </select>
+                <label><span class="b">*</span>车系</label>
+                <input class="form-control" value='雷诺' readonly/>
               </div>
               <div class="col-md-6 col-xs-12 form-group">
-                <label><span class="b">*</span>车辆品牌</label>
-                <select class="form-control"  readonly>
-                  <option>请选择</option>
-                  <option>雷诺</option>
-                </select>
-              </div>
-              <div class="col-md-6 col-xs-12 form-group">
-                <label><span class="b">*</span>服务类型</label>
-                <select class="form-control"  readonly>
-                  <option>请选择</option>
-                  <option></option>
-                </select>
-              </div>
-              <div class="col-md-6 col-xs-12 form-group">
-                <label><span class="b"></span>预约时间</label>
-                <select class="form-control"  readonly>
-                  <option>请选择</option>
-                  <option></option>
+                <label><span class="b">*</span>所在省份</label>
+                <select class="form-control" readonly>
+                  <option>北京</option>
                 </select>
               </div>
               <div class="col-md-12 col-xs-12 form-group">
-                <label>服务描述</label>
-                <textarea class="form-control" name="" id="" cols="10" rows="10"  readonly>
+                <label><span class="b">*</span>经销商</label>
+                <select class="form-control" readonly>
+                  <option>北京中汽雷日汽车有限公公司</option>
+                </select>
+              </div>
+               <div class="col-xs-12">
+                <div class="u-title-th">
+                  <span class="th">
+                 03
+                 <i class="u-icon u-icon-th"></i>
+               </span> 个人信息
+                </div>
+              </div>
+              <div class="col-md-6 col-xs-12 form-group">
+                <label><span class="b">*</span>姓名</label>
+                <input class="form-control" value='朱云飞' readonly/>
+              </div>
+              <div class="col-md-6 col-xs-12 form-group">
+                <label><span class="b">*</span>性别</label>
+                 <select class="form-control" readonly>
+                  <option>男</option>
+                  <option>女</option>
+                </select>
+              </div>
+              <div class="col-md-6 col-xs-12 form-group">
+                <label><span class="b">*</span>联系电话</label>
+                <input class="form-control" value='13800013800' readonly/>
+              </div>
+              <div class="col-md-12 col-xs-12 form-group">
+                <label>备注</label>
+                <textarea class="form-control" name="" id="" cols="10" rows="10" readonly>
                   DRAC通过网站登录数据表和内容点击情况来设计网站，找出网页内容受欢迎的原因，进一步完善网站使其对访问者更加实用。所保存下来网站登录数据是一种序列文件，通常情况下将不会通过分析数据表来识别访问者个人身份。但是，如果发现有人试图侵占、干扰或破坏本网站，我们将通过网站登录数据表将肇事者的身份查出来
 			DRAC通过网站登录数据表和内容点击情况来设计网站，找出网页内容受欢迎的原因，进一步完善网站使其对访问者更加实用。所保存下来网站登录数据是一种序列文件，通常情况下将不会通过分析数据表来识别访问者个人身份。但是，如果发现有人试图侵占、干扰或破坏本网站，我们将通过网站登录数据表将肇事者的身份查出来
 			DRAC通过网站登录数据表和内容点击情况来设计网站，找出网页内容受欢迎的原因，进一步完善网站使其对访问者更加实用。所保存下来网站登录数据是一种序列文件，通常情况下将不会通过分析数据表来识别访问者个人身份。但是，如果发现有人试图侵占、干扰或破坏本网站，我们将通过网站登录数据表将肇事者的身份查出来
 			DRAC通过网站登录数据表和内容点击情况来设计网站，找出网页内容受欢迎的原因，进一步完善网站使其对访问者更加实用。所保存下来网站登录数据是一种序列文件，通常情况下将不会通过分析数据表来识别访问者个人身份。但是，如果发现有人试图侵占、干扰或破坏本网站，我们将通过网站登录数据表将肇事者的身份查出来
                 </textarea>
-              </div>
-              <div class="col-md-12 col-xs-12 form-group">
-              	<div class="m-recommend">
-                  <label>是否联系</label>
-										<a class="u-yes"><i></i>是</a>
-										<a class="u-no"><i></i>否</a>
-              	</div>
-              </div>
-              <div class="col-xs-12">
-                <div class="u-title-th">
-                  <span class="th">
-                 03
-                 <i class="u-icon u-icon-th"></i>
-               </span> 填写联系人信息
-                </div>
-              </div>
-              <div class="col-md-6 col-xs-12 form-group">
-                <label><span class="b">*</span>联系人</label>
-                 <input class="form-control" placeholder='朱云飞'  readonly/>
-              </div>
-              <div class="col-md-6 col-xs-12 form-group">
-                <label><span class="b">*</span>手机号码</label>
-                 <input class="form-control" placeholder='13800138000' readonly />
-              </div>
-              <div class="col-md-6 col-xs-12 form-group">
-                <label><span class="b"></span>固定号码</label>
-                 <input class="form-control" placeholder='010-80870010' readonly />
-              </div>
-              <div class="col-md-6 col-xs-12 form-group">
-                <label><span class="b"></span>电子邮箱</label>
-                 <input class="form-control" placeholder='13800138000@163.com' readonly />
               </div>
             </form>
             <div class="m-btn-wrap m-btns">
