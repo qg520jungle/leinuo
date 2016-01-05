@@ -7,9 +7,9 @@
   <meta name="renderer" content="webkit">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <!--  <meta name="viewport" id="viewport" content="width=400">-->
-  <meta name="keywords" content="个人详情" />
-  <meta name="description" content="个人详情" />
-  <title>个人详情</title>
+  <meta name="keywords" content="会员转会" />
+  <meta name="description" content="会员转会" />
+  <title>会员转会</title>
   <link href="res/bootstrap.css" rel="stylesheet">
   <link href="res/global.css" rel="stylesheet">
   <script src="lib/jquery.js"></script>
@@ -84,58 +84,38 @@
         <div class="col-md-8 col-md-push-4">
           <div class="s-box">
             <div class="u-crumbs">
-              首页<span class="m">&gt;</span><span class="b">个人信息</span>
+              首页<span class="m">&gt;</span>我的个人信息<span class="m">&gt;</span><span class="b">会员转会</span>
             </div>
-            <div class="u-title u-title-1">客户信息</div>
+            <div class="u-title u-title-1">会员信息</div>
+            <div class="m-infoList m-infoList-wrap clearfix">
+              <ul class="col-md-6">
+                <li>姓名：<b>朱云飞</b></li>
+                <li>会员卡号：<b>D235000086</b></li>
+                <li>会员卡级别：<b>会员银卡VIP</b></li>
+                <li>所属专营店名称：<b>广州风日</b></li>
+              </ul>
+              <ul class="col-md-6">
+                <li>当前厂家可用积分：<b>3050</b></li>
+                <li>当前可用专营店积分：<b>3050</b></li>
+                <li>所属专营店编码：<b>1620</b></li>
+              </ul>
+            </div>
             <form class="clearfix">
-              <div class="col-md-4 col-xs-12 form-group">
-                <label>姓名</label>
-                <input type="text" value="朱云飞" class="form-control">
-              </div>
-              <div class="col-md-4 col-xs-12 form-group">
-                <label>性别</label>
+              <div class="col-md-6 col-xs-12 form-group">
+                <label>选择车辆</label>
                 <select class="form-control">
-                  <option>男</option>
+                  <option>LGB9908658089</option>
                 </select>
               </div>
-              <div class="col-md-4 col-xs-12 form-group">
-                <label>Email</label>
-                <input type="text" value="" class="form-control">
-              </div>
-              <div class="col-md-4 col-xs-12 form-group">
-                <label>常用电话</label>
-                <input type="text" value="13800138000" class="form-control">
-              </div>
-              <div class="col-md-4 col-xs-12 form-group">
-                <label>移动电话</label>
-                <input type="text" value="13800138000" class="form-control">
-              </div>
-              <div class="col-md-4 col-xs-12 form-group">
-                <label>办公电话</label>
+              <div class="col-md-6 col-xs-12 form-group">
+                <label><span class="b">*</span>联系电话</label>
                 <input type="text" value="13800138000" class="form-control">
               </div>
               <div class="col-md-12 col-xs-12 form-group">
-                <label>地址</label>
-                <div class="row">
-                  <div class="col-md-2">
-                    <select class="form-control">
-                      <option>浙江</option>
-                    </select>
-                  </div>
-                  <div class="col-md-2 f-np-l">
-                    <select class="form-control">
-                      <option>杭州</option>
-                    </select>
-                  </div>
-                  <div class="col-md-2 f-np-l">
-                    <select class="form-control">
-                      <option>余杭区</option>
-                    </select>
-                  </div>
-                  <div class="col-md-6">
-                    <input type="text" value="浙江杭州余杭区塘西镇乐苑新村8栋3单元" class="form-control">
-                  </div>
-                </div>
+                <label>转会专营店</label>
+                <select class="form-control">
+                  <option>请选择</option>
+                </select>
               </div>
               <div class="col-md-12 col-xs-12 form-group">
                 <label>验证码</label>
@@ -150,49 +130,33 @@
               </div>
             </form>
             <div class="m-btn-wrap">
-              <button type="submit" class="btn btn-app btn-lg btn-b btn-l">保存<span class="glyphicon glyphicon-menu-right"></span></button>
+              <button type="submit" class="btn btn-app btn-lg btn-l">申请转会<span class="glyphicon glyphicon-menu-right"></span></button>
             </div>
           </div>
 
-          <div class="panel panel-default f-mt-lg">
-            <div class="u-title u-title-1">会员卡信息</div>
-            <div class="panel-body m-infoList">
-              <ul class="col-md-4">
-                <li>会员卡号：<b>D23050000086</b></li>
-                <li>卡级别：<b>会员银卡VIP</b></li>
-                <li>升级积分：<b>100</b></li>
-              </ul>
-              <ul class="col-md-4">
-                <li>专营店累计积分：<b>3050</b></li>
-                <li>专营店可用积分：<b>3050</b></li>
-                <li>厂家可用积分：<b>1620</b></li>
-              </ul>
-              <ul class="col-md-4">
-                <li>启用日期：<b>2012 -11 -01</b></li>
-                <li>失效日期：<b>2017 -11 -01</b></li>
-                <li>厂家累计积分：<b>2500</b></li>
-              </ul>
-            </div>
-            <div class="panel-footer">
-              <a class="more" href="###" data-toggle="modal" data-target="#detailOfPoint">查看详情<span class="glyphicon glyphicon-menu-right"></span></a>
-            </div>
-          </div>
-
-          <div class="panel panel-default f-mt-lg">
-            <div class="u-title u-title-1">服务信息</div>
-            <div class="panel-body m-list-news-wrap">
-              <div class="m-list-news clearfix">
-                <div class="item"><a href="###">再续 115 年赛道传奇</a></div>
-                <div class="item"><a href="###">雷诺设计哲学的革新之作，雷诺设计哲学的革新之作，雷诺设计哲学的革新之作，雷诺设计哲学的革新之作，</a></div>
-                <div class="item z-last"><a href="###">雷诺设计哲学的革新之作，雷诺设计哲学的革新之作，雷诺设计哲学的革新之作，雷诺设计哲学的革新之作</a></div>
-              </div>
-            </div>
-            <div class="panel-footer">
-              <a class="more" href="###">会员服务使用明细<span class="glyphicon glyphicon-menu-right"></span></a>
+          <div class="m-table-list-wrap f-mt-lg">
+            <div class="u-title u-title-1">会员转会记录</div>
+              <div class="m-table-list">
+                <dl>
+                  <dt class="left">
+                   <p><span class="pending icon">待审批<i class="u-icon u-icon-greydan"></i></span>
+                您于2015年08月13日申请由杭州万风店转会到广州风日店！您于2015年08月13日申请由杭州万风店转会到广州风日店！</p>
+                  </dt>
+                  <dd class="right">
+                    <a href="###" class="btn btn-link">详情<i class="glyphicon glyphicon-menu-right"></i></a>
+                  </dd>
+                </dl>
+                <dl>
+                  <dt class="left">
+                   <p><span class="icon">已完成<i class="u-icon u-icon-dan"></i></span>
+                您于2015年08月13日申请由杭州万风店转会到广州风日店！</p>
+                  </dt>
+                  <dd class="right">
+                    <a href="###" class="btn btn-link">详情<i class="glyphicon glyphicon-menu-right"></i></a>
+                  </dd>
+                </dl>
             </div>
           </div>
-
-
         </div>
         <div class="col-md-4 col-md-pull-8">
           <div class="row">
@@ -322,81 +286,6 @@
       </div>
     </div>
   </div>
-  <!-- Modal -->
-<div class="modal fade" id="detailOfPoint" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="u-icon u-icon-close"></i></span></button>
-        <h4 class="modal-title" id="myModalLabel">积分详情</h4>
-      </div>
-      <div class="modal-body m-fix-height">
-        <table class="table table-bordered table-hover">
-          <caption class="u-table-tit">厂家积分明细<i class="u-icon u-icon-ug"></i></caption>
-          <tr>
-            <th>积分名称</th>
-            <th>积分额度</th>
-            <th>启用日期</th>
-            <th>停用日期</th>
-            <th>积分用途</th>
-          </tr>
-          <tr>
-            <td>厂家可用积分</td>
-            <td>1636</td>
-            <td>2016/01/01</td>
-            <td>2016/01/01</td>
-            <td>全国服务项目均可使用</td>
-          </tr>
-          <tr>
-            <td>厂家可用积分</td>
-            <td>1636</td>
-            <td>2016/01/01</td>
-            <td>2016/01/01</td>
-            <td>全国服务项目均可使用</td>
-          </tr>
-          <tr>
-            <td>厂家可用积分</td>
-            <td>1636</td>
-            <td>2016/01/01</td>
-            <td>2016/01/01</td>
-            <td>全国服务项目均可使用</td>
-          </tr>
-        </table>
-        <table class="table table-bordered table-hover">
-          <caption class="u-table-tit">专营店积分明细<i class="u-icon u-icon-ug"></i></caption>
-          <tr>
-            <th>积分名称</th>
-            <th>积分额度</th>
-            <th>启用日期</th>
-            <th>停用日期</th>
-            <th>积分用途</th>
-          </tr>
-          <tr>
-            <td>厂家可用积分</td>
-            <td>1636</td>
-            <td>2016/01/01</td>
-            <td>2016/01/01</td>
-            <td>全国服务项目均可使用</td>
-          </tr>
-          <tr>
-            <td>厂家可用积分</td>
-            <td>1636</td>
-            <td>2016/01/01</td>
-            <td>2016/01/01</td>
-            <td>全国服务项目均可使用</td>
-          </tr>
-          <tr>
-            <td>厂家可用积分</td>
-            <td>1636</td>
-            <td>2016/01/01</td>
-            <td>2016/01/01</td>
-            <td>全国服务项目均可使用</td>
-          </tr>
-        </table>
-      </div>
-    </div>
-  </div>
-</div>
 </body>
 
 </html>

@@ -1782,11 +1782,16 @@ li {
     padding: 8px;
     position: relative;
     margin-right: 10px;
+    color: #333;
     i {
       position: absolute;
       top: 12px;
       right: -8px;
     }
+  }
+  .pending{
+    background-color: #ddd;
+    border-color: #ddd;
   }
   .left {
     p {
@@ -1796,11 +1801,12 @@ li {
       text-overflow: ellipsis;
       margin-bottom: 0;
       padding: 9px;
+      color: #999;
+      font-weight:normal;
     }
   }
   .right {
     text-align: center;
-    width: 220px;
     .btn {
       color: #000;
       font-weight: bold;
@@ -1820,4 +1826,35 @@ li {
 .m-fix-height{
   height: 500px;
   overflow-y: scroll;
+}
+.m-table-list-wrap{
+  border:1px solid #ddd;
+  .m-table-list{
+    border: none;
+    p{
+      width: 630px;
+    }
+  }
+}
+.m-infoList-wrap{
+  padding: 30px 0;
+  border-bottom: 1px dashed #ddd;
+}
+.m-media-wrap{
+  padding:20px 15px;
+  .media{
+    margin-bottom: 20px;
+  }
+  .media-heading{
+    border-top: 1px solid #ddd;
+    padding: 10px 0 15px 0;
+    p{
+      line-height: 24px;
+    }
+  }
+  .more{
+    display: block;
+    text-align: right;
+    color: #333;
+  }
 }
