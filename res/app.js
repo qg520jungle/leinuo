@@ -87,5 +87,19 @@ $('#accordion').on('hidden.bs.collapse', function () {
   $('.panel-title i').removeClass('glyphicon-menu-down').addClass('glyphicon-menu-right');
 });
 
+$('.u-stars i').each(function(index,el){
+  $(el).on('click',function(){
+    $(el).prevAll('i').addClass('s-color-y');
+    $(el).addClass('s-color-y');
+    $(el).nextAll('i').removeClass('s-color-y');
+  }).on('mouseover',function(){
+    $('.u-start'+(index+1)).show();
+  }).on('mouseout',function(){
+    $('.m-tooltip').hide();
+  });
+});
+     $(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
 
 });

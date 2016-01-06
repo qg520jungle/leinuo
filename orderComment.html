@@ -7,17 +7,16 @@
   <meta name="renderer" content="webkit">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <!--  <meta name="viewport" id="viewport" content="width=400">-->
-  <meta name="keywords" content="个人详情" />
-  <meta name="description" content="个人详情" />
-  <title>个人详情</title>
+  <meta name="keywords" content="我的订单" />
+  <meta name="description" content="我的订单" />
+  <title>订单点评</title>
   <link href="res/bootstrap.css" rel="stylesheet">
   <link href="res/global.css" rel="stylesheet">
   <script src="lib/jquery.js"></script>
-  <!--[if lte IE 9]>
-  <script src="lib/respond.min.js"></script>
-  <script src="lib/html5shiv-printshiv.min.js"></script>
-  <![endif]-->
+  <script src="lib/respond.js"></script>
   <script src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/app.js"></script>
+
   <link type="image/x-icon" href="favicon.ico" rel="shortcut icon" />
   <link href="favicon.ico" rel="bookmark icon" />
 </head>
@@ -74,126 +73,120 @@
       </div>
     </div>
   </div>
-  <div class="m-mid-title">
-    <span>我的个人信息</span>
-    <span class="u-icon u-arc"></span>
-  </div>
   <div class="g-body">
     <div class="container">
       <div class="row">
         <div class="col-md-8 col-md-push-4">
-          <div class="s-box">
+          <div class="s-box f-cb">
             <div class="u-crumbs">
-              首页<span class="m">&gt;</span><span class="b">个人信息</span>
+              首页<span class="m">&gt;</span>我的个人信息<span class="m">&gt;</span>我的订单<span class="m">&gt;</span><span class="b">订单礼品点评</span>
             </div>
-            <div class="u-title u-title-1">客户信息</div>
-            <form class="clearfix">
+            <div class="u-title u-title-1">订单礼品点评</div>
+             <form class="clearfix">
+              <div class="col-md-12">
               <div class="col-md-4 col-xs-12 form-group">
-                <label>姓名</label>
-                <input type="text" value="朱云飞" class="form-control">
-              </div>
-              <div class="col-md-4 col-xs-12 form-group">
-                <label>性别</label>
-                <select class="form-control">
-                  <option>男</option>
+                <label>订单日期从</label>
+                <select class="form-control" >
+                  <option>--请选择--</option>
+                  <option>2014-03-10</option>
                 </select>
               </div>
               <div class="col-md-4 col-xs-12 form-group">
-                <label>Email</label>
-                <input type="text" value="" class="form-control">
+                <label>至</label>
+                <select class="form-control" >
+                  <option>--请选择--</option>
+                  <option>2014-03-10</option>
+                </select>
               </div>
               <div class="col-md-4 col-xs-12 form-group">
-                <label>常用电话</label>
-                <input type="text" value="13800138000" class="form-control">
+                <label>点评状态</label>
+                <select class="form-control" >
+                  <option>--请选择--</option>
+                </select>
               </div>
-              <div class="col-md-4 col-xs-12 form-group">
-                <label>移动电话</label>
-                <input type="text" value="13800138000" class="form-control">
-              </div>
-              <div class="col-md-4 col-xs-12 form-group">
-                <label>办公电话</label>
-                <input type="text" value="13800138000" class="form-control">
-              </div>
-              <div class="col-md-12 col-xs-12 form-group">
-                <label>地址</label>
-                <div class="row">
-                  <div class="col-md-2">
-                    <select class="form-control">
-                      <option>浙江</option>
-                    </select>
-                  </div>
-                  <div class="col-md-2 f-np-l">
-                    <select class="form-control">
-                      <option>杭州</option>
-                    </select>
-                  </div>
-                  <div class="col-md-2 f-np-l">
-                    <select class="form-control">
-                      <option>余杭区</option>
-                    </select>
-                  </div>
-                  <div class="col-md-6">
-                    <input type="text" value="浙江杭州余杭区塘西镇乐苑新村8栋3单元" class="form-control">
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-12 col-xs-12 form-group">
-                <label>验证码</label>
-                <div class="row">
-                  <div class="col-md-4">
-                    <input type="text" class="form-control">
-                  </div>
-                  <div class="col-md-2 u-identify f-np-l">
-                    <img src="http://lorempixel.com/110/48/" alt="验证码">
-                  </div>
-                </div>
               </div>
             </form>
-            <div class="m-btn-wrap">
-              <button type="submit" class="btn btn-app btn-lg btn-b btn-l">保存<span class="glyphicon glyphicon-menu-right"></span></button>
+           <div class="m-btn-wrap m-btns  col-xs-12 ">
+              <button type="submit" class="btn btn-app btn-lg  btn-p">保存<span class="glyphicon glyphicon-menu-right"></span></button>
+              <button type="submit" class="btn btn-app btn-lg  btn-p">查询<span class="glyphicon glyphicon-menu-right"></span></button>
+              <button type="submit" class="btn btn-grey btn-lg  btn-p">重置<span class="glyphicon glyphicon-menu-right"></span></button>
             </div>
           </div>
 
-          <div class="panel panel-default f-mt-lg">
-            <div class="u-title u-title-1">会员卡信息</div>
-            <div class="panel-body m-infoList">
-              <ul class="col-md-4">
-                <li>会员卡号：<b>D23050000086</b></li>
-                <li>卡级别：<b>会员银卡VIP</b></li>
-                <li>升级积分：<b>100</b></li>
-              </ul>
-              <ul class="col-md-4">
-                <li>专营店累计积分：<b>3050</b></li>
-                <li>专营店可用积分：<b>3050</b></li>
-                <li>厂家可用积分：<b>1620</b></li>
-              </ul>
-              <ul class="col-md-4">
-                <li>启用日期：<b>2012 -11 -01</b></li>
-                <li>失效日期：<b>2017 -11 -01</b></li>
-                <li>厂家累计积分：<b>2500</b></li>
-              </ul>
-            </div>
-            <div class="panel-footer">
-              <a class="more" href="###" data-toggle="modal" data-target="#detailOfPoint">查看详情<span class="glyphicon glyphicon-menu-right"></span></a>
-            </div>
-          </div>
+                <div class="s-box f-cb f-mt-lg">
+                  <div class="col-md-12">
+                   <table class="table table-hover table-striped table-bordered text-center f-mt-lg">
+                   <tbody>
+                    <tr>
+                      <td><i class="u-icon u-no"></i></td>
+<!--                     -->
+                      <th>礼品名称</th>
+                      <th class="s-color">高档汽车钥匙扣</th>
+                    </tr>
+                    <tr>
+                      <td rowspan="5" colspan="1" class="s-va-m"><i class="u-icon u-yes"></i></td>
 
-          <div class="panel panel-default f-mt-lg">
-            <div class="u-title u-title-1">服务信息</div>
-            <div class="panel-body m-list-news-wrap">
-              <div class="m-list-news clearfix">
-                <div class="item"><a href="###">再续 115 年赛道传奇</a></div>
-                <div class="item"><a href="###">雷诺设计哲学的革新之作，雷诺设计哲学的革新之作，雷诺设计哲学的革新之作，雷诺设计哲学的革新之作，</a></div>
-                <div class="item z-last"><a href="###">雷诺设计哲学的革新之作，雷诺设计哲学的革新之作，雷诺设计哲学的革新之作，雷诺设计哲学的革新之作</a></div>
-              </div>
+                          <td>订单号</td>
+                          <td>CPAPV1500910N4559</td>
+
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>订单日期</td>
+                      <td>2015-09-18</td>
+                    </tr>
+                    <tr>
+                      <td>点评状态</td>
+                      <td>未点评</td>
+                    </tr>
+                    <tr>
+                      <td>心得</td>
+                      <td><textarea name="" id="" cols="60" rows="4" placeholder="请输入你的心得"></textarea></td>
+                    </tr>
+                    <tr>
+                      <td>评分</td>
+                      <td class="u-stars f-pr">
+                        <i class="s-color2 glyphicon glyphicon-star"></i>
+                        <i class="s-color2 glyphicon glyphicon-star"></i>
+                        <i class="s-color2 glyphicon glyphicon-star"></i>
+                        <i class="s-color2 glyphicon glyphicon-star"></i>
+                        <i class="s-color2 glyphicon glyphicon-star"></i>
+                        <div class="m-tooltip u-start1">
+                          <span class="u-icon u-tri-up u-up"></span>
+                          <span class="s-fw-b u-bb-f">1分 满意</span>
+                          <span>质量不错，与描述的基本一致，还挺满意的！</span>
+                        </div>
+                        <div class="m-tooltip u-start2">
+                          <span class="u-icon u-tri-up u-up"></span>
+                          <span class="s-fw-b u-bb-f">2分 满意</span>
+                          <span>质量不错，与描述的基本一致，还挺满意的！</span>
+                        </div>
+                        <div class="m-tooltip u-start3">
+                          <span class="u-icon u-tri-up u-up"></span>
+                          <span class="s-fw-b u-bb-f">3分 满意</span>
+                          <span>质量不错，与描述的基本一致，还挺满意的！</span>
+                        </div>
+                        <div class="m-tooltip u-start4">
+                          <span class="u-icon u-tri-up u-up"></span>
+                          <span class="s-fw-b u-bb-f">4分 满意</span>
+                          <span>质量不错，与描述的基本一致，还挺满意的！</span>
+                        </div>
+                        <div class="m-tooltip u-start5">
+                          <span class="u-icon u-tri-up u-up"></span>
+                          <span class="s-fw-b u-bb-f">5分 满意</span>
+                          <span>质量不错，与描述的基本一致，还挺满意的！</span>
+                        </div>
+                      </td>
+                    </tr>
+              </tbody>
+            </table>
             </div>
-            <div class="panel-footer">
-              <a class="more" href="###">会员服务使用明细<span class="glyphicon glyphicon-menu-right"></span></a>
-            </div>
-          </div>
 
 
         </div>
+
+
+       </div>
         <div class="col-md-4 col-md-pull-8">
           <div class="row">
             <div class="col-xs-12">
@@ -322,81 +315,6 @@
       </div>
     </div>
   </div>
-  <!-- Modal -->
-<div class="modal fade" id="detailOfPoint" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="u-icon u-icon-close"></i></span></button>
-        <h4 class="modal-title" id="myModalLabel">积分详情</h4>
-      </div>
-      <div class="modal-body m-fix-height">
-        <table class="table table-bordered table-hover">
-          <caption class="u-table-tit">厂家积分明细<i class="u-icon u-icon-ug"></i></caption>
-          <tr>
-            <th>积分名称</th>
-            <th>积分额度</th>
-            <th>启用日期</th>
-            <th>停用日期</th>
-            <th>积分用途</th>
-          </tr>
-          <tr>
-            <td>厂家可用积分</td>
-            <td>1636</td>
-            <td>2016/01/01</td>
-            <td>2016/01/01</td>
-            <td>全国服务项目均可使用</td>
-          </tr>
-          <tr>
-            <td>厂家可用积分</td>
-            <td>1636</td>
-            <td>2016/01/01</td>
-            <td>2016/01/01</td>
-            <td>全国服务项目均可使用</td>
-          </tr>
-          <tr>
-            <td>厂家可用积分</td>
-            <td>1636</td>
-            <td>2016/01/01</td>
-            <td>2016/01/01</td>
-            <td>全国服务项目均可使用</td>
-          </tr>
-        </table>
-        <table class="table table-bordered table-hover">
-          <caption class="u-table-tit">专营店积分明细<i class="u-icon u-icon-ug"></i></caption>
-          <tr>
-            <th>积分名称</th>
-            <th>积分额度</th>
-            <th>启用日期</th>
-            <th>停用日期</th>
-            <th>积分用途</th>
-          </tr>
-          <tr>
-            <td>厂家可用积分</td>
-            <td>1636</td>
-            <td>2016/01/01</td>
-            <td>2016/01/01</td>
-            <td>全国服务项目均可使用</td>
-          </tr>
-          <tr>
-            <td>厂家可用积分</td>
-            <td>1636</td>
-            <td>2016/01/01</td>
-            <td>2016/01/01</td>
-            <td>全国服务项目均可使用</td>
-          </tr>
-          <tr>
-            <td>厂家可用积分</td>
-            <td>1636</td>
-            <td>2016/01/01</td>
-            <td>2016/01/01</td>
-            <td>全国服务项目均可使用</td>
-          </tr>
-        </table>
-      </div>
-    </div>
-  </div>
-</div>
 </body>
 
 </html>
