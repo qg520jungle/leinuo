@@ -7,9 +7,9 @@
   <meta name="renderer" content="webkit">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <!--  <meta name="viewport" id="viewport" content="width=400">-->
-  <meta name="keywords" content="代办详情" />
-  <meta name="description" content="代办详情" />
-  <title>礼品兑换</title>
+  <meta name="keywords" content="我的订单" />
+  <meta name="description" content="我的订单" />
+  <title>订单提交</title>
   <link href="res/bootstrap.css" rel="stylesheet">
   <link href="res/global.css" rel="stylesheet">
   <script src="lib/jquery.js"></script>
@@ -79,42 +79,83 @@
         <div class="col-md-8 col-md-push-4">
           <div class="s-box">
             <div class="u-crumbs">
-              首页<span class="m">&gt;</span><span class="b">业务办理</span>
+              首页<span class="m">&gt;</span>我的个人信息<span class="m">&gt;</span>我的购物车<span class="m">&gt;</span><span class="b">提交订单</span>
             </div>
-            <div class="u-title u-title-1">我的礼品车</div>
+            <div class="u-title u-title-1">提交订单</div>
+
             <div class="col-md-12">
              <table class="table table-hover table-striped table-bordered text-center f-mt-lg">
+             <tbody>
               <tr>
-                <th>礼品图片</th>
                 <th>礼品名称</th>
-                <th>礼品数量</th>
-                <th>兑换数量</th>
                 <th>所需积分</th>
+                <th>兑换数量</th>
+                <th>合计</th>
                 <th>发货方</th>
-                <th>操作</th>
+                <th>备注</th>
               </tr>
               <tr>
-                <td class="u-td"><img src="./upload/sp/gift1.png" alt="" class="u-img-td"></td>
                 <td class="u-td">高档汽车钥匙扣</td>
-                <td class="u-td">20</td>
-                <td class="u-td"><span class="u-bg-grey ">1</span></td>
                 <td class="u-td">200</td>
-                <td class="u-td">厂家邮寄</td>
-                <td class="u-td"><i class="u-icon u-plus"> </i>
-                <i class="u-icon u-minus"></i>
-                <i class="u-icon u-delete"></i></td>
+                <td class="u-td"><span class="">2</span></td>
+                <td class="u-td">400</td>
+                <td class="u-td">厂家(邮寄)</td>
+                <td class="u-td"><input type="text" class="u-input s-bkcolor-grey" placeholder="请输入备注"></td>
               </tr>
-
+              </tbody>
             </table>
 </div>
-              <div class="m-btn-wrap">
+      <div class="col-md-12">
+        <div class="m-btn-wrap">
               <p>
                 合计 &nbsp;&nbsp;&nbsp;礼品数量：<span>10</span> &nbsp;&nbsp;&nbsp;所需积分：<span>2000</span>
               </p>
+        </div>
+      </div>
+       <div class="col-md-12">
+        <div class="m-btn-wrap">
+                <span class="s-fsz24 s-fw-b">邮寄信息</span>
+        </div>
+      </div>
+       <div class="f-cb"></div>
+        <div class="form-group m-wrap">
+          <label class="col-md-12 col-xs-12" ><span class="b">*</span>邮寄地址</label>
+
+           <div class="col-md-6 col-xs-12 form-group f-cb" >
+            <select class=" form-control u-input-three" >
+              <option>浙江</option>
+            </select>
+            <select class=" form-control u-input-three"  >
+              <option>杭州</option>
+            </select>
+            <select class=" form-control u-input-three" >
+              <option>余杭</option>
+            </select>
             </div>
+            <div class="col-md-6 col-xs-12 form-group">
+              <input type="text" value="浙江汉子余杭区某地" class="form-control" >
+            </div>
+        </div>
+           <div class="col-md-4 col-xs-12 form-group">
+                <label><span class="b">*</span>邮政编码</label>
+                <input type="text" value="" class="form-control" placeholder="311100">
+              </div>
+              <div class="col-md-4 col-xs-12 form-group">
+                <label><span class="b">*</span>联系人</label>
+                <input type="text" value="" class="form-control"  placeholder="朱云飞">
+              </div>
+               <div class="col-md-4 col-xs-12 form-group">
+                <label><span class="b">*</span>联系电话</label>
+                <input type="text" value="" class="form-control f-cb"  placeholder="13800138000">
+              </div>
+              <div class="col-md-12 col-xs-12 form-group f-cb">
+                <label>备注</label>
+                <textarea class="form-control" name="" id="" cols="10" rows="10" ></textarea>
+              </div>
+
+              <div class="f-cb"></div>
             <div class="m-btn-wrap">
-                <button type="submit" class="btn btn-app btn-lg  btn-m">继续选择<span class="glyphicon glyphicon-menu-right"></span></button>
-                <button type="submit" class="btn btn-app btn-lg btn-m">确认兑换<span class="glyphicon glyphicon-menu-right"></span></button>
+                <button type="submit" class="btn btn-app btn-lg  btn-l">保存<span class="glyphicon glyphicon-menu-right"></span></button>
             </div>
 
           </div>
