@@ -178,6 +178,21 @@ li {
   line-height: 40px;
   text-align: center;
   font-weight: bold;
+  .a{
+    display: inline-block;
+    *display: inline;
+    zoom:1;
+    padding: 0 10px;
+    position: relative;
+    color: #000;
+    font-size: 10px;
+  }
+  .u-arc{
+      position: absolute;
+      left: 50%;
+      bottom: -20px;
+      margin-left: -12px;
+    }
 }
 .m-header {
   margin-top: 35px;
@@ -473,9 +488,6 @@ li {
 .m-personalPad {
   background-color: @color3;
 }
-.m-mid-title {
-  position: relative;
-}
 .m-contentMain {
   .content {
     width: 800px;
@@ -651,12 +663,8 @@ li {
   position: relative;
   @media(min-width: 992px) {
     .u-arc {
-      position: absolute;
-      top: 100%;
-      left: 49%;
       height: 20px;
       width: 30px;
-      background: url(../res/img/icons.png) no-repeat center;
       background-position: -182px -3px;
     }
     .u-arrow {
@@ -1856,5 +1864,10 @@ li {
     display: block;
     text-align: right;
     color: #333;
+  }
+}
+.m-banner{
+  img{
+    width: 100%;
   }
 }
