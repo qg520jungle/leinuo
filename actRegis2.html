@@ -207,7 +207,7 @@
                   <li class="row">
                     <span class="tt">厂家可用积分：</span>
                     <span class="cc">1636</span>
-                    <a><span class="u-link-right ">积分详情<i class="glyphicon glyphicon-menu-right u-icon-menu_d"></i></span></a>
+                    <a class="more" href="###" data-toggle="modal" data-target="#detailOfPoint"><span class="u-link-right ">积分详情<i class="glyphicon glyphicon-menu-right u-icon-menu_d"></i></span></a>
                   </li>
                   <li class="row">
                     <span class="tt">专营店可用积分：</span><span class="cc">100</span>
@@ -224,173 +224,289 @@
                   <li class="row">
                     <span class="tt">成功推荐购车数：</span><span class="cc">0</span>
                   </li>
+                  <li class="row u-news">
+                    <a><i class="u-icon u-icon-tips"></i>尊敬的管理员，您有一条保养信息...</a>
+
+                  </li>
                   <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-                    <li class="panel panel-default row tips_down">
-                      <div class="panel-heading" role="tab" id="headingOne">
-                        <h4 class="panel-title">
+  <li class="panel panel-default row tips_down">
+    <div class="panel-heading" role="tab" id="headingOne">
+      <h4 class="panel-title">
         <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-        我的个人信息  <i class="glyphicon glyphicon-menu-down u-icon-menu_d"></i>
+        我的个人信息  <i class="glyphicon glyphicon-menu-right u-icon-menu_d"></i>
         </a>
       </h4>
-                      </div>
-                      <div id="collapseOne" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingOne">
-                        <div class="panel-body">
-                          <ul class="col-ms-6 col-md-6">
-                            <li>
-                              <a>个人详情</a>
-                            </li>
-                            <li>
-                              <a>会员转会</a>
-                            </li>
-                            <li>
-                              <a>我的车辆</a>
-                            </li>
-                            <li>
-                              <a>安全问题设置</a>
-                            </li>
-                            <li>
-                              <a>积分查询</a>
-                            </li>
-                            <li>
-                              <a>修改密码</a>
-                            </li>
-                            <li>
-                              <a>试乘试驾登记</a>
-                            </li>
-                            <li>
-                              <a>我的试乘试驾</a>
-                            </li>
-                            <li>
-                              <a>我的购物车</a>
-                            </li>
-                          </ul>
-                          <ul class="col-ms-6 col-md-6">
-                            <li>
-                              <a>我的订单</a>
-                            </li>
-                            <li>
-                              <a>我参与的活动</a>
-                            </li>
-                            <li>
-                              <a>历时精彩活动</a>
-                            </li>
-                            <li>
-                              <a>我的代办业务</a>
-                            </li>
-                            <li>
-                              <a>我的预约服务</a>
-                            </li>
-                            <li>
-                              <a>我的推荐购车</a>
-                            </li>
-                            <li>
-                              <a>我的车辆增购</a>
-                            </li>
-                            <li>
-                              <a>我的车辆置换</a>
-                            </li>
+    </div>
+    <div id="collapseOne" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingOne">
+      <div class="panel-body">
+        <ul class="list-left">
+                      <li>
+                        <a>个人详情</a>
+                      </li>
+                      <li>
+                        <a>会员转会</a>
+                      </li>
+                      <li>
+                        <a>我的车辆</a>
+                      </li>
+                      <li>
+                        <a>安全问题设置</a>
+                      </li>
+                      <li>
+                        <a>积分查询</a>
+                      </li>
+                       <li>
+                        <a>修改密码</a>
+                      </li>
+                      <li>
+                        <a>试乘试驾登记</a>
+                      </li>
+                      <li>
+                        <a>我的试乘试驾</a>
+                      </li>
+                      <li>
+                        <a>我的购物车</a>
+                      </li>
+                    </ul>
+        <ul  class="list-right">
+                       <li>
+                        <a>我的订单</a>
+                      </li>
+                      <li>
+                        <a>我参与的活动</a>
+                      </li>
+                      <li>
+                        <a>历时精彩活动</a>
+                      </li>
+                      <li>
+                        <a>我的代办业务</a>
+                      </li>
+                       <li>
+                        <a>我的预约服务</a>
+                      </li>
+                      <li>
+                        <a>我的推荐购车</a>
+                      </li>
+                      <li>
+                        <a>我的车辆增购</a>
+                      </li>
+                      <li>
+                        <a>我的车辆置换</a>
+                      </li>
 
-                          </ul>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="panel panel-default row tips_down">
-                      <div class="panel-heading" role="tab" id="headingTwo">
-                        <h4 class="panel-title">
-        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">代办、预约服务 <i class="glyphicon glyphicon-menu-down u-icon-menu_d"></i>
+                    </ul>
+      </div>
+    </div>
+  </li>
+  <li class="panel panel-default row tips_down">
+    <div class="panel-heading" role="tab" id="headingTwo">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">代办、预约服务 <i class="glyphicon glyphicon-menu-right u-icon-menu_d"></i>
         </a>
       </h4>
-                      </div>
-                      <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-                        <div class="panel-body">
-                          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                        </div>
-                      </div>
-                    </li>
-                    <li class="panel panel-default row tips_down">
-                      <div class="panel-heading" role="tab" id="headingThree">
-                        <h4 class="panel-title">
+    </div>
+    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+      <div class="panel-body">
+             <ul class="list-left">
+                      <li>
+                        <a>个人详情</a>
+                      </li>
+                      <li>
+                        <a>会员转会</a>
+                      </li>
+                      <li>
+                        <a>我的车辆</a>
+                      </li>
+                      <li>
+                        <a>安全问题设置</a>
+                      </li>
+                      <li>
+                        <a>积分查询</a>
+                      </li>
+                       <li>
+                        <a>修改密码</a>
+                      </li>
+                      <li>
+                        <a>试乘试驾登记</a>
+                      </li>
+                      <li>
+                        <a>我的试乘试驾</a>
+                      </li>
+                      <li>
+                        <a>我的购物车</a>
+                      </li>
+                    </ul>
+        <ul  class="list-right">
+                       <li>
+                        <a>我的订单</a>
+                      </li>
+                      <li>
+                        <a>我参与的活动</a>
+                      </li>
+                      <li>
+                        <a>历时精彩活动</a>
+                      </li>
+                      <li>
+                        <a>我的代办业务</a>
+                      </li>
+                       <li>
+                        <a>我的预约服务</a>
+                      </li>
+                      <li>
+                        <a>我的推荐购车</a>
+                      </li>
+                      <li>
+                        <a>我的车辆增购</a>
+                      </li>
+                      <li>
+                        <a>我的车辆置换</a>
+                      </li>
+
+                    </ul>
+
+      </div>
+    </div>
+  </li>
+  <li class="panel panel-default row tips_down">
+    <div class="panel-heading" role="tab" id="headingThree">
+      <h4 class="panel-title">
         <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-          置换、推荐、增购<i class="glyphicon glyphicon-menu-down u-icon-menu_d"></i>
+          置换、推荐、增购<i class="glyphicon glyphicon-menu-right u-icon-menu_d"></i>
         </a>
       </h4>
-                      </div>
-                      <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-                        <div class="panel-body">
-                          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                        </div>
-                      </div>
-                    </li>
-                    <li class="panel panel-default row tips_down">
-                      <div class="panel-heading" role="tab" id="headingFour">
-                        <h4 class="panel-title">
-        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
-        我的个人信息  <i class="glyphicon glyphicon-menu-down u-icon-menu_d"></i>
-        </a>
-      </h4>
-                      </div>
-                      <div id="collapseFour" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingFour">
-                        <div class="panel-body">
-                          <ul class="list-left">
-                            <li>
-                              <a>个人详情</a>
-                            </li>
-                            <li>
-                              <a>会员转会</a>
-                            </li>
-                            <li>
-                              <a>我的车辆</a>
-                            </li>
-                            <li>
-                              <a>安全问题设置</a>
-                            </li>
-                            <li>
-                              <a>积分查询</a>
-                            </li>
-                            <li>
-                              <a>修改密码</a>
-                            </li>
-                            <li>
-                              <a>试乘试驾登记</a>
-                            </li>
-                            <li>
-                              <a>我的试乘试驾</a>
-                            </li>
-                            <li>
-                              <a>我的购物车</a>
-                            </li>
-                          </ul>
-                          <ul class="list-right">
-                            <li>
-                              <a>我的订单</a>
-                            </li>
-                            <li>
-                              <a>我参与的活动</a>
-                            </li>
-                            <li>
-                              <a>历时精彩活动</a>
-                            </li>
-                            <li>
-                              <a>我的代办业务</a>
-                            </li>
-                            <li>
-                              <a>我的预约服务</a>
-                            </li>
-                            <li>
-                              <a>我的推荐购车</a>
-                            </li>
-                            <li>
-                              <a>我的车辆增购</a>
-                            </li>
-                            <li>
-                              <a>我的车辆置换</a>
-                            </li>
+    </div>
+    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+      <div class="panel-body">
+            <ul class="list-left">
+                      <li>
+                        <a>个人详情</a>
+                      </li>
+                      <li>
+                        <a>会员转会</a>
+                      </li>
+                      <li>
+                        <a>我的车辆</a>
+                      </li>
+                      <li>
+                        <a>安全问题设置</a>
+                      </li>
+                      <li>
+                        <a>积分查询</a>
+                      </li>
+                       <li>
+                        <a>修改密码</a>
+                      </li>
+                      <li>
+                        <a>试乘试驾登记</a>
+                      </li>
+                      <li>
+                        <a>我的试乘试驾</a>
+                      </li>
+                      <li>
+                        <a>我的购物车</a>
+                      </li>
+                    </ul>
+        <ul  class="list-right">
+                       <li>
+                        <a>我的订单</a>
+                      </li>
+                      <li>
+                        <a>我参与的活动</a>
+                      </li>
+                      <li>
+                        <a>历时精彩活动</a>
+                      </li>
+                      <li>
+                        <a>我的代办业务</a>
+                      </li>
+                       <li>
+                        <a>我的预约服务</a>
+                      </li>
+                      <li>
+                        <a>我的推荐购车</a>
+                      </li>
+                      <li>
+                        <a>我的车辆增购</a>
+                      </li>
+                      <li>
+                        <a>我的车辆置换</a>
+                      </li>
 
-                          </ul>
-                        </div>
-                      </div>
-                    </li>
-                  </div>
+                    </ul>
+
+      </div>
+    </div>
+  </li>
+   <li class="panel panel-default row tips_down">
+    <div class="panel-heading" role="tab" id="headingFour">
+      <h4 class="panel-title">
+        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+        积分兑换专区  <i class="glyphicon glyphicon-menu-right u-icon-menu_d"></i>
+        </a>
+      </h4>
+    </div>
+    <div id="collapseFour" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingFour">
+      <div class="panel-body">
+        <ul class="list-left">
+                      <li>
+                        <a>个人详情</a>
+                      </li>
+                      <li>
+                        <a>会员转会</a>
+                      </li>
+                      <li>
+                        <a>我的车辆</a>
+                      </li>
+                      <li>
+                        <a>安全问题设置</a>
+                      </li>
+                      <li>
+                        <a>积分查询</a>
+                      </li>
+                       <li>
+                        <a>修改密码</a>
+                      </li>
+                      <li>
+                        <a>试乘试驾登记</a>
+                      </li>
+                      <li>
+                        <a>我的试乘试驾</a>
+                      </li>
+                      <li>
+                        <a>我的购物车</a>
+                      </li>
+                    </ul>
+        <ul  class="list-right">
+                       <li>
+                        <a>我的订单</a>
+                      </li>
+                      <li>
+                        <a>我参与的活动</a>
+                      </li>
+                      <li>
+                        <a>历时精彩活动</a>
+                      </li>
+                      <li>
+                        <a>我的代办业务</a>
+                      </li>
+                       <li>
+                        <a>我的预约服务</a>
+                      </li>
+                      <li>
+                        <a>我的推荐购车</a>
+                      </li>
+                      <li>
+                        <a>我的车辆增购</a>
+                      </li>
+                      <li>
+                        <a>我的车辆置换</a>
+                      </li>
+
+                    </ul>
+      </div>
+    </div>
+  </li>
+</div>
 
                 </ul>
 
@@ -497,7 +613,81 @@
       </div>
     </div>
   </div>
-
+  <!-- Modal -->
+<div class="modal fade" id="detailOfPoint" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="u-icon u-icon-close"></i></span></button>
+        <h4 class="modal-title" id="myModalLabel">积分详情</h4>
+      </div>
+      <div class="modal-body m-fix-height">
+        <table class="table table-bordered table-hover">
+          <caption class="u-table-tit">厂家积分明细<i class="u-icon u-icon-ug"></i></caption>
+          <tr>
+            <th>积分名称</th>
+            <th>积分额度</th>
+            <th>启用日期</th>
+            <th>停用日期</th>
+            <th>积分用途</th>
+          </tr>
+          <tr>
+            <td>厂家可用积分</td>
+            <td>1636</td>
+            <td>2016/01/01</td>
+            <td>2016/01/01</td>
+            <td>全国服务项目均可使用</td>
+          </tr>
+          <tr>
+            <td>厂家可用积分</td>
+            <td>1636</td>
+            <td>2016/01/01</td>
+            <td>2016/01/01</td>
+            <td>全国服务项目均可使用</td>
+          </tr>
+          <tr>
+            <td>厂家可用积分</td>
+            <td>1636</td>
+            <td>2016/01/01</td>
+            <td>2016/01/01</td>
+            <td>全国服务项目均可使用</td>
+          </tr>
+        </table>
+        <table class="table table-bordered table-hover">
+          <caption class="u-table-tit">专营店积分明细<i class="u-icon u-icon-ug"></i></caption>
+          <tr>
+            <th>积分名称</th>
+            <th>积分额度</th>
+            <th>启用日期</th>
+            <th>停用日期</th>
+            <th>积分用途</th>
+          </tr>
+          <tr>
+            <td>厂家可用积分</td>
+            <td>1636</td>
+            <td>2016/01/01</td>
+            <td>2016/01/01</td>
+            <td>全国服务项目均可使用</td>
+          </tr>
+          <tr>
+            <td>厂家可用积分</td>
+            <td>1636</td>
+            <td>2016/01/01</td>
+            <td>2016/01/01</td>
+            <td>全国服务项目均可使用</td>
+          </tr>
+          <tr>
+            <td>厂家可用积分</td>
+            <td>1636</td>
+            <td>2016/01/01</td>
+            <td>2016/01/01</td>
+            <td>全国服务项目均可使用</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
 </body>
 <script>
   $(function() {
