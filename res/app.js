@@ -1,10 +1,4 @@
 $(document).ready(function(){
-    $("#slidershow a.left").click(function(){
-        $(".carousel").carousel("prev");
-    });
-    $("#slidershow a.right").click(function(){
-        $(".carousel").carousel("next");
-    });
 	$('.lv1').each(function(index, el) {
 		$(el).on('mouseover',function(){
 			$(el).find('.drop-menu').show();
