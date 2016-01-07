@@ -18,7 +18,7 @@
   <script src="lib/html5shiv-printshiv.min.js"></script>
   <![endif]-->
   <script src="res/bootstrap.min.js"></script>
-  <!--  <script type="text/javascript" src="res/app.js"></script>-->
+  <script type="text/javascript" src="res/app.js"></script>
 
   <link type="image/x-icon" href="favicon.ico" rel="shortcut icon" />
   <link href="favicon.ico" rel="bookmark icon" />
@@ -28,18 +28,29 @@
   <div class="m-header">
     <div class="container">
       <div class="row">
-        <div class="col-xs-3">
+        <div class="visible-sm visible-xs col-sm-3 col-xs-3 u-menu">
+          <span class="glyphicon glyphicon-menu-hamburger s-fsz35"></span>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-6">
           <a class="logo" href="index.html">
             <i class="u-icon u-icon-logo"></i>
           </a>
         </div>
-
-        <ul class="navbar col-xs-6">
-          <li class="lv1"><a href="index.html">首页</a></li>
-          <li class="lv1">
+        <ul class="navbar col-md-6 col-xs-8 col-sm-8 hidden-sm hidden-xs u-list ">
+          <li class="u-back hidden-md hidden-lg">
+            <span class="glyphicon glyphicon-remove s-fsz35 f-fl"></span>
+            <i class="u-icon u-menu-text"></i>
+            <div class="u-menu2">
+              <i class="u-icon u-arrow-left"></i>
+              <span class="glyphicon glyphicon-menu-hamburger s-fsz35"></span>
+            </div>
+          </li>
+          <li class="lv1 "><a href="index.html">首页</a></li>
+          <li class="lv1 ">
             <a href="###">诺生活<i class="glyphicon glyphicon-menu-down u-icon-arrow_d "></i></a>
             <ul class="drop-menu">
-              <i class="u-icon u-icon-tri "></i>
+              <li><i class="u-icon u-icon-tri hidden-sm hidden-xs"></i>
+              </li>
               <li><a href="###">雷诺品牌<i class="glyphicon glyphicon-menu-right  u-icon-r"></i></a></li>
               <li><a href="###">俱乐部简介<i class="glyphicon glyphicon-menu-right  u-icon-r"></i></a></li>
               <li><a href="###">如何成为会员<i class="glyphicon glyphicon-menu-right  u-icon-r"></i></a></li>
@@ -48,30 +59,30 @@
               <li><a href="###">升级条款<i class="glyphicon glyphicon-menu-right  u-icon-r"></i></a></li>
             </ul>
           </li>
-          <li class="lv1">
+          <li class="lv1 ">
             <a href="###">会员服务<i class="glyphicon glyphicon-menu-down u-icon-arrow_d "></i></a>
             <ul class="drop-menu">
-              <i class="u-icon u-icon-tri"></i>
+              <li><i class="u-icon u-icon-tri hidden-sm hidden-xs"></i></li>
               <li><a href="###">如何成为会员<i class="glyphicon glyphicon-menu-right  u-icon-r"></i></a></li>
               <li><a href="###">会员权利与义务<i class="glyphicon glyphicon-menu-right  u-icon-r"></i></a></li>
               <li><a href="###">会员卡服务内容<i class="glyphicon glyphicon-menu-right  u-icon-r"></i></a></li>
               <li><a href="###">升级条款<i class="glyphicon glyphicon-menu-right  u-icon-r"></i></a></li>
             </ul>
           </li>
-          <li class="lv1">
+          <li class="lv1 ">
             <a href="###">精彩活动<i class="glyphicon glyphicon-menu-down u-icon-arrow_d "></i></a>
             <ul class="drop-menu">
-              <i class="u-icon u-icon-tri"></i>
+              <li><i class="u-icon u-icon-tri hidden-sm hidden-xs"></i></li>
               <li><a href="###">会员权利与义务<i class="glyphicon glyphicon-menu-right  u-icon-r"></i></a></li>
               <li><a href="###">会员卡服务内容<i class="glyphicon glyphicon-menu-right  u-icon-r"></i></a></li>
               <li><a href="###">升级条款<i class="glyphicon glyphicon-menu-right  u-icon-r"></i></a></li>
             </ul>
           </li>
         </ul>
-        <div class="col-xs-3">
+        <div class="col-md-3 col-sm-3 col-xs-3 ">
           <span class="f-ib slogo">
-					<i class="u-icon u-icon-slogo "></i>
-				</span>
+				<i class="u-icon u-icon-slogo "></i>
+		  </span>
         </div>
       </div>
     </div>
@@ -106,49 +117,49 @@
               </div>
             </form>
             <div class="m-btn-wrap m-btns">
-               <button type="submit" class="btn btn-app btn-lg btn-m">查询<span class="glyphicon glyphicon-menu-right"></span></button>
-                <button type="submit" class="btn btn-grey btn-lg btn-b btn-m">导出<span class="glyphicon glyphicon-menu-right"></span></button>
+              <button type="submit" class="btn btn-app btn-lg btn-m">查询<span class="glyphicon glyphicon-menu-right"></span></button>
+              <button type="submit" class="btn btn-grey btn-lg btn-b btn-m">导出<span class="glyphicon glyphicon-menu-right"></span></button>
             </div>
           </div>
-            <table class="table table-hover table-striped table-bordered text-center f-mt-lg">
-              <tr>
-                <th>序号</th>
-                <th>工时编码</th>
-                <th>消费时间</th>
-                <th>消费类型</th>
-                <th>费用</th>
-                <th>车牌号</th>
-                <th>消费店</th>
-              </tr>
-              <tr>
-                <td>01</td>
-                <td>CPAPV15910N4549</td>
-                <td>2015-09-21</td>
-                <td>专营店积分</td>
-                <td>100</td>
-                <td>粤BH2222</td>
-                <td>本店</td>
-              </tr>
-              <tr>
-                <td>02</td>
-                <td>CPAPV15910N4549</td>
-                <td>2015-09-21</td>
-                <td>专营店积分</td>
-                <td>100</td>
-                <td>粤BH2222</td>
-                <td>本店</td>
-              </tr>
-            </table>
-            <p class="u-page">第1页/共3页</p>
-            <ul class="pager">
-              <li><a class="grey" href="#">首页</a></li>
-              <li><a class="grey" href="#">上页</a></li>
-              <li class="active"><a class="page" href="#">01</a></li>
-              <li><a class="page" href="#">02</a></li>
-              <li><a class="page" href="#">03</a></li>
-              <li><a class="grey" href="#">下页</a></li>
-              <li><a class="grey" href="#">尾页</a></li>
-            </ul>
+          <table class="table table-hover table-striped table-bordered text-center f-mt-lg">
+            <tr>
+              <th>序号</th>
+              <th>工时编码</th>
+              <th>消费时间</th>
+              <th>消费类型</th>
+              <th>费用</th>
+              <th>车牌号</th>
+              <th>消费店</th>
+            </tr>
+            <tr>
+              <td>01</td>
+              <td>CPAPV15910N4549</td>
+              <td>2015-09-21</td>
+              <td>专营店积分</td>
+              <td>100</td>
+              <td>粤BH2222</td>
+              <td>本店</td>
+            </tr>
+            <tr>
+              <td>02</td>
+              <td>CPAPV15910N4549</td>
+              <td>2015-09-21</td>
+              <td>专营店积分</td>
+              <td>100</td>
+              <td>粤BH2222</td>
+              <td>本店</td>
+            </tr>
+          </table>
+          <p class="u-page">第1页/共3页</p>
+          <ul class="pager">
+            <li><a class="grey" href="#">首页</a></li>
+            <li><a class="grey" href="#">上页</a></li>
+            <li class="active"><a class="page" href="#">01</a></li>
+            <li><a class="page" href="#">02</a></li>
+            <li><a class="page" href="#">03</a></li>
+            <li><a class="grey" href="#">下页</a></li>
+            <li><a class="grey" href="#">尾页</a></li>
+          </ul>
         </div>
         <div class="col-md-4 col-md-pull-8">
           <div class="row">
@@ -208,118 +219,116 @@
     </div>
   </div>
 
-<<<<<<< HEAD
-  <div class="m-footer list-imp">
+  <<<<<<< HEAD <div class="m-footer list-imp">
     <div class="container list-imp">
       <div class="tt-l hidden-md hidden-lg u-to-index list-imp">
-        <span class="cc s-tt-1">首页</span><span class="glyphicon glyphicon-menu-right s-fsz12"></span>
-=======
-  <div class="m-footer">
-    <div class="container ">
-      <div class="col-xs-6">
-        <dl class="col-xs-3">
-          <dt class=" u-link-tt ">企业信息</dt>
-          <dd class=""><a href="">企业简介</a></dd>
-          <dd class=""><a href="">企业文化</a></dd>
-          <dd class=""><a href="">企业规划</a></dd>
-        </dl>
-        <dl class="col-xs-3">
-          <dt class=" u-link-tt">客户服务</dt>
-          <dd class=""><a href="">售后活动</a></dd>
-          <dd class=""><a href="">精品配件</a></dd>
-          <dd class=""><a href="">联系我们</a></dd>
-          <dd class=""><a href="">诺相随</a></dd>
-          <dd class=""><a href="">促销信息</a></dd>
-        </dl>
-        <dl class="col-xs-3">
-          <dt class=" u-link-tt">经销商网络</dt>
-          <dd class=""><a href="">经销商网络</a></dd>
-          <dd class=""><a href="">经销商查询</a></dd>
-        </dl>
+        <span class="cc s-tt-1">首页</span><span class="glyphicon glyphicon-menu-right s-fsz12"></span> =======
+        <div class="m-footer">
+          <div class="container ">
+            <div class="col-xs-6">
+              <dl class="col-xs-3">
+                <dt class=" u-link-tt ">企业信息</dt>
+                <dd class=""><a href="">企业简介</a></dd>
+                <dd class=""><a href="">企业文化</a></dd>
+                <dd class=""><a href="">企业规划</a></dd>
+              </dl>
+              <dl class="col-xs-3">
+                <dt class=" u-link-tt">客户服务</dt>
+                <dd class=""><a href="">售后活动</a></dd>
+                <dd class=""><a href="">精品配件</a></dd>
+                <dd class=""><a href="">联系我们</a></dd>
+                <dd class=""><a href="">诺相随</a></dd>
+                <dd class=""><a href="">促销信息</a></dd>
+              </dl>
+              <dl class="col-xs-3">
+                <dt class=" u-link-tt">经销商网络</dt>
+                <dd class=""><a href="">经销商网络</a></dd>
+                <dd class=""><a href="">经销商查询</a></dd>
+              </dl>
 
->>>>>>> origin/master
-      </div>
-      <div class="col-lg-6 col-md-6  col-sm-12 col-xs-12 col-md-push-6 list-imp">
-        <dl class="col-lg-5 col-md-5  col-sm-12 col-xs-12 list-imp">
-          <dd class="f-mb30 tt-l">雷诺贵宾专线 <span class="s-color-y">400-800-8886</span></dd>
-          <dd class="tt-l">分享你的雷诺</dd>
-          <dd class="tt-l">
-            <i class="u-icon u-icon-wb"></i>
-            <i class="u-icon u-icon-wx"></i>
-            <i class="u-icon u-icon-qq"></i>
-            <i class="u-icon u-icon-db"></i>
-          </dd>
-        </dl>
-        <dl class="col-lg-7 col-md-7  col-sm-12  col-xs-12 list-imp">
-          <dt class="tt-l show-l f-dn u-link-tt z-hidden-l list-imp">
+              >>>>>>> origin/master
+            </div>
+            <div class="col-lg-6 col-md-6  col-sm-12 col-xs-12 col-md-push-6 list-imp">
+              <dl class="col-lg-5 col-md-5  col-sm-12 col-xs-12 list-imp">
+                <dd class="f-mb30 tt-l">雷诺贵宾专线 <span class="s-color-y">400-800-8886</span></dd>
+                <dd class="tt-l">分享你的雷诺</dd>
+                <dd class="tt-l">
+                  <i class="u-icon u-icon-wb"></i>
+                  <i class="u-icon u-icon-wx"></i>
+                  <i class="u-icon u-icon-qq"></i>
+                  <i class="u-icon u-icon-db"></i>
+                </dd>
+              </dl>
+              <dl class="col-lg-7 col-md-7  col-sm-12  col-xs-12 list-imp">
+                <dt class="tt-l show-l f-dn u-link-tt z-hidden-l list-imp">
 		    <span class=" s-tt-1">关注雷诺官方账号</span><i class="glyphicon glyphicon-menu-down u-icon-arrow_d  u-icon-r s-color-y z-hidden-l"></i>
 		  </dt>
-          <div class="z-hidden-s">
-            <dd class="col-lg-6 col-md-6  col-sm-12 col-xs-12 tt-l f-tc f-fl">
-              <i class="u-code-wx"></i>
-              <span class="u-text">关注雷诺官方微信</span>
-            </dd>
-            <dd class="col-lg-6 col-md-6  col-sm-12 col-xs-12 tt-l f-tc f-fl">
-              <i class="u-code-wb"></i>
-              <span class="u-text">关注雷诺官方微博</span>
-            </dd>
-          </div>
-        </dl>
-      </div>
-      <div class="col-lg-6 col-md-6  col-sm-12 col-xs-12 list-imp col-md-pull-6">
+                <div class="z-hidden-s">
+                  <dd class="col-lg-6 col-md-6  col-sm-12 col-xs-12 tt-l f-tc f-fl">
+                    <i class="u-code-wx"></i>
+                    <span class="u-text">关注雷诺官方微信</span>
+                  </dd>
+                  <dd class="col-lg-6 col-md-6  col-sm-12 col-xs-12 tt-l f-tc f-fl">
+                    <i class="u-code-wb"></i>
+                    <span class="u-text">关注雷诺官方微博</span>
+                  </dd>
+                </div>
+              </dl>
+            </div>
+            <div class="col-lg-6 col-md-6  col-sm-12 col-xs-12 list-imp col-md-pull-6">
 
-        <dl class="col-lg-3 col-md-3  col-sm-12 col-xs-12 list-imp">
-          <dt class="tt-l u-link-tt list-imp">企业信息<i class="glyphicon glyphicon-menu-down u-icon-arrow_d  u-icon-r s-color-y z-hidden-l"></i></dt>
-          <div class="z-hidden-s">
-            <dd class="tt-l"><a href="">企业简介</a></dd>
-            <dd class="tt-l"><a href="">企业文化</a></dd>
-            <dd class="tt-l"><a href="">企业规划</a></dd>
-          </div>
-        </dl>
-        <dl class="col-lg-3 col-md-3  col-sm-12 col-xs-12 list-imp">
-          <dt class="tt-l u-link-tt list-imp">客户服务<i class="glyphicon glyphicon-menu-down u-icon-arrow_d  u-icon-r s-color-y z-hidden-l"></i></dt>
-          <div class="z-hidden-s">
-            <dd class="tt-l"><a href="">售后活动</a></dd>
-            <dd class="tt-l"><a href="">精品配件</a></dd>
-            <dd class="tt-l"><a href="">联系我们</a></dd>
-            <dd class="tt-l"><a href="">诺相随</a></dd>
-            <dd class="tt-l"><a href="">促销信息</a></dd>
-          </div>
-        </dl>
-        <dl class="col-lg-3 col-md-3  col-sm-12 col-xs-12 list-imp">
-          <dt class="tt-l u-link-tt list-imp">经销商网络<i class="glyphicon glyphicon-menu-down u-icon-arrow_d  u-icon-r s-color-y z-hidden-l"></i></dt>
-          <div class="z-hidden-s">
-            <dd class="tt-l"><a href="">经销商网络</a></dd>
-            <dd class="tt-l"><a href="">经销商查询</a></dd>
-          </div>
-        </dl>
+              <dl class="col-lg-3 col-md-3  col-sm-12 col-xs-12 list-imp">
+                <dt class="tt-l u-link-tt list-imp">企业信息<i class="glyphicon glyphicon-menu-down u-icon-arrow_d  u-icon-r s-color-y z-hidden-l"></i></dt>
+                <div class="z-hidden-s">
+                  <dd class="tt-l"><a href="">企业简介</a></dd>
+                  <dd class="tt-l"><a href="">企业文化</a></dd>
+                  <dd class="tt-l"><a href="">企业规划</a></dd>
+                </div>
+              </dl>
+              <dl class="col-lg-3 col-md-3  col-sm-12 col-xs-12 list-imp">
+                <dt class="tt-l u-link-tt list-imp">客户服务<i class="glyphicon glyphicon-menu-down u-icon-arrow_d  u-icon-r s-color-y z-hidden-l"></i></dt>
+                <div class="z-hidden-s">
+                  <dd class="tt-l"><a href="">售后活动</a></dd>
+                  <dd class="tt-l"><a href="">精品配件</a></dd>
+                  <dd class="tt-l"><a href="">联系我们</a></dd>
+                  <dd class="tt-l"><a href="">诺相随</a></dd>
+                  <dd class="tt-l"><a href="">促销信息</a></dd>
+                </div>
+              </dl>
+              <dl class="col-lg-3 col-md-3  col-sm-12 col-xs-12 list-imp">
+                <dt class="tt-l u-link-tt list-imp">经销商网络<i class="glyphicon glyphicon-menu-down u-icon-arrow_d  u-icon-r s-color-y z-hidden-l"></i></dt>
+                <div class="z-hidden-s">
+                  <dd class="tt-l"><a href="">经销商网络</a></dd>
+                  <dd class="tt-l"><a href="">经销商查询</a></dd>
+                </div>
+              </dl>
 
-      </div>
+            </div>
 
-    </div>
-  </div>
-  <div class="m-footer-copyright ">
-    <div class="container list-imp">
-      <dl class="col-lg-4 col-md-4 col-sm-12 col-xs-12 list-imp">
-        <dt class="tt-l col-lg-3 col-md-3  col-sm-12 col-xs-12 list-imp">
+          </div>
+        </div>
+        <div class="m-footer-copyright ">
+          <div class="container list-imp">
+            <dl class="col-lg-4 col-md-4 col-sm-12 col-xs-12 list-imp">
+              <dt class="tt-l col-lg-3 col-md-3  col-sm-12 col-xs-12 list-imp">
 						<a href="###">加入我们<i class="glyphicon glyphicon-menu-right u-icon-arrow_d  u-icon-r s-color-y z-hidden-l"></i></a>
 					</dt>
-        <dt class="tt-l col-lg-3 col-md-3  col-sm-12 col-xs-12 list-imp">
+              <dt class="tt-l col-lg-3 col-md-3  col-sm-12 col-xs-12 list-imp">
 						<a href="###">隐私条款<i class="glyphicon glyphicon-menu-right u-icon-arrow_d  u-icon-r s-color-y z-hidden-l"></i></a>
 					</dt>
-        <dt class="tt-l col-lg-3 col-md-3  col-sm-12 col-xs-12 list-imp">
+              <dt class="tt-l col-lg-3 col-md-3  col-sm-12 col-xs-12 list-imp">
 						<a href="###">站点地图<i class="glyphicon glyphicon-menu-right u-icon-arrow_d  u-icon-r s-color-y z-hidden-l"></i></a>
 					</dt>
-        <dt class="tt-l col-lg-3 col-md-3  col-sm-12 col-xs-12 list-imp">
+              <dt class="tt-l col-lg-3 col-md-3  col-sm-12 col-xs-12 list-imp">
 						<a href="###">法律声明<i class="glyphicon glyphicon-menu-right u-icon-arrow_d  u-icon-r s-color-y z-hidden-l"></i></a>
 					</dt>
-      </dl>
-      <div class="col-lg-4 col-md-4  col-sm-12"></div>
-      <div class="text-center col-lg-4 col-md-4  col-sm-12 col-xs-12 list-imp">
-        © 2015 东风雷诺汽车有限公司 鄂1CP备14001556号-1
-      </div>
-    </div>
-  </div>
+            </dl>
+            <div class="col-lg-4 col-md-4  col-sm-12"></div>
+            <div class="text-center col-lg-4 col-md-4  col-sm-12 col-xs-12 list-imp">
+              © 2015 东风雷诺汽车有限公司 鄂1CP备14001556号-1
+            </div>
+          </div>
+        </div>
 </body>
 
 </html>

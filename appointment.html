@@ -18,7 +18,7 @@
   <script src="lib/html5shiv-printshiv.min.js"></script>
   <![endif]-->
   <script src="res/bootstrap.min.js"></script>
-  <!--  <script type="text/javascript" src="res/app.js"></script>-->
+  <script type="text/javascript" src="res/app.js"></script>
 
   <link type="image/x-icon" href="favicon.ico" rel="shortcut icon" />
   <link href="favicon.ico" rel="bookmark icon" />
@@ -28,18 +28,29 @@
   <div class="m-header">
     <div class="container">
       <div class="row">
-        <div class="col-xs-3">
+        <div class="visible-sm visible-xs col-sm-3 col-xs-3 u-menu">
+          <span class="glyphicon glyphicon-menu-hamburger s-fsz35"></span>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-6">
           <a class="logo" href="index.html">
             <i class="u-icon u-icon-logo"></i>
           </a>
         </div>
-
-        <ul class="navbar col-xs-6">
-          <li class="lv1"><a href="index.html">首页</a></li>
-          <li class="lv1">
+        <ul class="navbar col-md-6 col-xs-8 col-sm-8 hidden-sm hidden-xs u-list ">
+          <li class="u-back hidden-md hidden-lg">
+            <span class="glyphicon glyphicon-remove s-fsz35 f-fl"></span>
+            <i class="u-icon u-menu-text"></i>
+            <div class="u-menu2">
+              <i class="u-icon u-arrow-left"></i>
+              <span class="glyphicon glyphicon-menu-hamburger s-fsz35"></span>
+            </div>
+          </li>
+          <li class="lv1 "><a href="index.html">首页</a></li>
+          <li class="lv1 ">
             <a href="###">诺生活<i class="glyphicon glyphicon-menu-down u-icon-arrow_d "></i></a>
             <ul class="drop-menu">
-              <i class="u-icon u-icon-tri "></i>
+              <li><i class="u-icon u-icon-tri hidden-sm hidden-xs"></i>
+              </li>
               <li><a href="###">雷诺品牌<i class="glyphicon glyphicon-menu-right  u-icon-r"></i></a></li>
               <li><a href="###">俱乐部简介<i class="glyphicon glyphicon-menu-right  u-icon-r"></i></a></li>
               <li><a href="###">如何成为会员<i class="glyphicon glyphicon-menu-right  u-icon-r"></i></a></li>
@@ -48,30 +59,30 @@
               <li><a href="###">升级条款<i class="glyphicon glyphicon-menu-right  u-icon-r"></i></a></li>
             </ul>
           </li>
-          <li class="lv1">
+          <li class="lv1 ">
             <a href="###">会员服务<i class="glyphicon glyphicon-menu-down u-icon-arrow_d "></i></a>
             <ul class="drop-menu">
-              <i class="u-icon u-icon-tri"></i>
+              <li><i class="u-icon u-icon-tri hidden-sm hidden-xs"></i></li>
               <li><a href="###">如何成为会员<i class="glyphicon glyphicon-menu-right  u-icon-r"></i></a></li>
               <li><a href="###">会员权利与义务<i class="glyphicon glyphicon-menu-right  u-icon-r"></i></a></li>
               <li><a href="###">会员卡服务内容<i class="glyphicon glyphicon-menu-right  u-icon-r"></i></a></li>
               <li><a href="###">升级条款<i class="glyphicon glyphicon-menu-right  u-icon-r"></i></a></li>
             </ul>
           </li>
-          <li class="lv1">
+          <li class="lv1 ">
             <a href="###">精彩活动<i class="glyphicon glyphicon-menu-down u-icon-arrow_d "></i></a>
             <ul class="drop-menu">
-              <i class="u-icon u-icon-tri"></i>
+              <li><i class="u-icon u-icon-tri hidden-sm hidden-xs"></i></li>
               <li><a href="###">会员权利与义务<i class="glyphicon glyphicon-menu-right  u-icon-r"></i></a></li>
               <li><a href="###">会员卡服务内容<i class="glyphicon glyphicon-menu-right  u-icon-r"></i></a></li>
               <li><a href="###">升级条款<i class="glyphicon glyphicon-menu-right  u-icon-r"></i></a></li>
             </ul>
           </li>
         </ul>
-        <div class="col-xs-3">
+        <div class="col-md-3 col-sm-3 col-xs-3 ">
           <span class="f-ib slogo">
-					<i class="u-icon u-icon-slogo "></i>
-				</span>
+				<i class="u-icon u-icon-slogo "></i>
+		  </span>
         </div>
       </div>
     </div>
@@ -80,93 +91,91 @@
     <div class="container">
       <div class="row">
         <div class="m-order col-md-8 col-md-push-4">
-        <div class="s-box">
-           <div class="u-crumbs">
+          <div class="s-box">
+            <div class="u-crumbs">
               首页<span class="m">&gt;</span>会员服务<span class="m">&gt;</span><span class="b">预约服务</span>
-          </div>
-          <div class="u-title u-title-1">预约服务</div>
-        	<form class="">
-        	<div class="m-appForm">
-				<h3 class="s-subtitle"><span class="u-num">01</span>选择预约店</h3>
-				<label class="s-la"><span class="s-star">*</span>预约专营店</label>
-				<select class="form-control">
-					<option>请选择</option>
-				</select>
-				<h3 class="s-subtitle"><span class="u-num">02</span>填写车辆和服务信息</h3>
-				<div class="col-md-12 col-xs-12 form-group">
-				<label class="s-la"><span class="s-star">*</span>车辆号码</label>
-				<input class="u-txt" type="text"/>
-				<span class="u-tip">格式：粤BYXXXX</span>
-				</div>
-				<div class="col-md-6 col-xs-12 form-group">
-					<label>汽车车型</label>
-					<select class="form-control">
-						<option>请选择</option>
-					</select>
-				</div>
-				<div class="col-md-6 col-xs-12 form-group">
-					<label><span class="s-star">*</span>车辆品牌</label>
-					<select class="form-control">
-						<option>请选择</option>
-					</select>
-					<span class="s-down"></span>
-				</div>
-				<div class="col-md-6 col-xs-12 form-group">
-					<label><span class="s-star">*</span>服务类别</label>
-					<select class="form-control">
-						<option>请选择</option>
-					</select>
-					<span class="s-down"></span>
-				</div>
-				<div class="col-md-6 col-xs-12 form-group">
-					<label>预约时间</label>
-					<select class="form-control">
-						<option>请选择</option>
-					</select>
-					<span class="s-down"></span>
-				</div>
-				<label class="u-serDetail">服务描述</label>
-				<div class="m-item">
-					<p class="u-content">
-			DRAC通过网站登录数据表和内容点击情况来设计网站，找出网页内容受欢迎的原因，进一步完善网站使其对访问者更加实用。所保存下来网站登录数据是一种序列文件，通常情况下将不会通过分析数据表来识别访问者个人身份。但是，如果发现有人试图侵占、干扰或破坏本网站，我们将通过网站登录数据表将肇事者的身份查出来
-			DRAC通过网站登录数据表和内容点击情况来设计网站，找出网页内容受欢迎的原因，进一步完善网站使其对访问者更加实用。所保存下来网站登录数据是一种序列文件，通常情况下将不会通过分析数据表来识别访问者个人身份。但是，如果发现有人试图侵占、干扰或破坏本网站，我们将通过网站登录数据表将肇事者的身份查出来
-			DRAC通过网站登录数据表和内容点击情况来设计网站，找出网页内容受欢迎的原因，进一步完善网站使其对访问者更加实用。所保存下来网站登录数据是一种序列文件，通常情况下将不会通过分析数据表来识别访问者个人身份。但是，如果发现有人试图侵占、干扰或破坏本网站，我们将通过网站登录数据表将肇事者的身份查出来
-			DRAC通过网站登录数据表和内容点击情况来设计网站，找出网页内容受欢迎的原因，进一步完善网站使其对访问者更加实用。所保存下来网站登录数据是一种序列文件，通常情况下将不会通过分析数据表来识别访问者个人身份。但是，如果发现有人试图侵占、干扰或破坏本网站，我们将通过网站登录数据表将肇事者的身份查出来
-					</p>
-				</div>
-				<div class="u-contact">
-					<label>是否联系</label>
-					<span><i class="u-yes"></i>是</span>
-					<span><i class="u-no"></i>否</span>
-				</div>
-				<h3 class="s-subtitle"><span class="u-num">03</span>填写联系人信息</h3>
-				<div class="col-md-6 col-xs-12 form-group">
-					<label><span class="s-star">*</span>联系人</label>
-					<input class="s-select" type="text" placeholder="朱云飞">
-				</div>
-				<div class="col-md-6 col-xs-12 form-group">
-					<label><span class="s-star">*</span>手机号码</span></label>
-					<input class="s-select" type="text" placeholder="13800138000">
-				</div>
-				<div class="col-md-6 col-xs-12 form-group">
-					<label>固定号码</label>
-					<input type="text" class="s-select" placeholder="010-80870010">
-				</div>
-				<div class="col-md-6 col-xs-12 form-group">
-					<label>电子邮箱</label>
-					<input type="text" class="s-select" placeholder="13800138000@163.com">
-				</div>
-       			<div class="f-cb"></div>
-       			</div>
-        	</form>
-        	<div class="m-btn-wrap">
-        		<a class="btn btn-lg btn-app btn-b btn-m">保存<span class="glyphicon glyphicon-menu-right"></span></a>
-        		<a class="btn btn-lg btn-grey btn-b btn-m">重置<span class="glyphicon glyphicon-menu-right"></span></a>
-        	</div>
+            </div>
+            <div class="u-title u-title-1">预约服务</div>
+            <form class="">
+              <div class="m-appForm">
+                <h3 class="s-subtitle"><span class="u-num">01</span>选择预约店</h3>
+                <label class="s-la"><span class="s-star">*</span>预约专营店</label>
+                <select class="form-control">
+                  <option>请选择</option>
+                </select>
+                <h3 class="s-subtitle"><span class="u-num">02</span>填写车辆和服务信息</h3>
+                <div class="col-md-12 col-xs-12 form-group">
+                  <label class="s-la"><span class="s-star">*</span>车辆号码</label>
+                  <input class="u-txt" type="text" />
+                  <span class="u-tip">格式：粤BYXXXX</span>
+                </div>
+                <div class="col-md-6 col-xs-12 form-group">
+                  <label>汽车车型</label>
+                  <select class="form-control">
+                    <option>请选择</option>
+                  </select>
+                </div>
+                <div class="col-md-6 col-xs-12 form-group">
+                  <label><span class="s-star">*</span>车辆品牌</label>
+                  <select class="form-control">
+                    <option>请选择</option>
+                  </select>
+                  <span class="s-down"></span>
+                </div>
+                <div class="col-md-6 col-xs-12 form-group">
+                  <label><span class="s-star">*</span>服务类别</label>
+                  <select class="form-control">
+                    <option>请选择</option>
+                  </select>
+                  <span class="s-down"></span>
+                </div>
+                <div class="col-md-6 col-xs-12 form-group">
+                  <label>预约时间</label>
+                  <select class="form-control">
+                    <option>请选择</option>
+                  </select>
+                  <span class="s-down"></span>
+                </div>
+                <label class="u-serDetail">服务描述</label>
+                <div class="m-item">
+                  <p class="u-content">
+                    DRAC通过网站登录数据表和内容点击情况来设计网站，找出网页内容受欢迎的原因，进一步完善网站使其对访问者更加实用。所保存下来网站登录数据是一种序列文件，通常情况下将不会通过分析数据表来识别访问者个人身份。但是，如果发现有人试图侵占、干扰或破坏本网站，我们将通过网站登录数据表将肇事者的身份查出来 DRAC通过网站登录数据表和内容点击情况来设计网站，找出网页内容受欢迎的原因，进一步完善网站使其对访问者更加实用。所保存下来网站登录数据是一种序列文件，通常情况下将不会通过分析数据表来识别访问者个人身份。但是，如果发现有人试图侵占、干扰或破坏本网站，我们将通过网站登录数据表将肇事者的身份查出来 DRAC通过网站登录数据表和内容点击情况来设计网站，找出网页内容受欢迎的原因，进一步完善网站使其对访问者更加实用。所保存下来网站登录数据是一种序列文件，通常情况下将不会通过分析数据表来识别访问者个人身份。但是，如果发现有人试图侵占、干扰或破坏本网站，我们将通过网站登录数据表将肇事者的身份查出来 DRAC通过网站登录数据表和内容点击情况来设计网站，找出网页内容受欢迎的原因，进一步完善网站使其对访问者更加实用。所保存下来网站登录数据是一种序列文件，通常情况下将不会通过分析数据表来识别访问者个人身份。但是，如果发现有人试图侵占、干扰或破坏本网站，我们将通过网站登录数据表将肇事者的身份查出来
+                  </p>
+                </div>
+                <div class="u-contact">
+                  <label>是否联系</label>
+                  <span><i class="u-yes"></i>是</span>
+                  <span><i class="u-no"></i>否</span>
+                </div>
+                <h3 class="s-subtitle"><span class="u-num">03</span>填写联系人信息</h3>
+                <div class="col-md-6 col-xs-12 form-group">
+                  <label><span class="s-star">*</span>联系人</label>
+                  <input class="s-select" type="text" placeholder="朱云飞">
+                </div>
+                <div class="col-md-6 col-xs-12 form-group">
+                  <label><span class="s-star">*</span>手机号码</span>
+                  </label>
+                  <input class="s-select" type="text" placeholder="13800138000">
+                </div>
+                <div class="col-md-6 col-xs-12 form-group">
+                  <label>固定号码</label>
+                  <input type="text" class="s-select" placeholder="010-80870010">
+                </div>
+                <div class="col-md-6 col-xs-12 form-group">
+                  <label>电子邮箱</label>
+                  <input type="text" class="s-select" placeholder="13800138000@163.com">
+                </div>
+                <div class="f-cb"></div>
+              </div>
+            </form>
+            <div class="m-btn-wrap">
+              <a class="btn btn-lg btn-app btn-b btn-m">保存<span class="glyphicon glyphicon-menu-right"></span></a>
+              <a class="btn btn-lg btn-grey btn-b btn-m">重置<span class="glyphicon glyphicon-menu-right"></span></a>
+            </div>
 
+          </div>
         </div>
-     </div>
-          <div class="col-md-4 col-md-pull-8 ">
+        <div class="col-md-4 col-md-pull-8 ">
           <div class="row">
             <div class="col-xs-12 ">
               <div class="m-personalInfo ">
@@ -202,172 +211,172 @@
                     <span class="tt">成功推荐购车数：</span><span class="cc">0</span>
                   </li>
                   <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-  <li class="panel panel-default row tips_down">
-    <div class="panel-heading" role="tab" id="headingOne">
-      <h4 class="panel-title">
+                    <li class="panel panel-default row tips_down">
+                      <div class="panel-heading" role="tab" id="headingOne">
+                        <h4 class="panel-title">
         <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
         我的个人信息  <i class="glyphicon glyphicon-menu-down u-icon-menu_d"></i>
         </a>
       </h4>
-    </div>
-    <div id="collapseOne" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingOne">
-      <div class="panel-body">
-        <ul class="col-ms-6 col-md-6">
-                      <li>
-                        <a>个人详情</a>
-                      </li>
-                      <li>
-                        <a>会员转会</a>
-                      </li>
-                      <li>
-                        <a>我的车辆</a>
-                      </li>
-                      <li>
-                        <a>安全问题设置</a>
-                      </li>
-                      <li>
-                        <a>积分查询</a>
-                      </li>
-                       <li>
-                        <a>修改密码</a>
-                      </li>
-                      <li>
-                        <a>试乘试驾登记</a>
-                      </li>
-                      <li>
-                        <a>我的试乘试驾</a>
-                      </li>
-                      <li>
-                        <a>我的购物车</a>
-                      </li>
-                    </ul>
-        <ul  class="col-ms-6 col-md-6">
-                       <li>
-                        <a>我的订单</a>
-                      </li>
-                      <li>
-                        <a>我参与的活动</a>
-                      </li>
-                      <li>
-                        <a>历时精彩活动</a>
-                      </li>
-                      <li>
-                        <a>我的代办业务</a>
-                      </li>
-                       <li>
-                        <a>我的预约服务</a>
-                      </li>
-                      <li>
-                        <a>我的推荐购车</a>
-                      </li>
-                      <li>
-                        <a>我的车辆增购</a>
-                      </li>
-                      <li>
-                        <a>我的车辆置换</a>
-                      </li>
+                      </div>
+                      <div id="collapseOne" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingOne">
+                        <div class="panel-body">
+                          <ul class="col-ms-6 col-md-6">
+                            <li>
+                              <a>个人详情</a>
+                            </li>
+                            <li>
+                              <a>会员转会</a>
+                            </li>
+                            <li>
+                              <a>我的车辆</a>
+                            </li>
+                            <li>
+                              <a>安全问题设置</a>
+                            </li>
+                            <li>
+                              <a>积分查询</a>
+                            </li>
+                            <li>
+                              <a>修改密码</a>
+                            </li>
+                            <li>
+                              <a>试乘试驾登记</a>
+                            </li>
+                            <li>
+                              <a>我的试乘试驾</a>
+                            </li>
+                            <li>
+                              <a>我的购物车</a>
+                            </li>
+                          </ul>
+                          <ul class="col-ms-6 col-md-6">
+                            <li>
+                              <a>我的订单</a>
+                            </li>
+                            <li>
+                              <a>我参与的活动</a>
+                            </li>
+                            <li>
+                              <a>历时精彩活动</a>
+                            </li>
+                            <li>
+                              <a>我的代办业务</a>
+                            </li>
+                            <li>
+                              <a>我的预约服务</a>
+                            </li>
+                            <li>
+                              <a>我的推荐购车</a>
+                            </li>
+                            <li>
+                              <a>我的车辆增购</a>
+                            </li>
+                            <li>
+                              <a>我的车辆置换</a>
+                            </li>
 
-                    </ul>
-      </div>
-    </div>
-  </li>
-  <li class="panel panel-default row tips_down">
-    <div class="panel-heading" role="tab" id="headingTwo">
-      <h4 class="panel-title">
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="panel panel-default row tips_down">
+                      <div class="panel-heading" role="tab" id="headingTwo">
+                        <h4 class="panel-title">
         <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">代办、预约服务 <i class="glyphicon glyphicon-menu-down u-icon-menu_d"></i>
         </a>
       </h4>
-    </div>
-    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-      <div class="panel-body">
-        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-      </div>
-    </div>
-  </li>
-  <li class="panel panel-default row tips_down">
-    <div class="panel-heading" role="tab" id="headingThree">
-      <h4 class="panel-title">
+                      </div>
+                      <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                        <div class="panel-body">
+                          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                        </div>
+                      </div>
+                    </li>
+                    <li class="panel panel-default row tips_down">
+                      <div class="panel-heading" role="tab" id="headingThree">
+                        <h4 class="panel-title">
         <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
           置换、推荐、增购<i class="glyphicon glyphicon-menu-down u-icon-menu_d"></i>
         </a>
       </h4>
-    </div>
-    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-      <div class="panel-body">
-        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-      </div>
-    </div>
-  </li>
-   <li class="panel panel-default row tips_down">
-    <div class="panel-heading" role="tab" id="headingFour">
-      <h4 class="panel-title">
+                      </div>
+                      <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                        <div class="panel-body">
+                          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                        </div>
+                      </div>
+                    </li>
+                    <li class="panel panel-default row tips_down">
+                      <div class="panel-heading" role="tab" id="headingFour">
+                        <h4 class="panel-title">
         <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
         我的个人信息  <i class="glyphicon glyphicon-menu-down u-icon-menu_d"></i>
         </a>
       </h4>
-    </div>
-    <div id="collapseFour" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingFour">
-      <div class="panel-body">
-        <ul class="list-left">
-                      <li>
-                        <a>个人详情</a>
-                      </li>
-                      <li>
-                        <a>会员转会</a>
-                      </li>
-                      <li>
-                        <a>我的车辆</a>
-                      </li>
-                      <li>
-                        <a>安全问题设置</a>
-                      </li>
-                      <li>
-                        <a>积分查询</a>
-                      </li>
-                       <li>
-                        <a>修改密码</a>
-                      </li>
-                      <li>
-                        <a>试乘试驾登记</a>
-                      </li>
-                      <li>
-                        <a>我的试乘试驾</a>
-                      </li>
-                      <li>
-                        <a>我的购物车</a>
-                      </li>
-                    </ul>
-        <ul  class="list-right">
-                       <li>
-                        <a>我的订单</a>
-                      </li>
-                      <li>
-                        <a>我参与的活动</a>
-                      </li>
-                      <li>
-                        <a>历时精彩活动</a>
-                      </li>
-                      <li>
-                        <a>我的代办业务</a>
-                      </li>
-                       <li>
-                        <a>我的预约服务</a>
-                      </li>
-                      <li>
-                        <a>我的推荐购车</a>
-                      </li>
-                      <li>
-                        <a>我的车辆增购</a>
-                      </li>
-                      <li>
-                        <a>我的车辆置换</a>
-                      </li>
+                      </div>
+                      <div id="collapseFour" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingFour">
+                        <div class="panel-body">
+                          <ul class="list-left">
+                            <li>
+                              <a>个人详情</a>
+                            </li>
+                            <li>
+                              <a>会员转会</a>
+                            </li>
+                            <li>
+                              <a>我的车辆</a>
+                            </li>
+                            <li>
+                              <a>安全问题设置</a>
+                            </li>
+                            <li>
+                              <a>积分查询</a>
+                            </li>
+                            <li>
+                              <a>修改密码</a>
+                            </li>
+                            <li>
+                              <a>试乘试驾登记</a>
+                            </li>
+                            <li>
+                              <a>我的试乘试驾</a>
+                            </li>
+                            <li>
+                              <a>我的购物车</a>
+                            </li>
+                          </ul>
+                          <ul class="list-right">
+                            <li>
+                              <a>我的订单</a>
+                            </li>
+                            <li>
+                              <a>我参与的活动</a>
+                            </li>
+                            <li>
+                              <a>历时精彩活动</a>
+                            </li>
+                            <li>
+                              <a>我的代办业务</a>
+                            </li>
+                            <li>
+                              <a>我的预约服务</a>
+                            </li>
+                            <li>
+                              <a>我的推荐购车</a>
+                            </li>
+                            <li>
+                              <a>我的车辆增购</a>
+                            </li>
+                            <li>
+                              <a>我的车辆置换</a>
+                            </li>
 
-                    </ul>
-      </div>
-    </div>
-  </li>
-</div>
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+                  </div>
 
                 </ul>
 
@@ -460,14 +469,15 @@
   </div>
 </body>
 <script>
-  $(function(){
+  $(function() {
     $('#sld2,#sld3').carousel({
 
-    pause: true,
+      pause: true,
 
-    interval: false
+      interval: false
 
     });
   })
 </script>
+
 </html>
